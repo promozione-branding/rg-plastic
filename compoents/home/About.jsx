@@ -10,7 +10,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-28"
+      className="relative overflow-hidden bg-white py-6 sm:py-13"
     >
       {/* =====================================================
           BACKGROUND
