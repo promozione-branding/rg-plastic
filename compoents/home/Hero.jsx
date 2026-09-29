@@ -40,7 +40,7 @@ export default function Hero() {
             {/* Main image frame */}
             <div className="absolute inset-y-8 left-0 right-[-25%] overflow-hidden rounded-r-[32px] rounded-l-[18px] shadow-[0_25px_60px_rgba(0,0,0,0.35)] lg:inset-y-10 lg:right-[-18%]">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxBV8xn1CaqtHqEw-4WGHKiL_8-eXZtEKyGA6nA0_BG8dYvNgcdW7B-YmI6kRGXKxYlTNSULQIwZM5kW9C9yoCLzQH4ifVXvTHs6r-5Ke2n7U1IQ0eaTd9sefl_Cg0csHTMRRMllAyixQQVTM_NT32JYpW1djBaYSnQyIzGraSLduPigIp3GNmGY1IhpKO11Gn_cbhCZR9fKV7AOtl65iwsN0s6i0haExSyedoD1emRCf9Paw0Krt1rg"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSktYGAef2Osy5vK7-4qhEAlNbJJGFkCdWRyOy8zXUWHvrq52ElZBm6TiCq&s=10"
                 alt="Texmo Plastic Moulding Machine"
                 
                 className="h-full w-full object-cover object-center transition-transform duration-1000 hover:scale-[1.02]"
