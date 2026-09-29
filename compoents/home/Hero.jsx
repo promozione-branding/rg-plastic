@@ -91,9 +91,9 @@ export default function Hero() {
             {/* Heading */}
             <h1 className="max-w-[620px] text-[40px] font-extrabold leading-[1.03] tracking-[-0.045em] text-white sm:text-[52px] lg:text-[56px] xl:text-[64px]">
               Plastic Moulding
-              <br />
-              Machines
-              <br />
+              
+              Machines{" "}
+              
               <span className="text-[#79d8ca]">Built for Precision.</span>
             </h1>
 
