@@ -1,183 +1,224 @@
 "use client";
 
 import {
+  FiPhone,
+  FiMapPin,
+  FiMail,
   FiFacebook,
   FiInstagram,
   FiLinkedin,
-  FiPhone,
-  FiMail,
-  FiMapPin,
+  FiYoutube,
+  FiTwitter,
+  FiArrowUpRight,
 } from "react-icons/fi";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-200">
-      <div className="mx-auto max-w-[1440px] px-5 py-12 sm:px-8 lg:px-10">
+    <footer className="relative overflow-hidden bg-[#100906] text-white">
+      {/* subtle texture */}
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.035]"
+        style={{
+          backgroundImage:
+            "radial-gradient(rgba(255,255,255,0.35) 0.7px, transparent 0.7px)",
+          backgroundSize: "5px 5px",
+        }}
+      />
 
-        <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-12 lg:gap-16">
-
-          {/* =====================================================
-              LEFT SIDE
-          ====================================================== */}
-          <div className="lg:col-span-7">
-
-            {/* Logo */}
-            <a href="#" className="inline-flex flex-col">
-              <span className="text-[24px] font-extrabold tracking-tight text-[#162321]">
+      <div className="relative mx-auto max-w-[1400px] px-6 py-12 sm:px-8 lg:px-12 lg:py-14">
+        {/* =====================================================
+            MAIN FOOTER
+        ====================================================== */}
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
+          {/* =================================================
+              BRAND
+          ================================================== */}
+          <div className="lg:col-span-4 lg:pr-10">
+            <a href="#" className="group inline-flex flex-col">
+              <span className="text-[29px] font-extrabold leading-none tracking-[-0.05em] text-white transition-colors duration-300 group-hover:text-[#78d5ca]">
                 TEXMO
               </span>
 
-              <span className="mt-1 text-[8px] font-bold uppercase tracking-[0.25em] text-gray-500">
+              <span className="mt-1 text-[9px] font-bold uppercase tracking-[0.28em] text-[#78d5ca]">
                 Precision Machinery
               </span>
             </a>
 
-            {/* Navigation */}
-            <nav className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-4">
-              <a
-                href="#"
-                className="text-sm font-medium text-gray-700 transition-colors hover:text-[#008f82]"
-              >
-                Home
-              </a>
+            <p className="mt-6 max-w-[295px] text-[12px] leading-5 text-white/55">
+              Engineering high-performance plastic moulding machinery with
+              precision, efficiency and reliability for modern industrial
+              production.
+            </p>
 
-              <a
-                href="#about"
-                className="text-sm font-medium text-gray-700 transition-colors hover:text-[#008f82]"
-              >
-                About
-              </a>
-
-              <a
-                href="#products"
-                className="text-sm font-medium text-gray-700 transition-colors hover:text-[#008f82]"
-              >
-                Products
-              </a>
-
-              <a
-                href="#blog"
-                className="text-sm font-medium text-gray-700 transition-colors hover:text-[#008f82]"
-              >
-                Blog
-              </a>
-
-              <a
-                href="#contact"
-                className="text-sm font-medium text-gray-700 transition-colors hover:text-[#008f82]"
-              >
-                Contact
-              </a>
-            </nav>
-
-            {/* Contact */}
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-6">
-              <a
-                href="tel:+919876543210"
-                className="flex items-center gap-2 text-sm text-gray-500 transition-colors hover:text-[#008f82]"
-              >
-                <FiPhone className="text-[#008f82]" />
-                +91 98765 43210
-              </a>
-
-              <a
-                href="mailto:sales@texmoprecision.com"
-                className="flex items-center gap-2 text-sm text-gray-500 transition-colors hover:text-[#008f82]"
-              >
-                <FiMail className="text-[#008f82]" />
-                sales@texmoprecision.com
-              </a>
-            </div>
-
-            {/* Social */}
-            <div className="mt-6 flex items-center gap-2">
-              <a
-                href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-lg border border-gray-200 text-gray-500 transition-all hover:border-[#008f82] hover:bg-[#008f82] hover:text-white"
-              >
-                <FiFacebook size={15} />
-              </a>
-
-              <a
-                href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-lg border border-gray-200 text-gray-500 transition-all hover:border-[#008f82] hover:bg-[#008f82] hover:text-white"
-              >
-                <FiInstagram size={15} />
-              </a>
-
-              <a
-                href="#"
-                className="flex h-9 w-9 items-center justify-center rounded-lg border border-gray-200 text-gray-500 transition-all hover:border-[#008f82] hover:bg-[#008f82] hover:text-white"
-              >
-                <FiLinkedin size={15} />
-              </a>
+            {/* Social Icons */}
+            <div className="mt-6 flex items-center gap-2.5">
+              <SocialIcon icon={<FiFacebook />} />
+              <SocialIcon icon={<FiInstagram />} />
+              <SocialIcon icon={<FiLinkedin />} />
+              <SocialIcon icon={<FiYoutube />} />
+              <SocialIcon icon={<FiTwitter />} />
             </div>
           </div>
 
-          {/* =====================================================
-              RIGHT SIDE MAP
-          ====================================================== */}
-          <div className="lg:col-span-5">
+          {/* =================================================
+              QUICK LINKS
+          ================================================== */}
+          <div className="lg:col-span-2">
+            <h3 className="text-[16px] font-semibold text-white">
+              Quick Links
+            </h3>
 
-            <div className="overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 shadow-sm">
+            <nav className="mt-5 flex flex-col gap-3">
+              {[
+                ["Home", "#"],
+                ["About Us", "#about"],
+                ["Products", "#products"],
+                ["Blogs", "#blog"],
+                ["Contact Us", "#contact"],
+              ].map(([label, href]) => (
+                <a
+                  key={label}
+                  href={href}
+                  className="group flex items-center gap-1 text-[12px] text-white/65 transition-colors duration-300 hover:text-[#78d5ca]"
+                >
+                  <span>{label}</span>
 
-              <div className="relative h-[230px] w-full">
+                  <FiArrowUpRight className="text-[11px] opacity-0 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
+                </a>
+              ))}
+            </nav>
+          </div>
 
-                {/* Replace with your actual Google Maps iframe */}
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d0!2d77.2090!3d28.6139!2m3!1f0!2f0!3f0!3m2!1i800!2i500!4f13.1!5e0!3m3!1m2!1s0x0%3A0x0!2sIndia!5e0!3m2!1sen!2sin!4v1"
-                  className="h-full w-full border-0 grayscale"
-                  loading="lazy"
-                  allowFullScreen
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+          {/* =================================================
+              WORKING HOURS
+          ================================================== */}
+          <div className="lg:col-span-3">
+            <h3 className="text-[16px] font-semibold text-white">
+              Working Hours
+            </h3>
 
-                {/* Map label */}
-                <div className="absolute bottom-3 left-3 rounded-lg bg-white/95 px-3 py-2 shadow-md backdrop-blur-sm">
-                  <div className="flex items-center gap-2">
-                    <FiMapPin className="text-[#008f82]" />
+            <div className="mt-5 overflow-hidden rounded-lg border border-[#e5e7eb] bg-white text-[#252b29] shadow-lg">
+              {/* Monday - Friday */}
+              <div className="flex items-center justify-between border-b border-gray-200 px-4 py-3">
+                <span className="text-[12px] font-bold">Mon–Fri:</span>
 
-                    <div>
-                      <p className="text-[11px] font-bold text-gray-800">
-                        Texmo Precision Machinery
-                      </p>
+                <span className="text-[12px]">8:00 AM – 6:00 PM</span>
+              </div>
 
-                      <p className="text-[9px] text-gray-500">
-                        Manufacturing & Export
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              {/* Saturday */}
+              <div className="flex items-center justify-between border-b border-gray-200 px-4 py-3">
+                <span className="text-[12px] font-bold">Sat:</span>
 
+                <span className="text-[12px]">9:00 AM – 3:00 PM</span>
+              </div>
+
+              {/* Sunday */}
+              <div className="flex items-center justify-between px-4 py-3">
+                <span className="text-[12px] font-bold">Sun:</span>
+
+                <span className="text-[12px]">Closed</span>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* =====================================================
-          COPYRIGHT
-      ====================================================== */}
-      <div className="border-t border-gray-100">
-        <div className="mx-auto flex max-w-[1440px] flex-col gap-2 px-5 py-4 text-[11px] text-gray-400 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-10">
+          {/* =================================================
+              CONTACT
+          ================================================== */}
+          <div className="lg:col-span-3">
+            <h3 className="text-[16px] font-semibold text-white">Contact Us</h3>
 
-          <p>
-            © {new Date().getFullYear()} Texmo Precision Machinery. All
-            Rights Reserved.
-          </p>
+            <div className="mt-5 space-y-4">
+              {/* Phone */}
+              <a
+                href="tel:+919876543210"
+                className="group flex items-start gap-3 text-white/65 transition-colors hover:text-[#78d5ca]"
+              >
+                <FiPhone className="mt-0.5 shrink-0 text-[15px]" />
 
-          <div className="flex gap-5">
-            <a href="#" className="hover:text-[#008f82]">
-              Privacy Policy
-            </a>
+                <span className="text-[12px]">+91 98765 43210</span>
+              </a>
 
-            <a href="#" className="hover:text-[#008f82]">
-              Terms & Conditions
-            </a>
+              {/* Location */}
+              <a
+                href="#"
+                className="group flex items-start gap-3 text-white/65 transition-colors hover:text-[#78d5ca]"
+              >
+                <FiMapPin className="mt-0.5 shrink-0 text-[15px]" />
+
+                <span className="text-[12px] leading-5">
+                  Texmo Precision Machinery
+                  <br />
+                  India
+                </span>
+              </a>
+
+              {/* Email */}
+              <a
+                href="mailto:sales@texmoprecision.com"
+                className="group flex items-start gap-3 text-white/65 transition-colors hover:text-[#78d5ca]"
+              >
+                <FiMail className="mt-0.5 shrink-0 text-[15px]" />
+
+                <span className="break-all text-[12px]">
+                  sales@texmoprecision.com
+                </span>
+              </a>
+            </div>
           </div>
+        </div>
 
+        {/* =====================================================
+            BOTTOM LINE
+        ====================================================== */}
+        <div className="mt-10 border-t border-white/[0.09] pt-5">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-[10px] text-white/40 sm:text-[11px]">
+              © {new Date().getFullYear()} Texmo Precision Machinery. All Rights
+              Reserved.
+            </p>
+
+            <div className="flex items-center gap-5">
+              <a
+                href="#"
+                className="text-[10px] text-white/45 transition-colors hover:text-[#78d5ca]"
+              >
+                Privacy Policy
+              </a>
+
+              <a
+                href="#"
+                className="text-[10px] text-white/45 transition-colors hover:text-[#78d5ca]"
+              >
+                Terms & Conditions
+              </a>
+
+              <span className="hidden h-3 w-px bg-white/10 sm:block" />
+
+              <span className="text-[10px] text-white/40">
+                Powered by{" "}
+                <span className="font-semibold text-[#78d5ca]">
+                  Your Company
+                </span>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+  );
+}
+
+/* =========================================================
+   SOCIAL ICON
+========================================================= */
+
+function SocialIcon({ icon }) {
+  return (
+    <a
+      href="#"
+      className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-[#17110f] transition-all duration-300 hover:-translate-y-1 hover:bg-[#78d5ca] hover:text-[#0d1816]"
+    >
+      <span className="text-[13px]">{icon}</span>
+    </a>
   );
 }

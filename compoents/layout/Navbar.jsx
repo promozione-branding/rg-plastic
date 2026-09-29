@@ -115,7 +115,7 @@ export default function Navbar() {
                     : "text-[#4b5755] hover:text-[#008f82]"
                 }`}
               >
-                <span className="relative text-base z-10">
+                <span className="relative font-bold text-base z-10">
                   {item.label}
                 </span>
 
@@ -137,7 +137,7 @@ export default function Navbar() {
           <div className="hidden items-center gap-2 lg:flex">
 
             {/* Phone */}
-            <a
+            {/* <a
               href="tel:+919876543210"
               className="group flex h-10 items-center gap-2 rounded-lg border border-[#e5e9e8] bg-[#f7f9f8] px-3 text-[13px] font-medium text-[#34403e] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#008f82]/20 hover:bg-[#008f82]/5 hover:text-[#008f82]"
             >
@@ -146,9 +146,9 @@ export default function Navbar() {
               />
 
               <span className="hidden text-base xl:inline">
-                Direct Dial
+                Connect
               </span>
-            </a>
+            </a> */}
 
             {/* Get Quote */}
             <a
