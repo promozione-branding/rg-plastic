@@ -76,7 +76,7 @@ export default function Why2() {
                 <span className="relative inline-block text-xs font-bold uppercase tracking-[0.2em] text-black">
                   Why RG Plastic?
 
-                  <span className="absolute -bottom-2 left-0 h-[2px] w-8 bg-[#008F82]" />
+                  <span className="absolute -bottom-2 left-0 h-[2px] w-8 bg-[#093372]" />
                 </span>
               </div>
 
@@ -84,7 +84,7 @@ export default function Why2() {
               <h2 className="max-w-xl text-4xl font-semibold leading-[1.08] tracking-tight text-[#101820] sm:text-5xl lg:text-[52px]">
                 Why People
                 <br />
-                <span className="text-[#008F82]">
+                <span className="text-[#093372]">
                   Choose Us?
                 </span>
               </h2>
@@ -100,7 +100,7 @@ export default function Why2() {
               {/* CTA */}
               <a
                 href="#contact"
-                className="group mt-7 flex w-fit items-center gap-3 rounded-md bg-[#008F82] px-5 py-3 text-xs font-semibold text-white shadow-[0_6px_18px_rgba(0,143,130,0.16)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00776D] hover:shadow-lg"
+                className="group mt-7 flex w-fit items-center gap-3 rounded-md bg-[#093372] px-5 py-3 text-xs font-semibold text-white shadow-[0_6px_18px_rgba(0,143,130,0.16)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#297eff] hover:shadow-lg"
               >
                 Talk to Our Team
 
@@ -162,7 +162,7 @@ export default function Why2() {
                     {/* =================================================
                         ICON
                     ================================================== */}
-                    <div className="relative flex h-10 w-10 items-center justify-center rounded-xl border border-[#075B96]/15 bg-white text-[#008F82] shadow-sm transition-all duration-500 group-hover:border-white/30 group-hover:bg-white group-hover:text-[#008F82] group-hover:shadow-lg">
+                    <div className="relative flex h-10 w-10 items-center justify-center rounded-xl border border-[#075B96]/15 bg-white text-[#093372] shadow-sm transition-all duration-500 group-hover:border-white/30 group-hover:bg-white group-hover:text-[#093372] group-hover:shadow-lg">
 
                       <Icon
                         size={18}

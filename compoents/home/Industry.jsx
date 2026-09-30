@@ -107,16 +107,16 @@ export default function Industry() {
 
           <div>
             <div className="mb-5 flex items-center gap-3">
-              <span className="h-[1px] w-10 bg-[#008f82]" />
+              <span className="h-[1px] w-10 bg-[#093372]" />
 
-              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#008f82]">
+              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#093372]">
                 Application Sectors
               </span>
             </div>
 
             <h2 className="max-w-4xl text-[38px] font-extrabold leading-[0.98] tracking-[-0.045em] text-[#13211f] sm:text-[50px] lg:text-[64px]">
               One Technology.
-              <span className="block text-[#008f82]">
+              <span className="block text-[#093372]">
                 Many Industries.
               </span>
             </h2>
@@ -132,10 +132,10 @@ export default function Industry() {
             <div className="mt-5 flex items-center gap-3">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#008f82] opacity-40" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-[#008f82]" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-[#093372]" />
               </span>
 
-              <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#008f82]">
+              <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#093372]">
                 Engineering for diverse applications
               </span>
             </div>
@@ -215,7 +215,7 @@ export default function Industry() {
           })}
 
           {/* ================= CUSTOM CARD ================= */}
-          <article className="group relative flex h-[380px] flex-col justify-between overflow-hidden rounded-[22px] bg-[#008f82] p-6 shadow-[0_18px_45px_rgba(0,143,130,0.16)] sm:p-7">
+          <article className="group relative flex h-[380px] flex-col justify-between overflow-hidden rounded-[22px] bg-[#093372] p-6 shadow-[0_18px_45px_rgba(0,143,130,0.16)] sm:p-7">
 
             {/* Decorative ring */}
             <div className="pointer-events-none absolute -right-24 -top-24 h-[300px] w-[300px] rounded-full border-[55px] border-white/[0.055] transition-transform duration-700 group-hover:scale-110" />
@@ -288,7 +288,7 @@ export default function Industry() {
         <div className="mt-10 flex flex-col gap-5 border-t border-[#d8e2de] pt-6 sm:flex-row sm:items-center sm:justify-between">
 
           <div className="flex max-w-2xl items-start gap-3">
-            <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[#f5a14a]" />
+            <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[#093372]" />
 
             <p className="text-[11px] leading-5 text-[#71807c] sm:text-xs">
               From automotive components to medical applications, our

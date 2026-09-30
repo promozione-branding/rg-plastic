@@ -66,14 +66,14 @@ export default function Work() {
         ================================================== */}
         <div className="mx-auto max-w-2xl text-center">
 
-          <div className="mb-4 inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.18em] text-[#7bd8cb]">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#7bd8cb]" />
+          <div className="mb-4 inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.18em] text-[#fff]">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#fff]" />
             How We Work
           </div>
 
           <h2 className="text-[34px] font-extrabold uppercase leading-[1.05] tracking-[-0.035em] text-white sm:text-[44px] lg:text-[52px]">
             Our Simple
-            <span className="text-[#79d8ca]"> Process</span>
+            <span className="text-[#297eff]"> Process</span>
           </h2>
 
           <p className="mx-auto mt-4 max-w-xl text-[13px] leading-6 text-white/45 sm:text-[14px] sm:leading-7">
@@ -120,7 +120,7 @@ export default function Work() {
                       duration-500
                       ease-out
                       group-hover:-translate-y-7
-                      group-hover:text-[#79d8ca]
+                      group-hover:text-[#4884dd]
                       group-hover:scale-[1.04]
                     "
                   >
@@ -137,7 +137,7 @@ export default function Work() {
                       transition-all
                       duration-500
                       group-hover:w-20
-                      group-hover:bg-[#008f82]
+                      group-hover:bg-[#297eff]
                     "
                   />
                 </div>
@@ -148,12 +148,12 @@ export default function Work() {
                 <div className="relative">
 
                   {/* Icon */}
-                  <div className="mb-5 flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/[0.04] text-white/50 transition-all duration-300 group-hover:border-[#008f82]/30 group-hover:bg-[#008f82]/10 group-hover:text-[#79d8ca]">
+                  <div className="mb-5 flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/[0.04] text-white/50 transition-all duration-300 group-hover:border-[#008f82]/30 group-hover:bg-[#008f82]/10 group-hover:text-[#297eff]">
                     <Icon className="text-[16px]" />
                   </div>
 
                   {/* Title */}
-                  <h3 className="max-w-[250px] text-[12px] font-extrabold uppercase leading-5 tracking-[0.05em] text-white transition-colors duration-300 group-hover:text-[#79d8ca] sm:text-[13px]">
+                  <h3 className="max-w-[250px] text-[12px] font-extrabold uppercase leading-5 tracking-[0.05em] text-white transition-colors duration-300 group-hover:text-[#297eff] sm:text-[13px]">
                     {step.title}
                   </h3>
 
@@ -163,7 +163,7 @@ export default function Work() {
                   </p>
 
                   {/* Learn more */}
-                  <div className="mt-5 flex items-center gap-2 overflow-hidden text-[9px] font-bold uppercase tracking-[0.1em] text-[#79d8ca]">
+                  <div className="mt-5 flex items-center gap-2 overflow-hidden text-[9px] font-bold uppercase tracking-[0.1em] text-[#297eff]">
                     <span
                       className="
                         translate-y-3 opacity-0
@@ -197,7 +197,7 @@ export default function Work() {
         <div className="mt-14 flex justify-center">
           <a
             href="#contact-quote-section"
-            className="group inline-flex h-12 items-center gap-3 rounded-md bg-[#008f82] px-6 text-[12px] font-bold uppercase tracking-[0.05em] text-white shadow-[0_8px_25px_rgba(0,143,130,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00776d] hover:shadow-[0_12px_32px_rgba(0,143,130,0.25)]"
+            className="group inline-flex h-12 items-center gap-3 rounded-md bg-[#297eff] px-6 text-[12px] font-bold uppercase tracking-[0.05em] text-white shadow-[0_8px_25px_rgba(0,143,130,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0c49a4] hover:shadow-[0_12px_32px_rgba(0,143,130,0.25)]"
           >
             <span>Start Your Project</span>
 

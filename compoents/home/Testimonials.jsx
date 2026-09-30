@@ -67,7 +67,7 @@ export default function Testimonials() {
             {/* Heading */}
             <h2 className="max-w-[620px] text-[36px] font-extrabold leading-[1.06] tracking-[-0.04em] text-[#162321] sm:text-[46px] ">
               Trusted by Manufacturers for{" "}
-              <span className="text-[#008f82]">
+              <span className="text-[#093372]">
                 Reliable Performance
               </span>
             </h2>
@@ -75,7 +75,7 @@ export default function Testimonials() {
             {/* CTA */}
             <a
               href="#contact-quote-section"
-              className="group mt-7 inline-flex h-11 items-center gap-2 rounded-lg bg-[#008f82] px-5 text-[12px] font-bold text-white shadow-[0_8px_20px_rgba(0,143,130,0.16)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00776d]"
+              className="group mt-7 inline-flex h-11 items-center gap-2 rounded-lg bg-[#093372] px-5 text-[12px] font-bold text-white shadow-[0_8px_20px_rgba(0,143,130,0.16)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#2a4b7d]"
             >
               Discuss Your Requirement
 
@@ -134,7 +134,7 @@ export default function Testimonials() {
                   Client Rating
                 </div>
 
-                <div className="mt-3 flex items-center gap-1.5 text-[9px] font-semibold uppercase tracking-[0.06em] text-[#008f82]">
+                <div className="mt-3 flex items-center gap-1.5 text-[9px] font-semibold uppercase tracking-[0.06em] text-[#093372]">
                   <FiCheckCircle className="text-[12px]" />
                   Verified Feedback
                 </div>
@@ -152,7 +152,7 @@ export default function Testimonials() {
 
             {/* Large stat */}
             <div className="mb-8">
-              <div className="text-[72px] font-extrabold leading-none tracking-[-0.06em] text-[#008f82] sm:text-[88px]">
+              <div className="text-[72px] font-extrabold leading-none tracking-[-0.06em] text-[#093372] sm:text-[88px]">
                 25+
               </div>
 
@@ -195,7 +195,7 @@ export default function Testimonials() {
                   {testimonial.role}
                 </div>
 
-                <div className="mt-1 text-[10px] font-bold uppercase tracking-[0.08em] text-[#008f82]">
+                <div className="mt-1 text-[10px] font-bold uppercase tracking-[0.08em] text-[#093372]">
                   {testimonial.company}
                 </div>
               </div>
@@ -214,13 +214,13 @@ export default function Testimonials() {
             <div className="mt-9 flex flex-col gap-4 border-t border-[#e7ecea] pt-6 sm:flex-row sm:items-center sm:justify-between">
 
               <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.08em] text-[#7d8784]">
-                <FiCheckCircle className="text-[#008f82]" />
+                <FiCheckCircle className="text-[#093372]" />
                 Built for demanding industries
               </div>
 
               <a
                 href="#contact-quote-section"
-                className="group inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.08em] text-[#008f82]"
+                className="group inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.08em] text-[#093372]"
               >
                 Start Your Project
 
@@ -241,7 +241,7 @@ export default function Testimonials() {
 function TrustItem({ text }) {
   return (
     <div className="flex items-center gap-2 rounded-lg bg-[#f6f9f8] px-3 py-3">
-      <FiCheckCircle className="shrink-0 text-[14px] text-[#008f82]" />
+      <FiCheckCircle className="shrink-0 text-[14px] text-[#093372]" />
 
       <span className="text-[10px] font-bold text-[#56625f]">
         {text}

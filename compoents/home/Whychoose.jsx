@@ -88,7 +88,7 @@ export default function Whychoose() {
 
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#008f82]/10 bg-white px-3.5 py-2 shadow-[0_4px_16px_rgba(0,0,0,0.035)]">
             <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#008f82]/10">
-              <FiCheckCircle className="text-[11px] text-[#008f82]" />
+              <FiCheckCircle className="text-[11px] text-[#093372]" />
             </span>
 
             <span className="text-[9px] font-bold uppercase tracking-[0.16em] text-[#53635e] sm:text-[10px]">
@@ -98,7 +98,7 @@ export default function Whychoose() {
 
           <h2 className="text-[36px] font-extrabold leading-[1.05] tracking-[-0.04em] text-[#162321] sm:text-[46px] lg:text-[54px]">
             Built Around{" "}
-            <span className="text-[#008f82]">
+            <span className="text-[#093372]">
               Performance & Reliability
             </span>
           </h2>
@@ -127,12 +127,12 @@ export default function Whychoose() {
                   className="group relative overflow-hidden rounded-2xl border border-[#e3ebe7] bg-white p-5 shadow-[0_5px_20px_rgba(0,0,0,0.025)] transition-all duration-300 hover:-translate-y-1 hover:border-[#008f82]/20 hover:shadow-[0_14px_35px_rgba(0,0,0,0.07)] lg:text-right"
                 >
                   {/* Hover accent */}
-                  <div className="absolute inset-y-0 right-0 w-1 bg-[#008f82] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <div className="absolute inset-y-0 right-0 w-1 bg-[#297eff] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
                   <div className="flex items-start gap-4 lg:flex-row-reverse">
 
                     {/* Icon */}
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eaf5f2] text-[#008f82] transition-all duration-300 group-hover:bg-[#008f82] group-hover:text-white">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eaf5f2] text-[#297eff] transition-all duration-300 group-hover:bg-[#2b6ac9] group-hover:text-white">
                       <Icon className="text-[18px]" />
                     </div>
 
@@ -203,7 +203,7 @@ export default function Whychoose() {
 
               {/* Experience badge */}
               <div className="absolute -bottom-5 -left-5 z-20 rounded-xl border border-white bg-white px-4 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.10)]">
-                <div className="text-[27px] font-extrabold leading-none tracking-[-0.04em] text-[#008f82]">
+                <div className="text-[27px] font-extrabold leading-none tracking-[-0.04em] text-[#093372]">
                   25+
                 </div>
 
@@ -230,12 +230,12 @@ export default function Whychoose() {
                   className="group relative overflow-hidden rounded-2xl border border-[#e3ebe7] bg-white p-5 shadow-[0_5px_20px_rgba(0,0,0,0.025)] transition-all duration-300 hover:-translate-y-1 hover:border-[#008f82]/20 hover:shadow-[0_14px_35px_rgba(0,0,0,0.07)]"
                 >
                   {/* Hover accent */}
-                  <div className="absolute inset-y-0 left-0 w-1 bg-[#008f82] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <div className="absolute inset-y-0 left-0 w-1 bg-[#297eff] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
                   <div className="flex items-start gap-4">
 
                     {/* Icon */}
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eaf5f2] text-[#008f82] transition-all duration-300 group-hover:bg-[#008f82] group-hover:text-white">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eaf5f2] text-[#297eff] transition-all duration-300 group-hover:bg-[#297eff] group-hover:text-white">
                       <Icon className="text-[18px]" />
                     </div>
 
@@ -270,7 +270,7 @@ export default function Whychoose() {
 
           <a
             href="#contact-quote-section"
-            className="group inline-flex h-12 items-center gap-3 rounded-lg bg-[#008f82] px-6 text-[12px] font-bold uppercase tracking-[0.04em] text-white shadow-[0_8px_22px_rgba(0,143,130,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00796f] hover:shadow-[0_12px_28px_rgba(0,143,130,0.24)]"
+            className="group inline-flex h-12 items-center gap-3 rounded-lg bg-[#093372] px-6 text-[12px] font-bold uppercase tracking-[0.04em] text-white shadow-[0_8px_22px_rgba(0,143,130,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00796f] hover:shadow-[0_12px_28px_rgba(0,143,130,0.24)]"
           >
             Get a Free Quote
 
@@ -279,7 +279,7 @@ export default function Whychoose() {
             </span>
           </a>
 
-          <span className="text-[10px] font-semibold uppercase tracking-[0.1em] text-[#87928e]">
+          <span className="text-[10px] font-semibold uppercase tracking-[0.1em] text-[#093372]">
             Precision • Efficiency • Reliability
           </span>
         </div>

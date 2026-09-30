@@ -29,7 +29,7 @@ export default function Navbar() {
       {/* =====================================================
           TOP INFO STRIP
       ====================================================== */}
-      <div className="bg-[#237a6d] text-white">
+      <div className="bg-[#00356B] text-white">
         <div className="mx-auto flex h-9 max-w-[1440px] items-center justify-between px-4 sm:px-6 lg:px-8">
 
           {/* Left */}
@@ -95,7 +95,7 @@ export default function Navbar() {
               >
 
                 {/* Logo Mark */}
-                <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-[#237a6d] shadow-[0_5px_15px_rgba(7,91,150,0.22)]">
+                <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-[#0070FF] shadow-[0_5px_15px_rgba(7,91,150,0.22)]">
 
                   <div className="absolute -right-3 -top-3 h-7 w-7 rounded-full border border-white/20" />
 
@@ -135,8 +135,8 @@ export default function Navbar() {
                     href={item.href}
                     className={`group relative flex items-center gap-1 rounded-xl px-4 py-3 text-[13px] font-semibold transition-all duration-300 xl:px-5 ${
                       item.active
-                        ? "bg-[#EAF5FC] text-[#237a6d]"
-                        : "text-[#237a6d] hover:bg-[#F3F8FC] hover:text-[#175a50]"
+                        ? "bg-[#EAF5FC] text-[#0070FF]"
+                        : "text-[#0070FF] hover:bg-[#F3F8FC] hover:text-[#175a50]"
                     }`}
                   >
 
@@ -164,7 +164,7 @@ export default function Navbar() {
 
                 <a
                   href="#quote"
-                  className="group relative flex h-11 items-center gap-2 overflow-hidden rounded-xl bg-[#259887] px-5 text-[13px] font-semibold text-white shadow-[0_6px_18px_rgba(7,91,150,0.22)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0d7868] hover:shadow-[0_9px_24px_rgba(7,91,150,0.28)]"
+                  className="group relative flex h-11 items-center gap-2 overflow-hidden rounded-xl bg-[#0F52BA] px-5 text-[13px] font-semibold text-white shadow-[0_6px_18px_rgba(7,91,150,0.22)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0d7868] hover:shadow-[0_9px_24px_rgba(7,91,150,0.28)]"
                 >
 
                   <FiFileText

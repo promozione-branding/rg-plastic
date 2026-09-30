@@ -76,7 +76,7 @@ export default function ProductSlider() {
 
             <h2 className="max-w-[700px] text-[38px] font-extrabold uppercase leading-[1.05] tracking-[-0.045em] text-[#25221f] sm:text-[48px] lg:text-[58px]">
               Precision Machinery
-              <span className="block text-[#008f82]">
+              <span className="block text-[#093372]">
                 Built to Perform
               </span>
             </h2>
@@ -84,12 +84,12 @@ export default function ProductSlider() {
 
           <a
             href="#all-products"
-            className="group inline-flex h-11 shrink-0 items-center gap-3 self-start rounded-full bg-[#008f82] pl-5 pr-2 text-[11px] font-extrabold uppercase tracking-[0.04em] text-[#171511] shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#f2a700] hover:shadow-lg md:self-auto"
+            className="group inline-flex h-11 shrink-0 items-center gap-3 self-start rounded-full bg-[#297eff] pl-5 pr-2 text-[11px] font-extrabold uppercase tracking-[0.04em] text-[#fff] shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#093372] hover:shadow-lg md:self-auto"
           >
             <span>Explore Products</span>
 
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white">
-              <FiArrowUpRight className="text-[15px] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <FiArrowUpRight className="text-[15px] text-[#297eff] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </span>
           </a>
         </div>
@@ -132,11 +132,11 @@ export default function ProductSlider() {
                     transition-all duration-300
                     ${
                       active
-                        ? "border-[#008f82] shadow-[0_8px_25px_rgba(240,178,11,0.14)]"
+                        ? "border-[#093372] shadow-[0_8px_25px_rgba(240,178,11,0.14)]"
                         : "border-[#ebe7de] shadow-[0_6px_20px_rgba(0,0,0,0.035)]"
                     }
                     hover:-translate-y-1
-                    hover:border-[#008f82]
+                    hover:border-[#093372]
                     hover:shadow-[0_12px_28px_rgba(0,0,0,0.07)]
                   `}
                 >
@@ -170,7 +170,7 @@ export default function ProductSlider() {
                         View Product
                       </span>
 
-                      <FiArrowUpRight className="text-[13px] text-[#008f82] transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
+                      <FiArrowUpRight className="text-[13px] text-[#093372] transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
                     </a>
                   </div>
                 </div>
@@ -186,7 +186,7 @@ export default function ProductSlider() {
             type="button"
             aria-label="Previous products"
             onClick={() => swiperRef.current?.slidePrev()}
-            className="group flex h-11 w-11 items-center justify-center rounded-full bg-[#008f82] text-[#25221f] shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
+            className="group flex h-11 w-11 items-center justify-center rounded-full bg-[#093372] text-[#fff] shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
           >
             <FiArrowLeft className="text-[17px] transition-transform duration-300 group-hover:-translate-x-0.5" />
           </button>
@@ -195,7 +195,7 @@ export default function ProductSlider() {
             type="button"
             aria-label="Next products"
             onClick={() => swiperRef.current?.slideNext()}
-            className="group flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#25221f] shadow-[0_4px_15px_rgba(0,0,0,0.07)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
+            className="group flex h-11 w-11 items-center border border-[#093372] justify-center rounded-full bg-white text-[#25221f] shadow-[0_4px_15px_rgba(0,0,0,0.07)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
           >
             <FiArrowRight className="text-[17px] transition-transform duration-300 group-hover:translate-x-0.5" />
           </button>

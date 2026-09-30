@@ -60,7 +60,7 @@ export default function AboutSection() {
             {/* =================================================
                 EXPERIENCE BADGE
             ================================================== */}
-            <div className="absolute -bottom-5 left-4 z-20 flex items-center gap-3 rounded-lg bg-[#008f82] px-4 py-3 text-white shadow-[0_12px_30px_rgba(0,143,130,0.22)] sm:-bottom-6 sm:left-8 sm:px-5 sm:py-4">
+            <div className="absolute -bottom-5 left-4 z-20 flex items-center gap-3 rounded-lg bg-[#0F52BA] px-4 py-3 text-white shadow-[0_12px_30px_rgba(0,143,130,0.22)] sm:-bottom-6 sm:left-8 sm:px-5 sm:py-4">
 
               <div className="text-[34px] font-extrabold leading-none tracking-[-0.04em] sm:text-[40px]">
                 25+
@@ -101,13 +101,13 @@ export default function AboutSection() {
               {/* Heading */}
               <h2 className="relative max-w-[620px] text-[31px] font-extrabold uppercase leading-[1.08] tracking-[-0.025em] text-white sm:text-[39px] lg:text-[42px] xl:text-[48px]">
                 Our Story, Our Standards,
-                <span className="block text-[#78d5c8]">
+                <span className="block text-[#54a2bc]">
                   Our Commitment
                 </span>
               </h2>
 
               {/* Divider */}
-              <div className="relative my-6 h-px w-14 bg-[#008f82]" />
+              <div className="relative my-6 h-px w-14 bg-[#0096c7]" />
 
               {/* Description */}
               <div className="relative max-w-[620px] space-y-4 text-[13px] leading-6 text-white/65 sm:text-[14px] sm:leading-7">
@@ -157,7 +157,7 @@ export default function AboutSection() {
               ================================================== */}
               <a
                 href="#manufacturing-facility"
-                className="group relative mt-8 inline-flex h-11 items-center gap-2 overflow-hidden rounded-md bg-[#008f82] px-5 text-[12px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00776d] hover:shadow-[0_10px_25px_rgba(0,143,130,0.22)]"
+                className="group relative mt-8 inline-flex h-11 items-center gap-2 overflow-hidden rounded-md bg-[#0F52BA] px-5 text-[12px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00776d] hover:shadow-[0_10px_25px_rgba(0,143,130,0.22)]"
               >
                 <span className="relative z-10">
                   Learn More About Us
@@ -170,7 +170,7 @@ export default function AboutSection() {
             </div>
 
             {/* Bottom decorative line */}
-            <div className="absolute -bottom-3 right-5 h-[3px] w-24 rounded-full bg-[#008f82] sm:right-8" />
+            <div className="absolute -bottom-3 right-5 h-[3px] w-24 rounded-full bg-[#0096c7] sm:right-8" />
           </div>
         </div>
       </div>

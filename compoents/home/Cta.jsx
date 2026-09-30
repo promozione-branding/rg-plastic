@@ -55,7 +55,7 @@ export default function Cta() {
             {/* =================================================
                 LEFT PANEL
             ================================================== */}
-            <div className="relative overflow-hidden bg-[#008f82] p-7 text-white sm:p-7 lg:col-span-5 ">
+            <div className="relative overflow-hidden bg-[#093372] p-7 text-white sm:p-7 lg:col-span-5 ">
               {/* Decorative circles */}
               <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full border-[50px] border-white/[0.05]" />
               <div className="pointer-events-none absolute -bottom-28 -left-28 h-72 w-72 rounded-full border-[50px] border-white/[0.04]" />
@@ -163,8 +163,8 @@ export default function Cta() {
             <div className="p-6 sm:p-8 lg:col-span-7 ">
               {/* Form heading */}
               <div className="mb-7">
-                <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.16em] text-[#008f82]">
-                  <span className="h-px w-6 bg-[#008f82]" />
+                <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.16em] text-[#093372]">
+                  <span className="h-px w-6 bg-[#093372]" />
                   Factory Direct Enquiry
                 </div>
 
@@ -200,7 +200,7 @@ export default function Cta() {
 
                   <div>
                     <label className="mb-1.5 block text-[11px] font-bold text-[#34403d]">
-                      Email <span className="text-[#008f82]">*</span>
+                      Email <span className="text-[#093372]">*</span>
                     </label>
 
                     <input
@@ -283,7 +283,7 @@ export default function Cta() {
                 <div className="flex flex-col gap-3 pt-1 sm:flex-row">
                   <button
                     type="submit"
-                    className="group flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-[#008f82] px-5 text-[13px] font-bold text-white shadow-[0_7px_18px_rgba(0,143,130,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00796f] hover:shadow-[0_10px_24px_rgba(0,143,130,0.23)] sm:w-auto"
+                    className="group flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-[#093372] px-5 text-[13px] font-bold text-white shadow-[0_7px_18px_rgba(0,143,130,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00796f] hover:shadow-[0_10px_24px_rgba(0,143,130,0.23)] sm:w-auto"
                   >
                     <FiSend className="text-[16px] transition-transform duration-300 group-hover:translate-x-0.5" />
 
@@ -296,7 +296,7 @@ export default function Cta() {
                     href="https://wa.me/919876543211"
                     target="_blank"
                     rel="noreferrer"
-                    className="flex h-12 w-full items-center justify-center gap-2 rounded-lg border border-[#25D366]/20 bg-[#25D366]/[0.07] px-5 text-[13px] font-bold text-[#128C7E] transition-all duration-300 hover:bg-[#25D366]/[0.12] sm:w-auto"
+                    className="flex h-12 w-full items-center justify-center gap-2 rounded-lg border border-[#25D366]/20 bg-[#093372]/[0.07] px-5 text-[13px] font-bold text-[#093372] transition-all duration-300 hover:bg-[#25D366]/[0.12] sm:w-auto"
                   >
                     <FiMessageCircle className="text-[17px]" />
                     WhatsApp Chat
@@ -306,7 +306,7 @@ export default function Cta() {
                 {/* Success Message */}
                 {submitted && (
                   <div className="flex items-start gap-3 rounded-xl border border-emerald-100 bg-emerald-50 p-4 text-emerald-800">
-                    <FiCheckCircle className="mt-0.5 shrink-0 text-[19px] text-emerald-600" />
+                    <FiCheckCircle className="mt-0.5 shrink-0 text-[19px] text-[#093372]" />
 
                     <div>
                       <div className="text-[12px] font-bold">
@@ -325,7 +325,7 @@ export default function Cta() {
                   <span>Fields marked with * are required.</span>
 
                   <div className="flex items-center gap-1.5">
-                    <FiShield className="text-[13px] text-[#008f82]" />
+                    <FiShield className="text-[13px] text-[#093372]" />
                     Secure enquiry
                   </div>
                 </div>

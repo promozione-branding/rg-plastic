@@ -53,8 +53,8 @@ export default function Hero() {
               <div className="absolute left-5 top-5 sm:left-7 sm:top-7">
                 <div className="flex items-center gap-2 rounded-full border border-white/10 bg-[#101d1b]/75 px-3.5 py-2 text-white backdrop-blur-xl">
                   <span className="relative flex h-2 w-2">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-70" />
-                    <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#0F52BA] opacity-70" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-[#0F52BA]" />
                   </span>
 
                   <span className="text-[9px] font-bold uppercase tracking-[0.12em] sm:text-[10px]">
@@ -78,7 +78,7 @@ export default function Hero() {
             </div>
 
             {/* Orange/teal accent line */}
-            <div className="absolute bottom-4 left-0 right-[-10%] h-[3px] bg-gradient-to-r from-[#008f82] via-[#56cdbf] to-transparent lg:right-[-8%]" />
+            <div className="absolute bottom-4 left-0 right-[-10%] h-[3px] bg-gradient-to-r from-[#008f82] via-[#0F52BA] to-transparent lg:right-[-8%]" />
           </div>
 
           {/* =================================================
@@ -93,7 +93,9 @@ export default function Hero() {
               
               Machines{" "}
               
-              <span className="text-[#79d8ca]">Built for Precision.</span>
+              <span className="bg-gradient-to-r from-[#19c5b5] via-[#159ed8] to-[#1969e0] bg-clip-text text-transparent">
+  Built for Precision.
+</span>
             </h1>
 
             {/* Description */}
@@ -109,7 +111,7 @@ export default function Hero() {
               {/* Primary */}
               <a
                 href="#products-section"
-                className="group inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[#008f82] px-6 text-[13px] font-bold text-white shadow-[0_8px_25px_rgba(0,143,130,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00776d]"
+                className="group inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[#0F52BA] px-6 text-[13px] font-bold text-white shadow-[0_8px_25px_rgba(0,143,130,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00776d]"
               >
                 <span>Explore Machines</span>
 
@@ -180,7 +182,7 @@ export default function Hero() {
           BOTTOM ANGLED EDGE
       ====================================================== */}
       <div className="absolute bottom-0 left-0 right-0 h-7 overflow-hidden">
-        <div className="absolute bottom-[-18px] left-[-2%] h-10 w-[104%] rotate-[1.3deg] bg-[#008f82]" />
+        <div className="absolute bottom-[-18px] left-[-2%] h-10 w-[104%] rotate-[1.3deg] bg-[#0F52BA]" />
         <div className="absolute bottom-[-23px] left-[-2%] h-10 w-[104%] rotate-[1.3deg] bg-[#101d1b]" />
       </div>
     </section>
