@@ -167,7 +167,7 @@ export default function ProductSlider() {
                       className="group/link mt-4 inline-flex items-center gap-2 text-[10px] font-extrabold uppercase tracking-[0.08em] text-[#25221f]"
                     >
                       <span className="border-b border-transparent transition-colors group-hover/link:border-[#008f82]">
-                        Learn More
+                        View Product
                       </span>
 
                       <FiArrowUpRight className="text-[13px] text-[#008f82] transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />

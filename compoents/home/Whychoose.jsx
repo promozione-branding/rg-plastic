@@ -56,7 +56,7 @@ export default function Whychoose() {
   return (
     <section
       id="why-choose-us"
-      className="relative overflow-hidden bg-[#f5f8f7] py-6 sm:py-13"
+      className="relative overflow-hidden bg-[#d2e9e1] py-6 sm:py-13"
     >
       {/* =====================================================
           BACKGROUND
@@ -137,8 +137,8 @@ export default function Whychoose() {
                     </div>
 
                     <div className="min-w-0 flex-1">
-                      <div className="flex items-center gap-2 lg:justify-end">
-                        <span className="text-[9px] font-bold tracking-[0.15em] text-[#9aa6a2]">
+                      <div className="flex  items-center gap-2 lg:justify-end">
+                        <span className="text-[9px] md:text-2xl font-bold tracking-[0.15em] text-[#9aa6a2]">
                           {item.number}
                         </span>
 
@@ -147,7 +147,7 @@ export default function Whychoose() {
                         </h3>
                       </div>
 
-                      <p className="mt-2 text-[12px] leading-6 text-[#78837f] sm:text-[13px]">
+                      <p className="mt-2 text-[12px]  text-[#78837f] sm:text-[13px]">
                         {item.description}
                       </p>
                     </div>
@@ -171,7 +171,7 @@ export default function Whychoose() {
 
                 <div className="aspect-[4/5] overflow-hidden rounded-[23px]">
                   <img
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxBV8xn1CaqtHqEw-4WGHKiL_8-eXZtEKyGA6nA0_BG8dYvNgcdW7B-YmI6kRGXKxYlTNSULQIwZM5kW9C9yoCLzQH4ifVXvTHs6r-5Ke2n7U1IQ0eaTd9sefl_Cg0csHTMRRMllAyixQQVTM_NT32JYpW1djBaYSnQyIzGraSLduPigIp3GNmGY1IhpKO11Gn_cbhCZR9fKV7AOtl65iwsN0s6i0haExSyedoD1emRCf9Paw0Krt1rg"
+                    src="https://media.istockphoto.com/id/179078166/photo/injection-moulding-machine.webp?a=1&b=1&s=612x612&w=0&k=20&c=MQChhtVqSYiYbZqclx7qfyoI_xWb2H570_WFYGkdZyI="
                     alt="Texmo Precision Machinery"
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                   />
@@ -241,7 +241,7 @@ export default function Whychoose() {
 
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-2">
-                        <span className="text-[9px] font-bold tracking-[0.15em] text-[#9aa6a2]">
+                        <span className="text-[9px] md:text-2xl font-bold tracking-[0.15em] text-[#9aa6a2]">
                           {item.number}
                         </span>
 
@@ -250,7 +250,7 @@ export default function Whychoose() {
                         </h3>
                       </div>
 
-                      <p className="mt-2 text-[12px] leading-6 text-[#78837f] sm:text-[13px]">
+                      <p className="mt-2 text-[12px]  text-[#78837f] sm:text-[13px]">
                         {item.description}
                       </p>
                     </div>

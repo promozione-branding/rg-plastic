@@ -33,7 +33,7 @@ export default function Hero() {
           {/* =================================================
               LEFT IMAGE
           ================================================== */}
-          <div className="relative order-2 h-[420px] sm:h-[500px] lg:order-1 lg:col-span-7 lg:h-[680px]">
+          <div className="relative order-2 h-[420px] sm:h-[610px] lg:order-1 lg:col-span-7 ">
             {/* Glow behind image */}
             <div className="absolute left-[-10%] top-1/2 h-[75%] w-[75%] -translate-y-1/2 rounded-full bg-[#008f82]/10 blur-[100px]" />
 
@@ -89,7 +89,7 @@ export default function Hero() {
             {/* Small label */}
 
             {/* Heading */}
-            <h1 className="max-w-[620px] text-[40px] font-extrabold leading-[1.03] tracking-[-0.045em] text-white sm:text-[52px] lg:text-[56px] xl:text-[64px]">
+            <h1 className="max-w-[620px] text-[40px] font-extrabold leading-[1.03] tracking-[-0.045em] text-white sm:text-[52px] lg:text-[56px] ">
               Plastic Moulding
               
               Machines{" "}
