@@ -98,7 +98,7 @@ export default function Hero() {
             </h1>
 
             {/* Description */}
-            <p className="mt-6 max-w-[560px] text-[14px] leading-7 text-white/65 sm:text-[15px] sm:leading-7 lg:text-[16px]">
+            <p className="mt-6 max-w-[560px] text-[14px] leading-5 text-white/65 sm:text-[15px] sm:leading-5 lg:text-[16px]">
               High-performance plastic moulding machines engineered for
               precision, reliability and efficient production. Designed for
               demanding industrial environments with advanced servo technology
