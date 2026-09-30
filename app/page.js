@@ -1,5 +1,6 @@
 import AboutSection from "@/compoents/home/About";
 import Cta from "@/compoents/home/Cta";
+import FAQSection from "@/compoents/home/FAQSection";
 import Hero from "@/compoents/home/Hero";
 import Industry from "@/compoents/home/Industry";
 import MachineryCTA from "@/compoents/home/MachineryCTA";
@@ -23,6 +24,7 @@ export default function Home() {
       <MachineryCTA/>
       <Industry/>
       <Testimonials/>
+      <FAQSection/>
       <Cta/>
    
     </>
