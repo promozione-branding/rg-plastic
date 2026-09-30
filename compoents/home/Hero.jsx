@@ -28,7 +28,7 @@ export default function Hero() {
       {/* =====================================================
           HERO CONTAINER
       ====================================================== */}
-      <div className="relative mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-[1440px] px-4 sm:px-0 ">
         <div className="grid min-h-[650px] items-center lg:grid-cols-12">
           {/* =================================================
               LEFT IMAGE
@@ -38,7 +38,7 @@ export default function Hero() {
             <div className="absolute left-[-10%] top-1/2 h-[75%] w-[75%] -translate-y-1/2 rounded-full bg-[#008f82]/10 blur-[100px]" />
 
             {/* Main image frame */}
-            <div className="absolute inset-y-8 left-0 right-[-25%] overflow-hidden rounded-r-[32px] rounded-l-[18px] shadow-[0_25px_60px_rgba(0,0,0,0.35)] lg:inset-y-10 lg:right-[-18%]">
+            <div className="absolute inset-y-8 left-0 right-[-25%] overflow-hidden rounded-r-[32px]  shadow-[0_25px_60px_rgba(0,0,0,0.35)] lg:inset-y-10 lg:right-[-18%]">
               <img
                 src="https://www.goodfishgroup.com/wp-content/uploads/2023/12/IMG_5330-scaled.webp"
                 
