@@ -164,7 +164,7 @@ export default function Navbar() {
 
                 <a
                   href="#quote"
-                  className="group relative flex h-11 items-center gap-2 overflow-hidden rounded-xl bg-[#0F52BA] px-5 text-[13px] font-semibold text-white shadow-[0_6px_18px_rgba(7,91,150,0.22)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0d7868] hover:shadow-[0_9px_24px_rgba(7,91,150,0.28)]"
+                  className="group relative flex h-11 items-center gap-2 overflow-hidden rounded-xl bg-[#0F52BA] px-5 text-[13px] font-semibold text-white shadow-[0_6px_18px_rgba(7,91,150,0.22)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#4289f5] hover:shadow-[0_9px_24px_rgba(7,91,150,0.28)]"
                 >
 
                   <FiFileText

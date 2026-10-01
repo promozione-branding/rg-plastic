@@ -26,7 +26,7 @@ export default function AboutIntro() {
               <span className="h-px w-8 bg-[#1261A0]" />
 
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1261A0]">
-                Who We Are
+                About Us
               </span>
             </div>
 
@@ -34,7 +34,7 @@ export default function AboutIntro() {
             <h2 className="max-w-[600px] text-[42px] font-semibold leading-[1.02] tracking-[-0.035em] text-[#111111] sm:text-[52px] lg:text-[58px]">
               Engineering
               <br />
-              <span className="text-[#1261A0]">Excellence</span>
+              <span className="text-[#0D2461]">Excellence</span>
               <br />
               Together.
             </h2>
@@ -65,7 +65,7 @@ export default function AboutIntro() {
                     <Check
                       size={14}
                       strokeWidth={2.5}
-                      className="text-[#1261A0]"
+                      className="text-[#0D2461]"
                     />
                   </span>
 
