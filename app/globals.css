@@ -43,10 +43,10 @@ body {
   height: 26px;
   overflow: hidden;
 
-  background: #d4af5a;
+  background: #0D2461;
 
-  border-top: 1px solid #a9822d;
-  border-bottom: 1px solid #a9822d;
+  border-top: 1px solid #0D2461;
+  border-bottom: 1px solid #0D2461;
 
   display: flex;
   align-items: center;
@@ -89,7 +89,7 @@ body {
   font-size: 17px;
   font-weight: 600;
 
-  color: rgba(0, 0, 0, 0.55);
+  color: white;
 }
 
 .machine-marquee__gear {
@@ -104,14 +104,14 @@ body {
 
   flex-shrink: 0;
 
-  color: #000;
+  color: #fff;
   font-size: 15px;
 }
 
 .machine-marquee__text {
   flex-shrink: 0;
 
-  color: #000;
+  color: #fff;
 
   font-size: 14px;
   font-weight: 600;

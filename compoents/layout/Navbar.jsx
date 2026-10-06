@@ -34,10 +34,10 @@ export default function Navbar() {
       {/* =====================================================
           TOP INFO STRIP
       ====================================================== */}
-      <div className="bg-[#00356B] text-white">
+      {/* <div className="bg-[#00356B] text-white">
         <div className="mx-auto flex h-9 max-w-[1440px] items-center justify-between px-4 sm:px-6 lg:px-8">
 
-          {/* Left */}
+        
           <div className="flex items-center gap-4 text-[10px] sm:gap-6 sm:text-[11px]">
 
             <div className="flex items-center gap-1.5">
@@ -60,7 +60,7 @@ export default function Navbar() {
 
           </div>
 
-          {/* Phone */}
+         
           <a
             href="tel:+919876543210"
             className="group flex items-center gap-2 text-[10px] sm:text-[11px]"
@@ -77,7 +77,7 @@ export default function Navbar() {
           </a>
 
         </div>
-      </div>
+      </div> */}
 
 
       {/* =====================================================

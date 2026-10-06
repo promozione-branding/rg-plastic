@@ -11,7 +11,7 @@ const machines = [
 
 export default function MachineMarquee() {
   return (
-    <div className="machine-marquee">
+    <div className="clarity machine-marquee z-[9999]">
       <div className="machine-marquee__track">
 
         {/* SET 1 */}

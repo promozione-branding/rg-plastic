@@ -11,7 +11,7 @@ import {
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#101d1b] pt-[108px] sm:pt-15 ">
+    <section className="relative overflow-hidden bg-[#101d1b] pt-[108px] sm:pt-13 ">
       {/* =====================================================
           BACKGROUND
       ====================================================== */}

@@ -30,9 +30,12 @@ export default function RootLayout({ children }) {
 @import url('https://fonts.googleapis.com/css2?family=Clarity+City:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 </style>
       </head>
+      <body className="min-h-full clarity flex flex-col">
+      {/* <MachineMarquee/> */}
       <Navbar/>
-      <body className="min-h-full clarity flex flex-col">{children}</body>
+        {children}
       <Footer/>
+        </body>
     </html>
   );
 }
