@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import {
   FiCheckCircle,
@@ -89,39 +91,19 @@ export default function Navbar() {
               {/* =================================================
                   LOGO
               ================================================= */}
-              <a
-                href="#"
-                className="group flex shrink-0 items-center gap-3"
-              >
-
-                {/* Logo Mark */}
-                <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-[#0070FF] shadow-[0_5px_15px_rgba(7,91,150,0.22)]">
-
-                  <div className="absolute -right-3 -top-3 h-7 w-7 rounded-full border border-white/20" />
-
-                  <div className="absolute -bottom-4 -left-3 h-8 w-8 rounded-full border border-white/20" />
-
-                  <span className="relative text-sm font-black tracking-tight text-white">
-                    RG
-                  </span>
-
-                </div>
-
-
-                {/* Brand */}
-                <div className="flex flex-col">
-
-                  <span className="text-[20px] font-black leading-none tracking-[-0.045em] text-[#092F4F] transition-colors group-hover:text-[#075B96] sm:text-[22px]">
-                    RG PLASTIC
-                  </span>
-
-                  <span className="mt-1 text-[7px] font-bold uppercase tracking-[0.25em] text-gray-400 sm:text-[8px]">
-                    Plastic Machinery
-                  </span>
-
-                </div>
-
-              </a>
+            <Link
+  href="/"
+  className="group flex shrink-0 items-center"
+>
+  <Image
+    src="/dharam.webp"
+    alt="RG Plastic - Plastic Processing and Recycling Machines"
+    width={190}
+    height={70}
+    priority
+    className="h-auto w-[150px] object-contain sm:w-[155px]"
+  />
+</Link>
 
 
               {/* =================================================

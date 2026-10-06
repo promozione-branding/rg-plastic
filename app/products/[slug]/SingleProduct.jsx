@@ -21,14 +21,14 @@ const product = {
   highlights: [
     ["125 kVA", "Prime power"],
     ["100 kW", "Rated output"],
-    ["400 V · 3 ph", "Voltage"],
+    ["400 V·3 ph", "Voltage"],
     ["50 Hz", "Frequency"],
   ],
   specifications: [
     ["Model", "LPS-125"],
     ["Prime power", "125 kVA / 100 kW"],
     ["Standby power", "138 kVA / 110 kW"],
-    ["Voltage", "400 V, 3 phase"],
+    ["Voltage", "400 V,3 phase"],
     ["Frequency", "50 Hz"],
     ["Engine make", "Cummins"],
     ["Alternator make", "Stamford / LPS"],
@@ -228,7 +228,7 @@ export default function SingleProduct() {
               {product.category} · Model {product.model}
             </p>
             <h1
-              className={`mt-3 text-5xl font-extrabold leading-[.95] tracking-tight sm:text-6xl lg:text-7xl`}
+              className={`mt-3 text-5xl font-extrabold leading-[.95] tracking-tight sm:text-6xl `}
             >
               {product.name}
             </h1>
@@ -241,11 +241,11 @@ export default function SingleProduct() {
               {product.highlights.map(([value, label], i) => (
                 <div
                   key={label}
-                  className={`px-4 py-4 ${i > 0 ? "sm:border-l-2" : ""} ${
+                  className={`px-2 py-4 ${i > 0 ? "sm:border-l-2" : ""} ${
                     i % 2 ? "border-l-2" : ""
                   } ${i > 1 ? "border-t-2 sm:border-t-0" : ""} border-[#0B2233]`}
                 >
-                  <dd className={`text-2xl font-bold leading-none`}>{value}</dd>
+                  <dd className={`text-[20px] font-bold leading-none`}>{value}</dd>
                   <dt className="mt-1.5 text-xs text-slate-600">{label}</dt>
                 </div>
               ))}

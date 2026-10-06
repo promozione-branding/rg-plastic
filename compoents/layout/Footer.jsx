@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
 import {
   FiPhone,
   FiMapPin,
@@ -38,18 +40,19 @@ export default function Footer() {
           ================================================== */}
           <div className="lg:col-span-4 lg:pr-10">
 
-            <a href="#" className="group inline-flex flex-col">
-
-              <span className="text-[29px] font-extrabold leading-none tracking-[-0.05em] text-white transition-colors duration-300 group-hover:text-[#55B8F2]">
-                RG PLASTIC
-              </span>
-
-              <span className="mt-1 text-[9px] font-bold uppercase tracking-[0.28em] text-[#55B8F2]">
-                Plastic Machinery
-              </span>
-
-            </a>
-
+             <Link
+  href="/"
+  className="group flex bg-white w-fit shrink-0 items-center"
+>
+  <Image
+    src="/dharam.webp"
+    alt="RG Plastic - Plastic Processing and Recycling Machines"
+    width={190}
+    height={70}
+    priority
+    className="h-auto w-[150px] object-contain sm:w-[155px]"
+  />
+</Link>
             <p className="mt-6 max-w-[310px] text-[12px] leading-5 text-white/55">
               Delivering reliable and high-performance plastic processing
               machinery with precision, efficiency and engineering excellence
