@@ -241,7 +241,7 @@ export default function SingleProduct() {
               {product.highlights.map(([value, label], i) => (
                 <div
                   key={label}
-                  className={`px-2 py-4 ${i > 0 ? "sm:border-l-2" : ""} ${
+                  className={`px- py-4 ${i > 0 ? "sm:border-l-2" : ""} ${
                     i % 2 ? "border-l-2" : ""
                   } ${i > 1 ? "border-t-2 sm:border-t-0" : ""} border-[#0B2233]`}
                 >
@@ -305,28 +305,8 @@ export default function SingleProduct() {
         </div>
       </section>
 
-      {/* Features */}
-      <section id="features" className="scroll-mt-14 bg-[#0B2233]">
-        <div className="mx-auto max-w-[1360px] px-5 py-16 sm:px-8 md:px-12 md:py-13">
-          <Heading
-            light
-            title="Built to keep running"
-            intro="Six design choices that matter most when the grid goes down."
-          />
-          <div className="mt-12 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-            {product.features.map(([title, text]) => (
-              <div key={title} className="border-t-2 border-[#F2A81D] pt-5">
-                <h3 className={`text-2xl font-bold text-white`}>{title}</h3>
-                <p className="mt-2 text-[15px] leading-7 text-white/70">
-                  {text}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* Specs */}
+         {/* Specs */}
       <section id="specs" className="scroll-mt-14 bg-[#EDF1F4]">
         <div className="mx-auto grid max-w-[1360px] gap-12 px-5 py-16 sm:px-8 md:px-12 md:py-13 lg:grid-cols-[1.4fr_.6fr] lg:gap-16">
           {/* Specifications */}
@@ -381,6 +361,29 @@ export default function SingleProduct() {
           </aside>
         </div>
       </section>
+
+      {/* Features */}
+      <section id="features" className="scroll-mt-14 bg-[#0B2233]">
+        <div className="mx-auto max-w-[1360px] px-5 py-16 sm:px-8 md:px-12 md:py-13">
+          <Heading
+            light
+            title="Built to keep running"
+            intro="Six design choices that matter most when the grid goes down."
+          />
+          <div className="mt-12 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+            {product.features.map(([title, text]) => (
+              <div key={title} className="border-t-2 border-[#F2A81D] pt-5">
+                <h3 className={`text-2xl font-bold text-white`}>{title}</h3>
+                <p className="mt-2 text-[15px] leading-7 text-white/70">
+                  {text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+   
 
       {/* Applications */}
 
