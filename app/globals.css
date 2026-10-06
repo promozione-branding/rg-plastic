@@ -66,6 +66,14 @@ body {
   transform: translate3d(0, 0, 0);
 }
 
+/* =========================================================
+   PAUSE ON HOVER
+========================================================= */
+
+.machine-marquee:hover .machine-marquee__track {
+  animation-play-state: paused;
+}
+
 .machine-marquee__group {
   display: flex;
   align-items: center;
