@@ -13,6 +13,7 @@ import {
 } from "react-icons/fi";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoCloseOutline } from "react-icons/io5";
+import MachineMarquee from "../MachineMarquee";
 
 const navItems = [
   { label: "Home", href: "/", active: true },
@@ -26,7 +27,9 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
+    <>
     <header className="fixed inset-x-0 top-0 z-50">
+      <MachineMarquee/>
 
       {/* =====================================================
           TOP INFO STRIP
@@ -315,5 +318,6 @@ export default function Navbar() {
       </div>
 
     </header>
+    </>
   );
 }
