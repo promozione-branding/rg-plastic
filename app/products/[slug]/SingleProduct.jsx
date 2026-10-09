@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
+import { FileDown, Send } from "lucide-react";
 
 /* Palette: ink #0B2233 · steel #EDF1F4 · paper #FFFFFF · brand #0878D1 · signal #F2A81D */
 
@@ -146,13 +148,13 @@ export default function SingleProduct() {
   const current = product.images[active];
 
   return (
-    <main className={"scroll-smooth bg-white text-[#0B2233]"}>
+    <main className={"scroll-smooth mt-15 bg-white text-[#0B2233]"}>
       {/* Breadcrumb */}
       <nav
         aria-label="Breadcrumb"
         className="border-b border-slate-200 bg-[#EDF1F4] pt-10"
       >
-        <ol className="mx-auto flex max-w-[1360px] flex-wrap items-center gap-2 px-5 py-3.5 text-[13px] text-slate-600 sm:px-8 lg:px-12">
+        <ol className="mx-auto flex max-w-[1360px] flex-wrap items-center gap-2 px-5 py-3.5 text-[13px] text-slate-600 sm:px-8 lg:px-8">
           {[
             ["Home", "/"],
             ["Products", "/products"],
@@ -179,7 +181,7 @@ export default function SingleProduct() {
       {/* Hero */}
       {/* Hero */}
       <section className="bg-[#EDF1F4]">
-        <div className="mx-auto grid max-w-[1360px] gap-10 px-5 pb-14 pt-8 sm:px-8 lg:grid-cols-[1.1fr_.9fr] lg:gap-16 lg:px-12 lg:pb-20 lg:pt-12">
+        <div className="mx-auto grid max-w-[1360px] gap-10 px-5 pb-14 pt-8 sm:px-8 lg:grid-cols-[1.1fr_.9fr] md:gap-16 md:px-8 md:pb-20 md:pt-5">
           {/* Gallery */}
           <div className="flex flex-col gap-3 lg:flex-row-reverse">
             <div className="relative  flex-1 overflow-hidden rounded-xl border border-slate-200 bg-white">
@@ -241,7 +243,7 @@ export default function SingleProduct() {
               {product.highlights.map(([value, label], i) => (
                 <div
                   key={label}
-                  className={`px- py-4 ${i > 0 ? "sm:border-l-2" : ""} ${
+                  className={`px-2 py-3  text-center ${i > 0 ? "sm:border-l-2" : ""} ${
                     i % 2 ? "border-l-2" : ""
                   } ${i > 1 ? "border-t-2 sm:border-t-0" : ""} border-[#0B2233]`}
                 >
@@ -251,29 +253,40 @@ export default function SingleProduct() {
               ))}
             </dl>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="#enquiry"
-                className={`inline-flex items-center justify-center rounded-lg bg-[#0878D1] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0669B8] ${focus}`}
-              >
-                Get a quote
-              </Link>
-              <button
-                type="button"
-                className={`inline-flex items-center justify-center rounded-lg border-2 border-[#0B2233] px-7 py-3.5 text-sm font-semibold transition hover:bg-[#0B2233] hover:text-white ${focus}`}
-              >
-                Download brochure
-              </button>
-            </div>
+           <div className="mt-6 flex flex-col gap-2 sm:flex-row">
+  <Link
+    href="#enquiry"
+    className={`inline-flex items-center justify-center gap-2 rounded-lg bg-[#0878D1] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#0669B8] ${focus}`}
+  >
+    <Send size={15} />
+    Get a quote
+  </Link>
+
+  <Link
+    href="#enquiry"
+    className={`inline-flex items-center justify-center gap-2 rounded-lg bg-green-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#0669B8] ${focus}`}
+  >
+    <FaWhatsapp size={15} />
+    WhatsApp Now
+  </Link>
+
+  <button
+    type="button"
+    className={`inline-flex items-center justify-center gap-2 rounded-lg border border-[#0B2233] px-4 py-2.5 text-sm font-semibold text-[#0B2233] transition hover:bg-[#0B2233] hover:text-white ${focus}`}
+  >
+    <FileDown size={15} />
+    Download brochure
+  </button>
+</div>
           </div>
         </div>
       </section>
 
       {/* Section nav */}
-      <div className="sticky top-20 z-30 border-b border-slate-200 bg-white/95 backdrop-blur">
+      <div className="sticky top-25 z-30 border-b border-slate-200 bg-white/95 backdrop-blur">
         <nav
           aria-label="Product sections"
-          className="mx-auto flex max-w-[1360px] gap-1 overflow-x-auto px-5 sm:px-8 lg:px-12"
+          className="mx-auto flex max-w-[1360px] gap-1 overflow-x-auto px-5 sm:px-8 lg:px-8"
         >
           {sections.map(([id, label]) => (
             <a
@@ -308,7 +321,7 @@ export default function SingleProduct() {
 
          {/* Specs */}
       <section id="specs" className="scroll-mt-14 bg-[#EDF1F4]">
-        <div className="mx-auto grid max-w-[1360px] gap-12 px-5 py-16 sm:px-8 md:px-12 md:py-13 lg:grid-cols-[1.4fr_.6fr] lg:gap-16">
+        <div className="mx-auto grid max-w-[1360px] gap-12 px-5 py-16 sm:px-8 md:px-8 md:py-13 lg:grid-cols-[1.4fr_.6fr] lg:gap-10">
           {/* Specifications */}
           <div>
             <Heading title="Technical specifications" />
@@ -364,11 +377,10 @@ export default function SingleProduct() {
 
       {/* Features */}
       <section id="features" className="scroll-mt-14 bg-[#0B2233]">
-        <div className="mx-auto max-w-[1360px] px-5 py-16 sm:px-8 md:px-12 md:py-13">
+        <div className="mx-auto max-w-[1360px] px-5 py-16 sm:px-8 md:px-8 md:py-13">
           <Heading
             light
-            title="Built to keep running"
-            intro="Six design choices that matter most when the grid goes down."
+            title="Features"
           />
           <div className="mt-12 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
             {product.features.map(([title, text]) => (
@@ -388,7 +400,7 @@ export default function SingleProduct() {
       {/* Applications */}
 
       <section id="applications" className="scroll-mt-14">
-        <div className="mx-auto max-w-[1360px] px-5 py-6 sm:px-8 md:px-12 md:py-13">
+        <div className="mx-auto max-w-[1360px] px-5 py-6 sm:px-8 md:px-8 md:py-13">
           <Heading
             title="Where it works"
             intro="From the factory floor to the server room, one generator size covers many jobs."
@@ -417,7 +429,7 @@ export default function SingleProduct() {
 
       {/* Enquiry */}
       <section id="enquiry" className="scroll-mt-14 bg-[#0878D1]">
-        <div className="mx-auto grid max-w-[1360px] gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[.8fr_1.2fr] md:gap-16 md:px-12 md:py-13">
+        <div className="mx-auto grid max-w-[1360px] gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[.8fr_1.2fr] md:gap-16 md:px-8 md:py-13">
           <div className="text-white">
             <h2 className={`text-4xl font-bold leading-none sm:text-5xl`}>
               Tell us your power need.
@@ -476,16 +488,7 @@ export default function SingleProduct() {
                     required
                     placeholder="+91"
                   />
-                  <Field
-                    label="Power needed"
-                    name="power"
-                    placeholder="e.g. 125 kVA"
-                  />
-                  <Field
-                    label="Where will you use it?"
-                    name="application"
-                    placeholder="Factory, hospital, site"
-                  />
+                 
                 </div>
                 <label className="mt-4 block text-sm font-medium">
                   Message
