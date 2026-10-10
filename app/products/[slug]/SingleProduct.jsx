@@ -8,108 +8,6 @@ import { FileDown, Send } from "lucide-react";
 
 /* Palette: ink #0B2233 · steel #EDF1F4 · paper #FFFFFF · brand #0878D1 · signal #F2A81D */
 
-const product = {
-  name: "125 kVA Diesel Generator",
-  category: "Diesel Generator",
-  model: "LPS-125",
-  description:
-    "A fuel-efficient diesel generator for continuous and prime power. Robust engine, digital controls and an acoustic canopy keep factories, buildings and project sites running.",
-  images: [
-    { src: "/images/products/generator-125.jpg", label: "Front view" },
-    { src: "/images/products/generator-control.jpg", label: "Control panel" },
-    { src: "/images/products/generator-engine.jpg", label: "Engine" },
-    { src: "/images/products/generator-inside.jpg", label: "Inside canopy" },
-  ],
-  highlights: [
-    ["125 kVA", "Prime power"],
-    ["100 kW", "Rated output"],
-    ["400 V·3 ph", "Voltage"],
-    ["50 Hz", "Frequency"],
-  ],
-  specifications: [
-    ["Model", "LPS-125"],
-    ["Prime power", "125 kVA / 100 kW"],
-    ["Standby power", "138 kVA / 110 kW"],
-    ["Voltage", "400 V,3 phase"],
-    ["Frequency", "50 Hz"],
-    ["Engine make", "Cummins"],
-    ["Alternator make", "Stamford / LPS"],
-    ["Fuel tank capacity", "250 litres"],
-    ["Dimensions (L × W × H)", "3200 × 1100 × 1750 mm"],
-    ["Dry weight", "2500 kg"],
-    ["Noise level", "75 dB(A) at 7 m"],
-    ["Control panel", "Deep Sea / ComAp (optional)"],
-  ],
-  features: [
-    [
-      "Heavy-duty engine",
-      "Built for long running hours in continuous and prime power duty.",
-    ],
-    [
-      "Fuel efficient",
-      "Tuned fuel consumption lowers your running cost per kWh.",
-    ],
-    [
-      "Digital controls",
-      "Monitor load, temperature and faults, with automatic protection.",
-    ],
-    [
-      "Easy to service",
-      "Filters, belts and the battery are reachable without removing panels.",
-    ],
-    ["Low noise", "The acoustic canopy keeps sound at 75 dB(A) at 7 m."],
-    [
-      "Site ready",
-      "Weather-resistant canopy suits factories, buildings and project sites.",
-    ],
-  ],
-  applications: [
-    {
-      title: "Industrial",
-      subtitle: "Factories and plants",
-      image: "/images/applications/industrial.jpg",
-    },
-    {
-      title: "Commercial",
-      subtitle: "Malls, offices, hotels",
-      image: "/images/applications/commercial.jpg",
-    },
-    {
-      title: "Healthcare",
-      subtitle: "Hospitals and clinics",
-      image: "/images/applications/hospital.jpg",
-    },
-    {
-      title: "Infrastructure",
-      subtitle: "Construction sites",
-      image: "/images/applications/infrastructure.jpg",
-    },
-    {
-      title: "Data centres",
-      subtitle: "Uninterrupted power",
-      image: "/images/applications/data-center.jpg",
-    },
-  ],
-  relatedProducts: [
-    {
-      name: "62.5 kVA Diesel Generator",
-      image: "/images/products/generator-62.jpg",
-    },
-    {
-      name: "100 kVA Diesel Generator",
-      image: "/images/products/generator-100.jpg",
-    },
-    {
-      name: "200 kVA Diesel Generator",
-      image: "/images/products/generator-200.jpg",
-    },
-    {
-      name: "250 kVA Diesel Generator",
-      image: "/images/products/generator-250.jpg",
-    },
-  ],
-};
-
 const sections = [
   ["overview", "Overview"],
   ["features", "Features"],
@@ -142,7 +40,7 @@ function Heading({ title, intro, light }) {
   );
 }
 
-export default function SingleProduct() {
+export default function SingleProduct({ product }) {
   const [active, setActive] = useState(0);
   const [sent, setSent] = useState(false);
   const current = product.images[active];
@@ -155,27 +53,23 @@ export default function SingleProduct() {
         className="border-b border-slate-200 bg-[#EDF1F4] pt-10"
       >
         <ol className="mx-auto flex max-w-[1360px] flex-wrap items-center gap-2 px-5 py-3.5 text-[13px] text-slate-600 sm:px-8 lg:px-8">
-          {[
-            ["Home", "/"],
-            ["Products", "/products"],
-            ["Diesel generators", "/products/diesel-generators"],
-          ].map(([label, href]) => (
-            <li key={href} className="flex items-center gap-2">
-              <Link
-                href={href}
-                className={`rounded hover:text-[#0878D1] ${focus}`}
-              >
-                {label}
-              </Link>
-              <span aria-hidden className="text-slate-400">
-                /
-              </span>
-            </li>
-          ))}
-          <li aria-current="page" className="font-semibold text-[#0B2233]">
-            {product.name}
-          </li>
-        </ol>
+  {[
+    ["Home", "/"],
+    ["Products", "/products"],
+    [`${product.name}`, `/products/${product.slug}`],
+  ].map(([label, href], index) => (
+    <li key={href} className="flex items-center gap-2">
+      {index > 0 && <span>/</span>}
+
+      <Link
+        href={href}
+        className={`rounded hover:text-[#0878D1] ${focus}`}
+      >
+        {label}
+      </Link>
+    </li>
+  ))}
+</ol>
       </nav>
 
       {/* Hero */}
@@ -226,9 +120,9 @@ export default function SingleProduct() {
 
           {/* Info */}
           <div className="flex flex-col justify-center">
-            <p className="text-sm font-semibold text-[#0878D1]">
+            {/* <p className="text-sm font-semibold text-[#0878D1]">
               {product.category} · Model {product.model}
-            </p>
+            </p> */}
             <h1
               className={`mt-3 text-5xl font-extrabold leading-[.95] tracking-tight sm:text-6xl `}
             >
@@ -239,7 +133,7 @@ export default function SingleProduct() {
             </p>
 
             {/* Rating plate: the one memorable element */}
-            <dl className="mt-8 grid grid-cols-2 overflow-hidden rounded-lg border-2 border-[#0B2233] bg-white sm:grid-cols-4">
+            {/* <dl className="mt-8 grid grid-cols-2 overflow-hidden rounded-lg border-2 border-[#0B2233] bg-white sm:grid-cols-4">
               {product.highlights.map(([value, label], i) => (
                 <div
                   key={label}
@@ -251,33 +145,33 @@ export default function SingleProduct() {
                   <dt className="mt-1.5 text-xs text-slate-600">{label}</dt>
                 </div>
               ))}
-            </dl>
+            </dl> */}
 
-           <div className="mt-6 flex flex-col gap-2 sm:flex-row">
-  <Link
-    href="#enquiry"
-    className={`inline-flex items-center justify-center gap-2 rounded-lg bg-[#0878D1] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#0669B8] ${focus}`}
-  >
-    <Send size={15} />
-    Get a quote
-  </Link>
+            <div className="mt-6 flex flex-col gap-2 sm:flex-row">
+              <Link
+                href="#enquiry"
+                className={`inline-flex items-center justify-center gap-2 rounded-lg bg-[#0878D1] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#0669B8] ${focus}`}
+              >
+                <Send size={15} />
+                Get a quote
+              </Link>
 
-  <Link
-    href="#enquiry"
-    className={`inline-flex items-center justify-center gap-2 rounded-lg bg-green-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#0669B8] ${focus}`}
-  >
-    <FaWhatsapp size={15} />
-    WhatsApp Now
-  </Link>
+              <Link
+                href="#enquiry"
+                className={`inline-flex items-center justify-center gap-2 rounded-lg bg-green-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#0669B8] ${focus}`}
+              >
+                <FaWhatsapp size={15} />
+                WhatsApp Now
+              </Link>
 
-  <button
-    type="button"
-    className={`inline-flex items-center justify-center gap-2 rounded-lg border border-[#0B2233] px-4 py-2.5 text-sm font-semibold text-[#0B2233] transition hover:bg-[#0B2233] hover:text-white ${focus}`}
-  >
-    <FileDown size={15} />
-    Download brochure
-  </button>
-</div>
+              <button
+                type="button"
+                className={`inline-flex items-center justify-center gap-2 rounded-lg border border-[#0B2233] px-4 py-2.5 text-sm font-semibold text-[#0B2233] transition hover:bg-[#0B2233] hover:text-white ${focus}`}
+              >
+                <FileDown size={15} />
+                Download brochure
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -305,21 +199,12 @@ export default function SingleProduct() {
         <div className="mx-auto grid max-w-[1360px] gap-10 px-5 py-16 sm:px-8 md:grid-cols-2 md:py-13 ">
           <Heading title="Reliable power for demanding sites" />
           <div className="space-y-4 text-[15px] leading-7 text-slate-700">
-            <p>
-              The {product.name} pairs dependable output with low running cost
-              and easy servicing. It is made for industrial, commercial and
-              infrastructure sites where an outage is expensive.
-            </p>
-            <p>
-              A heavy-duty engine, digital control system and acoustic canopy
-              work together to give steady performance with controlled noise.
-            </p>
+            <p>{product.overview}</p>
           </div>
         </div>
       </section>
 
-
-         {/* Specs */}
+      {/* Specs */}
       <section id="specs" className="scroll-mt-14 bg-[#EDF1F4]">
         <div className="mx-auto grid max-w-[1360px] gap-12 px-5 py-16 sm:px-8 md:px-8 md:py-13 lg:grid-cols-[1.4fr_.6fr] lg:gap-10">
           {/* Specifications */}
@@ -327,17 +212,35 @@ export default function SingleProduct() {
             <Heading title="Technical specifications" />
 
             <dl className="mt-10 overflow-hidden rounded-xl border border-slate-200 bg-white">
-              {product.specifications.map(([key, value], i) => (
-                <div
-                  key={key}
-                  className={`grid grid-cols-[1fr_1.1fr] gap-4 px-5 py-3.5 text-sm ${
-                    i % 2 ? "bg-slate-50" : ""
-                  }`}
-                >
-                  <dt className="text-slate-600">{key}</dt>
-                  <dd className="font-semibold">{value}</dd>
+              {/* Model Specifications Table */}
+              {product.modelSpecifications?.length > 0 && (
+                <div className="my-6 w-full overflow-x-auto">
+                  <dl>
+                    {/* Labels */}
+                    <div className="grid grid-cols-[1fr_1fr_1fr_1fr] gap-4 px-5 py-3.5 text-sm font-semibold">
+                      <dt>Model</dt>
+                      <dt>Main Motor (HP)</dt>
+                      <dt>Screw Diameter (mm)</dt>
+                      <dt>Max Output (kg/hr)</dt>
+                    </div>
+
+                    {/* Model Data */}
+                    {product.modelSpecifications.map((i, index) => (
+                      <div
+                        key={i.model}
+                        className={`grid grid-cols-[1fr_1fr_1fr_1fr] gap-4 px-5 py-3.5 text-sm ${
+                          index % 2 ? "bg-slate-50" : ""
+                        }`}
+                      >
+                        <dd className="text-slate-600">{i.model}</dd>
+                        <dd className="font-semibold">{i.mainMotorHP}</dd>
+                        <dd className="text-slate-600">{i.screwDiameterMM}</dd>
+                        <dd className="font-semibold">{i.maxOutputKgHr}</dd>
+                      </div>
+                    ))}
+                  </dl>
                 </div>
-              ))}
+              )}
             </dl>
           </div>
 
@@ -378,24 +281,21 @@ export default function SingleProduct() {
       {/* Features */}
       <section id="features" className="scroll-mt-14 bg-[#0B2233]">
         <div className="mx-auto max-w-[1360px] px-5 py-16 sm:px-8 md:px-8 md:py-13">
-          <Heading
-            light
-            title="Features"
-          />
+          <Heading light title="Features" />
           <div className="mt-12 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-            {product.features.map(([title, text]) => (
-              <div key={title} className="border-t-2 border-[#F2A81D] pt-5">
-                <h3 className={`text-2xl font-bold text-white`}>{title}</h3>
+            {product.features.map((item) => (
+              <div key={item} className="border-t-2 border-[#F2A81D] pt-5">
+                <h3 className={`text-2xl font-bold text-white`}>
+                  {item.title}
+                </h3>
                 <p className="mt-2 text-[15px] leading-7 text-white/70">
-                  {text}
+                  {item.description}
                 </p>
               </div>
             ))}
           </div>
         </div>
       </section>
-
-   
 
       {/* Applications */}
 
@@ -488,7 +388,6 @@ export default function SingleProduct() {
                     required
                     placeholder="+91"
                   />
-                 
                 </div>
                 <label className="mt-4 block text-sm font-medium">
                   Message

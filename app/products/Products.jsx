@@ -8,62 +8,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
-const products = [
-  {
-    id: "01",
-    name: "Plastic Granules Making Machine",
-    category: "Recycling Machinery",
-    description:
-      "High-performance machinery designed for efficient plastic recycling and consistent granule production.",
-    image: "/images/products/plastic-granules-machine.jpg",
-    specs: ["High Output", "Energy Efficient", "Heavy Duty"],
-  },
-  {
-    id: "02",
-    name: "Scrap Grinder Machine",
-    category: "Grinding Machinery",
-    description:
-      "Robust scrap grinding solution engineered for efficient size reduction and continuous industrial operation.",
-    image: "/images/products/scrap-grinder-machine.jpg",
-    specs: ["Heavy Duty", "Low Maintenance", "High Efficiency"],
-  },
-  {
-    id: "03",
-    name: "Plastic Extrusion Machine",
-    category: "Extrusion Machinery",
-    description:
-      "Precision-engineered extrusion machinery designed for stable processing and reliable production performance.",
-    image: "/images/products/plastic-extrusion-machine.jpg",
-    specs: ["Precision Processing", "Stable Output", "Industrial Grade"],
-  },
-  {
-    id: "04",
-    name: "Plastic Recycling Machine",
-    category: "Recycling Machinery",
-    description:
-      "Complete recycling machinery designed to process plastic waste into reusable and valuable production material.",
-    image: "/images/products/plastic-recycling-machine.jpg",
-    specs: ["Continuous Operation", "Efficient Processing", "Durable"],
-  },
-  {
-    id: "05",
-    name: "Plastic Agglomerator Machine",
-    category: "Processing Machinery",
-    description:
-      "Efficient agglomeration equipment built for processing plastic films and lightweight recyclable materials.",
-    image: "/images/products/plastic-agglomerator.jpg",
-    specs: ["High Speed", "Strong Build", "Easy Operation"],
-  },
-  {
-    id: "06",
-    name: "Plastic Shredder Machine",
-    category: "Size Reduction",
-    description:
-      "Powerful industrial shredding equipment designed for reliable plastic waste size reduction and recycling.",
-    image: "/images/products/plastic-shredder.jpg",
-    specs: ["High Torque", "Heavy Duty", "Long Service Life"],
-  },
-];
+import { products } from "@/data/data";
 
 export default function Products() {
   return (
@@ -160,7 +105,7 @@ export default function Products() {
 
 
           {/* Product Grid */}
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-4">
 
             {products.map((product) => (
               <ProductCard
@@ -254,15 +199,7 @@ function ProductCard({ product }) {
         {/* Image overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
 
-        {/* Product number */}
-        <div className="absolute left-4 top-4 flex h-9 min-w-9 items-center justify-center rounded-full bg-white/95 px-2 text-[11px] font-bold text-[#075B96] shadow-sm backdrop-blur">
-          {product.id}
-        </div>
-
-        {/* Category */}
-        <div className="absolute right-4 top-4 rounded-full border border-white/50 bg-white/90 px-3 py-1.5 text-[10px] font-semibold text-[#075B96] shadow-sm backdrop-blur">
-          {product.category}
-        </div>
+        
 
       </div>
 
@@ -283,29 +220,10 @@ function ProductCard({ product }) {
         </div>
 
 
-        <p className="mt-4 text-sm leading-6 text-gray-500">
-          {product.description}
-        </p>
+       
 
 
-        {/* Specifications */}
-        <div className="mt-5 flex flex-wrap gap-2">
-
-          {product.specs.map((spec) => (
-            <span
-              key={spec}
-              className="flex items-center gap-1.5 rounded-full bg-[#F4F8FA] px-3 py-1.5 text-[10px] font-medium text-gray-600"
-            >
-              <CheckCircle2
-                size={12}
-                className="text-[#1261A0]"
-              />
-
-              {spec}
-            </span>
-          ))}
-
-        </div>
+        
 
 
         {/* View Product */}
