@@ -10,7 +10,7 @@ const sections = [
     eyebrow: "WHAT DRIVES US",
     number: "01",
     description:
-      "At R G Plastics Machinery, our mission is to provide dependable, efficient and high-performance machinery for the plastic processing industry. We combine technical expertise, quality engineering and customer-focused service to deliver solutions that create long-term value.",
+      "At Dharam Engg Work, our mission is to provide dependable, efficient and high-performance machinery for the plastic processing industry. We combine technical expertise, quality engineering and customer-focused service to deliver solutions that create long-term value.",
     points: [
       "Deliver Reliable Machinery",
       "Focus on Quality & Performance",
@@ -79,7 +79,7 @@ export default function AboutStory() {
             <span className="h-px w-9 bg-[#1261A0]" />
 
             <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#1261A0]">
-              About R G Plastics Machinery
+              About Dharam Engg Work
             </span>
           </div>
 
@@ -137,7 +137,7 @@ export default function AboutStory() {
 
                     <Image
                       src={section.image}
-                      alt={`${section.title} - R G Plastics Machinery`}
+                      alt={`${section.title} - Dharam Engg Work`}
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover transition-transform duration-700 hover:scale-105"
@@ -151,7 +151,7 @@ export default function AboutStory() {
 
                       <div>
                         <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/70">
-                          R G Plastics Machinery
+                          Dharam Engg Work
                         </p>
 
                         <p className="mt-1 text-lg font-medium text-white">

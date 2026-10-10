@@ -99,9 +99,9 @@ export default function AboutSection() {
               </div>
 
               {/* Heading */}
-              <h2 className="relative max-w-[620px] text-[31px] font-extrabold uppercase leading-[1.08] tracking-[-0.025em] text-white sm:text-[39px] lg:text-[42px] xl:text-[48px]">
-                Leading Plant Processing 
-                <span className="block text-[#54a2bc]">
+              <h2 className="relative max-w-full text-[31px] font-extrabold uppercase leading-[1.08] tracking-[-0.025em] text-white sm:text-[39px] lg:text-[42px] xl:text-[48px]">
+                Leading Plant Processing{" "} 
+                <span className=" text-[#54a2bc]">
                   Machine Manufacturer
                 </span>
               </h2>

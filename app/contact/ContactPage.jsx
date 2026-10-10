@@ -354,7 +354,7 @@ export default function ContactPage() {
             {" "}
             <span>
               {" "}
-              R G Plastics Machinery — Engineering reliable solutions.{" "}
+              Dharam Engg Work — Engineering reliable solutions.{" "}
             </span>{" "}
             <span className="flex items-center gap-2">
               {" "}
@@ -376,7 +376,7 @@ export default function ContactPage() {
             </span>
 
             <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-              Visit R G Plastics Machinery
+              Visit Dharam Engg Work
             </h2>
           </div>
 
@@ -390,7 +390,7 @@ export default function ContactPage() {
               <h3 className="mt-5 font-semibold">Our Address</h3>
 
               <p className="mt-2 text-sm leading-6 text-gray-500">
-                R G Plastics Machinery
+                Dharam Engg Work
                 <br />
                 Add your complete business address
                 <br />
@@ -438,7 +438,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
           <div className="relative h-[400px] overflow-hidden rounded-[28px] border border-gray-200 bg-gray-100 sm:h-[500px]">
             <iframe
-              title="R G Plastics Machinery Location"
+              title="Dharam Engg Work Location"
               src="https://www.google.com/maps?q=Delhi,India&output=embed"
               className="absolute inset-0 h-full w-full border-0 grayscale-[20%]"
               loading="lazy"
@@ -453,7 +453,7 @@ export default function ContactPage() {
 
                 <div>
                   <p className="text-sm font-semibold">
-                    R G Plastics Machinery
+                    Dharam Engg Work
                   </p>
 
                   <p className="text-xs text-gray-500">Delhi, India</p>

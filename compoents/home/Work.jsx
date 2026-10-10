@@ -64,7 +64,7 @@ export default function Work() {
         {/* =================================================
             HEADING
         ================================================== */}
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-5xl text-center">
 
           <div className="mb-4 inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.18em] text-[#fff]">
             <span className="h-1.5 w-1.5 rounded-full bg-[#fff]" />
@@ -72,7 +72,7 @@ export default function Work() {
           </div>
 
           <h2 className="text-[34px] font-extrabold uppercase leading-[1.05] tracking-[-0.035em] text-white sm:text-[44px] lg:text-[52px]">
-            Our Plant Processing
+            Our Plant Processing{" "}
             <span className="text-[#297eff]">Machine Manufacturing Process</span>
           </h2>
 

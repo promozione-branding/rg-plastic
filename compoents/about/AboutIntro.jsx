@@ -41,7 +41,7 @@ export default function AboutIntro() {
 
             {/* Description */}
             <p className="mt-7 max-w-[540px] text-[15px] leading-7 text-gray-600 sm:text-base">
-              At R G Plastics Machinery, we are committed to delivering
+              At Dharam Engg Work, we are committed to delivering
               reliable and innovative plastic extrusion machinery designed
               for performance, precision and long-term productivity. With
               years of industry experience and technical expertise, we help
@@ -109,7 +109,7 @@ export default function AboutIntro() {
               <div className="relative aspect-[1.35/1] sm:aspect-[1.5/1]">
                 <Image
                   src="https://plus.unsplash.com/premium_photo-1664298925852-a10f7112c548?w=1200&auto=format&fit=crop&q=80"
-                  alt="R G Plastics Machinery"
+                  alt="Dharam Engg Work"
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 55vw"
@@ -123,7 +123,7 @@ export default function AboutIntro() {
                 <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between sm:bottom-7 sm:left-7 sm:right-7">
                   <div>
                     <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/70">
-                      R G Plastics Machinery
+                      Dharam Engg Work
                     </p>
 
                     <p className="mt-1 text-lg font-medium text-white sm:text-xl">
@@ -192,7 +192,7 @@ export default function AboutIntro() {
                     letterSpacing="2.5"
                   >
                     <textPath href="#aboutCirclePath">
-                      R G PLASTICS MACHINERY • ENGINEERED FOR EXCELLENCE •
+                      DHARAM ENGG WORK • ENGINEERED FOR EXCELLENCE •
                     </textPath>
                   </text>
                 </svg>

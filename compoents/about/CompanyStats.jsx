@@ -28,7 +28,7 @@ export default function CompanyStats() {
         <div className="mx-auto max-w-4xl text-center">
           <p className="text-[17px] leading-[1.55] text-[#222] sm:text-[20px] lg:text-[22px]">
             <span>
-              R G Plastics Machinery is one of the leading manufacturers and
+              Dharam Engg Work is one of the leading manufacturers and
               service providers of{" "}
             </span>
 

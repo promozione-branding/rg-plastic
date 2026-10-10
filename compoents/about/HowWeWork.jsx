@@ -64,7 +64,7 @@ export default function HowWeWork() {
             <div className="relative aspect-[16/7] min-h-[280px]">
               <Image
                 src="/images/how-we-work.jpg"
-                alt="R G Plastics Machinery"
+                alt="Dharam Engg Work"
                 fill
                 priority
                 className="object-cover transition duration-700 group-hover:scale-105"
@@ -88,7 +88,7 @@ export default function HowWeWork() {
 
               {/* Bottom Label */}
               <div className="absolute bottom-5 left-5 hidden rounded-full border border-white/20 bg-black/30 px-5 py-2.5 text-xs font-medium text-white backdrop-blur-md sm:block">
-                R G Plastics Machinery
+                Dharam Engg Work
               </div>
             </div>
           </div>

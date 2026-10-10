@@ -74,7 +74,7 @@ export default function ProductSlider() {
               Our Products
             </div>
 
-            <h2 className="max-w-[700px] text-[38px] font-extrabold uppercase leading-[1.05] tracking-[-0.045em] text-[#25221f] sm:text-[48px] lg:text-[58px]">
+            <h2 className="max-w-[700px] text-[38px] font-extrabold uppercase leading-[1.05] tracking-[-0.045em] text-[#25221f] sm:text-[48px] ">
               High-Performance Plastic Recycling
               <span className="block text-[#093372]">
                 & Processing Machinery
