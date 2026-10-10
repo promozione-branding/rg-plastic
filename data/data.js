@@ -197,25 +197,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/two-stage-granule-machine.jpg",
+        src: "/products/two-gran.webp",
         alt: "Two Stage Granule Machine by Dharam Engg Work",
         label: "Machine view",
       },
-      {
-        src: "/images/products/two-stage-granule-machine-screw.jpg",
-        alt: "Two stage granule machine screw assembly",
-        label: "Screw assembly",
-      },
-      {
-        src: "/images/products/two-stage-granule-machine-extruder.jpg",
-        alt: "Two stage plastic extrusion system",
-        label: "Extrusion system",
-      },
-      {
-        src: "/images/products/two-stage-granule-machine-output.jpg",
-        alt: "Plastic granule production output",
-        label: "Granule production",
-      },
+    
     ],
 
     highlights: [
@@ -1108,25 +1094,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/cast-washing-machine.jpg",
+        src: "/products/cast.webp",
         alt: "Cast Washing Machine by Dharam Engg Work",
         label: "Machine view",
       },
-      {
-        src: "/images/products/cast-washing-machine-washing-unit.jpg",
-        alt: "Cast washing machine washing unit",
-        label: "Washing unit",
-      },
-      {
-        src: "/images/products/cast-washing-machine-motor.jpg",
-        alt: "Cast washing machine motor assembly",
-        label: "Motor assembly",
-      },
-      {
-        src: "/images/products/cast-washing-machine-output.jpg",
-        alt: "Washed plastic materials after processing",
-        label: "Washed material",
-      },
+    
     ],
 
     highlights: [
