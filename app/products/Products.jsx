@@ -190,7 +190,7 @@ function ProductCard({ product }) {
       <div className="relative aspect-[1.15/0.88] overflow-hidden bg-[#F3F7FA]">
 
         <Image
-          src={product.image}
+          src={product.images[0].src}
           alt={product.name}
           fill
           className="object-cover transition duration-700 group-hover:scale-105"

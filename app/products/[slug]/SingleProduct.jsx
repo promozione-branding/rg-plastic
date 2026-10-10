@@ -78,14 +78,14 @@ export default function SingleProduct({ product }) {
         <div className="mx-auto grid max-w-[1360px] gap-10 px-5 pb-14 pt-8 sm:px-8 lg:grid-cols-[1.1fr_.9fr] md:gap-16 md:px-8 md:pb-20 md:pt-5">
           {/* Gallery */}
           <div className="flex flex-col gap-3 lg:flex-row-reverse">
-            <div className="relative  flex-1 overflow-hidden rounded-xl border border-slate-200 bg-white">
+            <div className="relative h-100  flex-1 overflow-hidden rounded-xl border border-slate-200 bg-white">
               <Image
                 src={current.src}
                 alt={`${product.name}: ${current.label}`}
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 55vw"
-                className="object-contain p-6 sm:p-10"
+                className="object-contain p-6 sm:p-7"
               />
               <span className="absolute bottom-4 left-4 rounded bg-[#0B2233] px-3 py-1.5 text-xs font-medium text-white">
                 {current.label}
