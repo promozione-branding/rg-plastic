@@ -41,7 +41,6 @@ export default function Hero() {
             <div className="absolute inset-y-8 left-0 right-[-25%] overflow-hidden rounded-r-[32px]  shadow-[0_25px_60px_rgba(0,0,0,0.35)] lg:inset-y-10 lg:right-[-18%]">
               <img
                 src="https://www.goodfishgroup.com/wp-content/uploads/2023/12/IMG_5330-scaled.webp"
-                
                 className="h-full w-full object-cover object-center transition-transform duration-1000 hover:scale-[1.02]"
               />
 
@@ -67,11 +66,11 @@ export default function Hero() {
               <div className="absolute bottom-5 left-5 sm:bottom-7 sm:left-7">
                 <div className="rounded-xl border border-white/10 bg-[#101d1b]/80 px-4 py-3 text-white backdrop-blur-xl">
                   <div className="text-[8px] font-semibold uppercase tracking-[0.12em] text-white/45">
-                    Precision Manufacturing
+                    Plastic Recycling
                   </div>
 
                   <div className="mt-1 text-[13px] font-bold sm:text-[14px]">
-                    Advanced Servo Technology
+                    Machine Manufacturer
                   </div>
                 </div>
               </div>
@@ -89,21 +88,18 @@ export default function Hero() {
 
             {/* Heading */}
             <h1 className="max-w-[620px] text-[40px] font-extrabold leading-[1.03] tracking-[-0.045em] text-white sm:text-[52px] lg:text-[56px] ">
-              Plastic Moulding
-              
-              Machines{" "}
-              
+              Plastic Recycling{" "}
               <span className="bg-gradient-to-r from-[#19c5b5] via-[#159ed8] to-[#1969e0] bg-clip-text text-transparent">
-  Built for Precision.
-</span>
+                Machine Manufacturer.
+              </span>
             </h1>
 
             {/* Description */}
             <p className="mt-6 max-w-[560px] text-[14px] leading-5 text-white/65 sm:text-[15px] sm:leading-5 lg:text-[16px]">
-              High-performance plastic moulding machines engineered for
-              precision, reliability and efficient production. Designed for
-              demanding industrial environments with advanced servo technology
-              and consistent repeatability.
+              Dharam Engg Work is an experienced Plant Processing Machine
+              Manufacturer offering vented extruders, granule machines,
+              Thermocol and EPS recycling machines, mixture machines, and
+              agglomerators for efficient plastic recycling and processing.
             </p>
 
             {/* CTA */}
@@ -132,7 +128,6 @@ export default function Hero() {
             {/* =================================================
                 TRUST POINTS
             ================================================== */}
-           
 
             {/* =================================================
                 STATS
@@ -140,37 +135,35 @@ export default function Hero() {
             <div className="mt-9 grid max-w-[560px] grid-cols-3 border-y border-white/10">
               <div className="py-4 pr-4">
                 <div className="text-[25px] font-extrabold tracking-[-0.04em] text-white sm:text-[30px]">
-                  25+
+                  40+
                 </div>
 
                 <div className="mt-1 text-[8px] font-bold uppercase tracking-[0.1em] text-white/40 sm:text-[9px]">
                   Years
                   <br />
-                  Manufacturing
+                  of Engineering Expertise
                 </div>
               </div>
 
               <div className="border-x border-white/10 px-4 py-4">
                 <div className="text-[25px] font-extrabold tracking-[-0.04em] text-white sm:text-[30px]">
-                  50+
+                  6+
                 </div>
 
                 <div className="mt-1 text-[8px] font-bold uppercase tracking-[0.1em] text-white/40 sm:text-[9px]">
-                  Countries
-                  <br />
-                  Exported
+                  Plastic Processing Solutions
                 </div>
               </div>
 
               <div className="py-4 pl-4">
                 <div className="text-[25px] font-extrabold tracking-[-0.04em] text-white sm:text-[30px]">
-                  1000+
+                  End-to-End
                 </div>
 
                 <div className="mt-1 text-[8px] font-bold uppercase tracking-[0.1em] text-white/40 sm:text-[9px]">
-                  Machines
+                  Machinery
                   <br />
-                  Installed
+                  Solutions
                 </div>
               </div>
             </div>
