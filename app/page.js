@@ -6,12 +6,12 @@ import Industry from "@/compoents/home/Industry";
 import MachineryCTA from "@/compoents/home/MachineryCTA";
 import ProductSlider from "@/compoents/home/ProductSlider";
 import Testimonials from "@/compoents/home/Testimonials";
-import Why2 from "@/compoents/home/Why2";
+// import Why2 from "@/compoents/home/Why2";
 import Whychoose from "@/compoents/home/Whychoose";
 import Work from "@/compoents/home/Work";
-import Footer from "@/compoents/layout/Footer";
-import Navbar from "@/compoents/layout/Navbar";
-import Image from "next/image";
+// import Footer from "@/compoents/layout/Footer";
+// import Navbar from "@/compoents/layout/Navbar";
+// import Image from "next/image";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
       <Work/>
       <ProductSlider/>
       <Whychoose/>
-      <Why2/>
+      {/* <Why2/> */}
       <MachineryCTA/>
       <Industry/>
       <Testimonials/>

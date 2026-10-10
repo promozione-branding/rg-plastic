@@ -206,7 +206,7 @@ export default function Footer() {
                 <FiMapPin className="mt-0.5 shrink-0 text-[15px]" />
 
                 <span className="text-[12px] leading-5">
-                  RG Plastic
+                  Dharam Engg Work
                   <br />
                   India
                 </span>
@@ -223,7 +223,7 @@ export default function Footer() {
                 <FiMail className="mt-0.5 shrink-0 text-[15px]" />
 
                 <span className="break-all text-[12px]">
-                  info@rgplastic.com
+                  info@dharamenggwork.com
                 </span>
 
               </a>
@@ -263,14 +263,8 @@ export default function Footer() {
                 Terms & Conditions
               </a>
 
-              <span className="hidden h-3 w-px bg-white/10 sm:block" />
 
-              <span className="text-[10px] text-white/40">
-                Powered by{" "}
-                <span className="font-semibold text-[#55B8F2]">
-                  RG Plastic
-                </span>
-              </span>
+              
 
             </div>
 

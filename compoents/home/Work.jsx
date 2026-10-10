@@ -12,30 +12,30 @@ const processSteps = [
   {
     number: "01",
     icon: FiMessageSquare,
-    title: "CONSULTATION & REQUIREMENT",
+    title: "Consultation & Machine Requirements",
     description:
-      "We understand your production requirements, application, material, output target and machine specifications.",
+      "We understand your processing requirements, material specifications, production capacity, industrial application, and machine expectations to identify a suitable plant processing machinery solution for your business.",
   },
   {
     number: "02",
     icon: FiSettings,
-    title: "ENGINEERING & PLANNING",
+    title: "Engineering & Machine Planning",
     description:
-      "Our engineering team evaluates the application and develops the appropriate machine configuration for your production needs.",
+      "Our planning process focuses on machine configuration, technical specifications, and application requirements to develop suitable industrial processing machinery solutions aligned with your production goals.",
   },
   {
     number: "03",
     icon: FiTool,
-    title: "MANUFACTURING & ASSEMBLY",
+    title: "Plant Processing Machine Manufacturing & Assembly",
     description:
-      "Precision components are manufactured, assembled and tested according to our quality and performance standards.",
+      "We emphasize quality manufacturing, precision component fitting, and careful machine assembly to deliver plant processing equipment designed for durability, functionality, and reliable industrial operation.",
   },
   {
     number: "04",
     icon: FiCheckCircle,
-    title: "TESTING & DELIVERY",
+    title: "Quality Inspection & Machine Delivery",
     description:
-      "Every machine undergoes inspection and performance testing before commissioning and final delivery to your facility.",
+      "Before dispatch, machines undergo appropriate quality inspections and functional checks to verify compliance with agreed specifications. Our goal is to deliver dependable plant processing machinery that supports efficient industrial operations.",
   },
 ];
 
@@ -72,13 +72,12 @@ export default function Work() {
           </div>
 
           <h2 className="text-[34px] font-extrabold uppercase leading-[1.05] tracking-[-0.035em] text-white sm:text-[44px] lg:text-[52px]">
-            Our Simple
-            <span className="text-[#297eff]"> Process</span>
+            Our Plant Processing
+            <span className="text-[#297eff]">Machine Manufacturing Process</span>
           </h2>
 
           <p className="mx-auto mt-4 max-w-xl text-[13px] leading-6 text-white/45 sm:text-[14px] sm:leading-7">
-            From the initial requirement to final machine delivery, every
-            stage is carefully planned and executed for dependable results.
+            At Dharam Engg Work, we follow a structured approach to delivering reliable industrial machinery. As a Plant Processing Machine Manufacturer, we focus on understanding customer requirements, planning suitable machine solutions, maintaining manufacturing quality, and ensuring dependable performance at every stage of the process.
           </p>
         </div>
 
@@ -199,7 +198,7 @@ export default function Work() {
             href="#contact-quote-section"
             className="group inline-flex h-12 items-center gap-3 rounded-md bg-[#297eff] px-6 text-[12px] font-bold uppercase tracking-[0.05em] text-white shadow-[0_8px_25px_rgba(0,143,130,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0c49a4] hover:shadow-[0_12px_32px_rgba(0,143,130,0.25)]"
           >
-            <span>Start Your Project</span>
+            <span>Contact Us for Plant Processing Machinery</span>
 
             <span className="flex h-7 w-7 items-center justify-center rounded-md bg-white/10">
               <FiArrowRight className="text-[14px] transition-transform duration-300 group-hover:translate-x-1" />

@@ -15,31 +15,31 @@ const reasons = [
     number: "01",
     title: "Precision Engineering",
     description:
-      "Advanced engineering and accurate machine construction deliver consistent performance and repeatable results.",
+      "Our focus on quality manufacturing and precision machine construction supports reliable operation and consistent plastic processing performance.",
     position: "left",
   },
   {
     icon: FiSettings,
     number: "02",
-    title: "Advanced Technology",
+    title: "Reliable Performance",
     description:
-      "Smart controls, servo technology and intelligent automation improve production efficiency and machine control.",
+      "Our vented extruders, granule machines, mixture machines, and agglomerators are designed to support efficient plastic recycling and material processing applications.",
     position: "right",
   },
   {
     icon: FiZap,
     number: "03",
-    title: "Energy Efficient",
+    title: "Efficient Processing Solutions",
     description:
-      "Optimized servo-driven systems help reduce unnecessary power consumption while maintaining high output.",
+      "We emphasize practical machine design to support smooth production workflows, effective material processing, and efficient use of resources.",
     position: "left",
   },
   {
     icon: FiHeadphones,
     number: "04",
-    title: "Reliable After-Sales",
+    title: "Customer-Focused Approach",
     description:
-      "Dedicated installation, technical support and genuine OEM spare parts keep your production moving.",
+      "We understand your production requirements and help identify suitable machinery solutions based on your materials, applications, and operational needs.",
     position: "right",
   },
 ];
@@ -99,13 +99,12 @@ export default function Whychoose() {
           <h2 className="text-[36px] font-extrabold leading-[1.05] tracking-[-0.04em] text-[#162321] sm:text-[46px] lg:text-[54px]">
             Built Around{" "}
             <span className="text-[#093372]">
-              Performance & Reliability
+              Quality & Reliability
             </span>
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-[13px] leading-7 text-[#74807c] sm:text-[15px]">
-            Engineering focused on precision, efficiency and dependable
-            performance for demanding plastic manufacturing environments.
+            With 40 years of experience, we strive to deliver dependable machinery solutions for diverse industrial processing requirements.
           </p>
         </div>
 

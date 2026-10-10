@@ -15,25 +15,25 @@ import {
 const industries = [
   {
     number: "01",
-    category: "AUTOMOTIVE",
-    title: "Interior Trims & Radiator Grilles",
-    description: "PP, ABS, PA66-GF30 · Zero flash parting",
+    category: "Plastic Recycling",
+    title: "Efficient solutions for processing plastic waste into reusable materials.",
+    description: "Efficient solutions for processing plastic waste into reusable materials.",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuA8jigbxw0gZgR50C5hE6fIWQCvNylW_USNFVOwM7tuwrVDo2gsCbxNdODeTnH-LYpwcQ0go31j0-H_ieap7-CGlRaog-KI9zwj2fAW4AN046RIoY606Zfsg-lWdKKV-0-ykfAHWM1K1zHH-iSlEp7ZrYNYjtSJuZRFjRfU3-4nfvbyHQRBRXP1xvVyIfYdkG4D5EXfjIsq7linYMtyFKG2N1lKK7rw3HIvx81flchZ5I7qx-rAekq55g",
     icon: FiCpu,
   },
   {
     number: "02",
-    category: "PACKAGING",
+    category: "Granule Manufacturing",
     title: "Caps, Closures & Thin-Wall",
-    description: "HDPE, PP, PET · Fast cycle multicavity",
+    description: "Machinery for consistent plastic granule production",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCPGnNc2qhm7mYpDcA-pNEidHowb_G5Ek_pi7mBkJT2xvbUQtndlcFBroEbPCLmgE8T0z11NCI8YS__SDykDRWjrbK4XI_yvaU12KZZ8Y908niHbnIPmBnpB2kS_kc-UwCwGzdKI0EhKj5pNKMf-bs95Gr9aNb7Ab7rU3Qdi0A0D3OkweZcseyavXVY-FRxdGzoM1MPxXTg7pdWcJLCN3IXbUdCEJm8m2S8IEs2JqEqs5XSOJjYT_JiZg",
     icon: FiPackage,
   },
   {
     number: "03",
-    category: "MEDICAL",
+    category: "Thermocol & EPS Recycling",
     title: "Syringes & Diagnostic Labware",
     description: "ISO Class 7/8 Cleanroom compatible",
     image:
@@ -42,36 +42,36 @@ const industries = [
   },
   {
     number: "04",
-    category: "ELECTRONICS",
+    category: "Plastic Film Recycling",
     title: "Switchgears & Terminal Blocks",
-    description: "Flame retardant Polycarbonate / PBT",
+    description: "Agglomerators for processing lightweight plastic waste.",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuBDiRbhbEaEm-x1UZiXNYF8u7qzVHIPQVumU3nrbywCv0NtfMkzWe1xQnHBQVILUCLq_ypqacxkJL2hpKBDnpWHKpwnZS4r3MgRJ6h4D4D-9mzDTElh6gIXgOS3Swu6_up0BGtMZrK2n5yBYGZ8P0JotC7clhIbMr8LxaTW6yQDRSCNPMBZKvV4fYVEZiZbLe2zOfS4IDDZJhgzd9Q8ufAPZEbL4x1xrBrnoD8_yNm0Hk2ao-iCPT1muw",
     icon: FiMonitor,
   },
   {
     number: "05",
-    category: "CONSUMER",
+    category: "Material Mixing",
     title: "Appliances & Storage Crates",
-    description: "High-impact copolymer PP",
+    description: "Mixture machines for blending plastic materials and additives.",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuBDPu55E921UBe6LNa7-gwOLFhtToa83xFYeHosd4BpgoZwLqbCgsyoud-epEFA6Yl8WM4vFTwdbh5sGUFoW6RJQWlezVGHRGEnWvhGwGT01wyH-9gkiYWcYLvQSzwlcYyXgk8TekenSgKOUKQCPg5VYo8PrAmDKsiRm0JwEJd_MqEli8lRR2Lj7gASVfgVvx_cWod9oJtvR6l-IAg7VVPTVtudmMCQnvPEaFQ8lf_auETP_njE0d1q2A",
     icon: FiShoppingBag,
   },
   {
     number: "06",
-    category: "AGRICULTURE",
+    category: "Extrusion & Pelletizing",
     title: "Drip Emitters & Sprinklers",
-    description: "UV stabilized POM & HDPE",
+    description: "Vented extruders and granule machines for plastic processing.",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuDJQccE3pGl_k9QrfCJhRPYr4x3Qyy-NtIfeXmwnXWUqQDMKr2AB-ti2juB3j4PGxmRz5U9pgz24dVrZrbpCDBrkPby5ZsHsaw5B084zd3ZZ_EgdiL5OkCIPPT5fcECkCwnug-3pBBh8dgA3Wd0Hge577KPcl008pAE-xHwDFhZN0KOVHFsXwCTp9EC3zzHxx2GSiZYGOBUJaJdniUQmjha5QtTMDE4NZrdno4Kn6v6vNSDJWTttGZ6_Q",
     icon: FiDroplet,
   },
   {
     number: "07",
-    category: "CONSTRUCTION",
+    category: "Industrial Processing",
     title: "Pipe Couplers & Conduit Bends",
-    description: "Rigid PVC, CPVC & PPR",
+    description: "Reliable machinery for diverse plastic recycling applications.",
     image:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuCaEWn9ze0nZwr9veXQwZL2ZbeZiucl7bjE5vJnVK6AhgdL0ypZLztb7SSggNe8Wx2_Vdbg4rsxwbGfb-v89s3Buxn4Cf8AcnmHkK4zsDMvQhCOCvn7lNEWkhzhclaL5wrzd4J1MPacOxpNGDfkwo7XQZjnCBgNAz99f7u7JCBWAzixhcpj7blcJb4Hcvuy905Iw6t2DhV-xBzsSmstmG6k4haDLzNoPziDz2uQDMx4Q-dGn9xiz6WN6g",
     icon: FiTool,
@@ -110,23 +110,21 @@ export default function Industry() {
               <span className="h-[1px] w-10 bg-[#093372]" />
 
               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#093372]">
-                Application Sectors
+                Industries We Serve
               </span>
             </div>
 
             <h2 className="max-w-4xl text-[38px] font-extrabold leading-[0.98] tracking-[-0.045em] text-[#13211f] sm:text-[50px] lg:text-[64px]">
               One Technology.
               <span className="block text-[#093372]">
-                Many Industries.
+                 Multiple Applications.
               </span>
             </h2>
           </div>
 
           <div className="lg:pb-1">
             <p className="max-w-lg text-[13px] leading-6 text-[#687874] sm:text-[14px] sm:leading-7">
-              Texmo moulding machinery supports demanding applications across
-              automotive, packaging, medical, electronics and industrial
-              manufacturing.
+             Dharam Engg Work delivers reliable plastic recycling and processing machinery backed by <span className="font-bold">40 years of experience</span>, serving diverse industrial requirements.
             </p>
 
             <div className="mt-5 flex items-center gap-3">
@@ -201,9 +199,9 @@ export default function Industry() {
                     {industry.title}
                   </h3>
 
-                  <p className="mt-3 max-w-[290px] text-[11px] leading-5 text-white/60 sm:text-xs">
+                  {/* <p className="mt-3 max-w-[290px] text-[11px] leading-5 text-white/60 sm:text-xs">
                     {industry.description}
-                  </p>
+                  </p> */}
 
                   <div className="mt-5 flex translate-y-3 items-center gap-2 text-[10px] font-bold uppercase tracking-[0.12em] text-[#f5a14a] opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                     Explore application
@@ -240,7 +238,7 @@ export default function Industry() {
                   <span className="h-1.5 w-1.5 rounded-full bg-[#f5a14a]" />
 
                   <span className="text-[9px] font-bold uppercase tracking-[0.17em] text-white/75">
-                    08 / CUSTOM WORK
+                    08 / Custom Machinery
                   </span>
                 </div>
 
@@ -250,9 +248,9 @@ export default function Industry() {
               </div>
 
               <div className="mt-10">
-                <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.16em] text-white/55">
+                {/* <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.16em] text-white/55">
                   Bespoke Engineering
-                </p>
+                </p> */}
 
                 <h3 className="max-w-[280px] text-[29px] font-extrabold leading-[1] tracking-[-0.04em] text-white">
                   Tailored
@@ -262,8 +260,7 @@ export default function Industry() {
                 </h3>
 
                 <p className="mt-4 max-w-[290px] text-[12px] leading-6 text-white/70">
-                  Multi-material rotary tables, side-entry in-mold labeling
-                  (IML), and automated 6-axis robotic extraction.
+                 Solutions tailored to your specific processing requirements.
                 </p>
               </div>
             </div>

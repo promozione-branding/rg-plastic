@@ -6,34 +6,29 @@ import { ChevronDown, Settings2 } from "lucide-react";
 
 const faqs = [
   {
-    question: "What types of plastic machinery do you provide?",
+    question: "What types of plastic recycling machines does Dharam Engg Work manufacture?",
     answer:
-      "RG Plastic provides a range of plastic processing and recycling machinery, including plastic granules making machines, scrap grinder machines, extrusion machinery and other industrial plastic processing solutions.",
+      "Dharam Engg Work manufactures plastic recycling and processing machinery, including vented extruders, two-stage granule machines, die face cutter granule machines, Thermocol and EPS recycling machines, mixture machines, and agglomerators.",
   },
   {
-    question: "Can you help me choose the right machine?",
+    question: "What is the price of a plastic granule machine?",
     answer:
-      "Yes. Our team can understand your material, production capacity and application requirements and help you identify a suitable machinery solution.",
+      "The price of a plastic granule machine depends on machine type, production capacity, material specifications, configuration, and technical requirements. Contact Dharam Engg Work for a machine price quotation based on your specific needs.",
   },
   {
-    question: "Do you provide machinery for plastic recycling?",
+    question: "What is the cost of a Thermocol and EPS recycling machine?",
     answer:
-      "Yes. We provide machinery designed for plastic recycling and processing applications, helping manufacturers efficiently process plastic waste into reusable material.",
+      "The cost of a Thermocol and EPS recycling machine varies according to processing capacity, machine configuration, and application requirements. Contact Dharam Engg Work to discuss your requirements and request a customized price estimate.",
   },
   {
-    question: "What factors should I consider before buying a machine?",
+    question: "What factors affect the cost of plastic recycling machinery?",
     answer:
-      "Production capacity, material type, required output, machine configuration, available space, power requirements and long-term operating requirements are important factors to consider.",
+      "The cost of plastic recycling machinery depends on production capacity, automation level, machine specifications, motor power, material compatibility, and additional equipment requirements. Choosing the right configuration helps meet your processing needs and budget.",
   },
   {
-    question: "Do you provide technical support?",
+    question: "How can I get a quotation for plastic processing machines from Dharam Engg Work?",
     answer:
-      "Yes. RG Plastic focuses on customer support and can assist with machinery-related technical requirements, operation guidance and service-related enquiries.",
-  },
-  {
-    question: "How can I request a quotation?",
-    answer:
-      "You can contact RG Plastic through the enquiry form, call our team directly or use the Get a Quote button to share your machinery requirements.",
+      "To get a quotation, contact Dharam Engg Work with details about your required machine, plastic material, desired production capacity, and application. Our team can help you explore suitable machinery options and obtain a price quotation based on your requirements.",
   },
 ];
 

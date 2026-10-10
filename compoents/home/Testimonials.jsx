@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { BsFillChatQuoteFill } from "react-icons/bs";
 import { FiArrowRight, FiCheckCircle, FiStar } from "react-icons/fi";
 
@@ -8,17 +9,42 @@ import { FiArrowRight, FiCheckCircle, FiStar } from "react-icons/fi";
 const testimonials = [
   {
     quote:
-      "Texmo machines have delivered consistent performance for our production requirements. The machine quality, precision and technical support have helped us maintain reliable output.",
-    name: "Rajesh Kumar",
-    company: "Industrial Manufacturing Company",
-    role: "Plant Manager",
-    image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80",
+      "Dharam Engg Work provided us with a practical plastic granule machine solution. The machine meets our processing requirements, and we appreciate their professional approach.",
+    attribution: "Plastic Recycling Business Owner",
+  },
+  {
+    quote:
+      "We were looking for dependable plastic recycling machinery, and Dharam Engg Work offered a suitable solution for our requirements. The overall experience was positive.",
+    attribution: "Industrial Manufacturer",
+  },
+  {
+    quote:
+      "The team at Dharam Engg Work understood our machinery requirements and guided us toward a suitable solution. Their communication and support were appreciated.",
+    attribution: "Production Unit Manager",
+  },
+  {
+    quote:
+      "We purchased machinery for our plastic recycling operations and found the solution suitable for our production needs. We value their industry experience and technical knowledge.",
+    attribution: "Plastic Processing Company",
+  },
+  {
+    quote:
+      "Dharam Engg Work demonstrated a good understanding of plastic processing machinery. Their experience and customer-focused approach helped us evaluate the right equipment for our business.",
+    attribution: "Recycling Industry Professional",
   },
 ];
 
 export default function Testimonials() {
-  const testimonial = testimonials[0];
+  const [activeIndex, setActiveIndex] = useState(0);
+  const testimonial = testimonials[activeIndex];
+
+  useEffect(() => {
+    const slideInterval = setInterval(() => {
+      setActiveIndex((index) => (index + 1) % testimonials.length);
+    }, 5000);
+
+    return () => clearInterval(slideInterval);
+  }, []);
 
   return (
     <section
@@ -166,7 +192,10 @@ export default function Testimonials() {
 
               <BsFillChatQuoteFill className="absolute -left-1 -top-6 text-[50px] text-[#008f82]/10" />
 
-              <blockquote className="relative max-w-[610px] text-[20px] font-medium tracking-[-0.015em] text-[#27332f] sm:text-[24px] ">
+              <blockquote
+                aria-live="polite"
+                className="relative max-w-[610px] text-[20px] font-medium tracking-[-0.015em] text-[#27332f] sm:text-[24px] "
+              >
                 “{testimonial.quote}”
               </blockquote>
             </div>
@@ -178,27 +207,36 @@ export default function Testimonials() {
             <div className="flex items-center gap-4">
 
               {/* Avatar */}
-              <div className="h-14 w-14 overflow-hidden rounded-full border-4 border-[#eaf5f2] bg-[#eef4f2]">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="h-full w-full object-cover"
-                />
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-4 border-[#eaf5f2] bg-[#eef4f2] text-[#093372]">
+                <BsFillChatQuoteFill aria-hidden="true" className="text-lg" />
               </div>
 
-              <div>
+              <div className="min-w-0">
                 <div className="text-[14px] font-extrabold text-[#202c29]">
-                  {testimonial.name}
-                </div>
-
-                <div className="mt-0.5 text-[11px] font-medium text-[#78837f]">
-                  {testimonial.role}
-                </div>
-
-                <div className="mt-1 text-[10px] font-bold uppercase tracking-[0.08em] text-[#093372]">
-                  {testimonial.company}
+                  {testimonial.attribution}
                 </div>
               </div>
+            </div>
+
+            <div
+              role="group"
+              aria-label="Choose a testimonial"
+              className="mt-5 flex items-center gap-2"
+            >
+              {testimonials.map((item, index) => (
+                <button
+                  key={item.attribution}
+                  type="button"
+                  aria-label={`Show testimonial ${index + 1}`}
+                  aria-current={index === activeIndex ? "true" : undefined}
+                  onClick={() => setActiveIndex(index)}
+                  className={`h-2 rounded-full transition-all ${
+                    index === activeIndex
+                      ? "w-6 bg-[#093372]"
+                      : "w-2 bg-[#cbd6d2] hover:bg-[#008f82]"
+                  }`}
+                />
+              ))}
             </div>
 
             {/* Trust points */}

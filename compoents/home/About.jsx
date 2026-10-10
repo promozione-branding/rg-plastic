@@ -100,9 +100,9 @@ export default function AboutSection() {
 
               {/* Heading */}
               <h2 className="relative max-w-[620px] text-[31px] font-extrabold uppercase leading-[1.08] tracking-[-0.025em] text-white sm:text-[39px] lg:text-[42px] xl:text-[48px]">
-                Our Story, Our Standards,
+                Leading Plant Processing 
                 <span className="block text-[#54a2bc]">
-                  Our Commitment
+                  Machine Manufacturer
                 </span>
               </h2>
 
@@ -113,16 +113,7 @@ export default function AboutSection() {
               <div className="relative max-w-[620px] space-y-4 text-[13px] leading-6 text-white/65 sm:text-[14px] sm:leading-7">
 
                 <p>
-                  Established in 1999, Texmo Precision Machinery designs,
-                  machines and commissions world-class plastic injection and
-                  blow moulding machinery.
-                </p>
-
-                <p>
-                  Our machines are built using advanced engineering,
-                  intelligent control systems and robust manufacturing
-                  practices to deliver dependable performance across demanding
-                  industrial production environments.
+                  Dharam Engg Work is dedicated to manufacturing reliable industrial machinery and plant processing solutions designed to meet diverse industrial requirements. With a strong focus on quality engineering, durable construction, and efficient performance, we aim to help businesses improve productivity and streamline their operations.
                 </p>
               </div>
 
@@ -138,17 +129,17 @@ export default function AboutSection() {
 
                 <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.06em] text-white/70">
                   <FiCheckCircle className="shrink-0 text-[#78d5c8]" />
-                  Advanced Technology
+                  Quality Manufacturing
                 </div>
 
                 <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.06em] text-white/70">
                   <FiCheckCircle className="shrink-0 text-[#78d5c8]" />
-                  Energy Efficient
+                  Reliable Performance
                 </div>
 
                 <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.06em] text-white/70">
                   <FiCheckCircle className="shrink-0 text-[#78d5c8]" />
-                  Reliable Support
+                  Customer Satisfaction 
                 </div>
               </div>
 
