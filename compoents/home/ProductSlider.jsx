@@ -12,46 +12,47 @@ import "swiper/css";
 
 const products = [
   {
+    slug:"",
     title: "Vented Extruders Granule Machine",
     description:
       "Designed for efficient plastic recycling and granule production, vented extruder granule machines support material processing with moisture and volatile removal during extrusion.",
     image:
-      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1000&q=85",
+      "/products/Vented.webp",
   },
   {
     title: "Two Stage Granule Machine",
     description:
       "Two-stage granule machines are designed for plastic recycling applications that require multi-stage processing, helping improve melt filtration, material consistency, and granule quality.",
     image:
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=85",
+      "/products/two-gran.webp",
   },
-  {
-    title: "Granule Machine with Die Face Cutter",
-    description:
-      "Engineered for efficient plastic pelletizing, granule machines with die face cutters cut extruded plastic directly at the die face to produce uniform granules for further processing and reuse.",
-    image:
-      "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1000&q=85",
-  },
+  // {
+  //   title: "Granule Machine with Die Face Cutter",
+  //   description:
+  //     "Engineered for efficient plastic pelletizing, granule machines with die face cutters cut extruded plastic directly at the die face to produce uniform granules for further processing and reuse.",
+  //   image:
+  //     "/products/two-gran.webp",
+  // },
   {
     title: "Granule Machine for Thermocol & EPS Recycling",
     description:
       "Specially designed for Thermocol and expanded polystyrene (EPS) recycling applications, these machines help process recyclable foam materials into reusable granules for further manufacturing.",
     image:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=85",
+      "/products/gran.webp",
   },
   {
     title: "Mixture Machine",
     description:
       "Built for efficient material mixing, mixture machines help blend plastic raw materials, additives, colours, and other compatible ingredients to support consistent processing and production requirements",
     image:
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=85",
+      "/products/mixture.webp",
   },
   {
     title: "Agglomerator",
     description:
       "Agglomerators are designed to process lightweight plastic films and other suitable plastic waste into denser material, making handling, feeding, and subsequent recycling operations more efficient.",
     image:
-      "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&w=1000&q=85",
+      "/products/agglo.webp",
   },
 ];
 
@@ -73,7 +74,7 @@ export default function ProductSlider() {
             <div className="mb-4 text-[11px] font-bold text-[#34312d]">
               Our Products
             </div>
-
+d
             <h2 className="max-w-[700px] text-[38px] font-extrabold uppercase leading-[1.05] tracking-[-0.045em] text-[#25221f] sm:text-[48px] ">
               High-Performance Plastic Recycling
               <span className="block text-[#093372]">
@@ -142,11 +143,11 @@ export default function ProductSlider() {
                 >
                   {/* Image */}
                   <div className="m-1.5 overflow-hidden rounded-[10px]">
-                    <div className="aspect-[1.55/1] bg-[#e8eceb]">
+                    <div className="h-[220] bg-[#fff]">
                       <img
                         src={product.image}
                         alt={product.title}
-                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.06]"
+                        className="h-full w-full object-contain transition-transform duration-700 group-hover:scale-[1.06]"
                       />
                     </div>
                   </div>

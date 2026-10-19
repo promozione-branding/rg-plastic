@@ -40,7 +40,7 @@ const navItems = [
   },
   {
     label: "Blogs",
-    href: "/blog",
+    href: "/blogs",
   },
   {
     label: "Contact Us",
