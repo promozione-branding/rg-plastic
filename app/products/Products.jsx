@@ -11,6 +11,7 @@ import {
 import { products } from "@/data/data";
 
 export default function Products() {
+  let allproducts= products.length;
   return (
     <main className="bg-white text-[#101820]">
 
@@ -63,7 +64,7 @@ export default function Products() {
           {/* Hero Bottom Stats */}
           <div className="mt-14 grid max-w-3xl grid-cols-2 border-t border-white/10 sm:grid-cols-4">
 
-            <HeroStat number="06" label="Demo Products" />
+            <HeroStat number={allproducts} label="All Products" />
             <HeroStat number="10+" label="Years Experience" />
             <HeroStat number="100+" label="Clients Served" />
             <HeroStat number="24/7" label="Support" />
