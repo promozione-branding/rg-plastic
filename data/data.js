@@ -380,25 +380,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/thermocol-eps-recycling-granule-machine.jpg",
+        src: "/products/gran.webp",
         alt: "Thermocol and EPS Recycling Granule Machine by Dharam Engg Work",
         label: "Machine view",
       },
-      {
-        src: "/images/products/thermocol-eps-recycling-granule-machine-screw.jpg",
-        alt: "Thermocol recycling machine screw assembly",
-        label: "Screw assembly",
-      },
-      {
-        src: "/images/products/thermocol-eps-recycling-granule-machine-processing.jpg",
-        alt: "EPS foam waste processing system",
-        label: "EPS processing",
-      },
-      {
-        src: "/images/products/thermocol-eps-recycling-granule-machine-output.jpg",
-        alt: "Recycled plastic granules from EPS processing",
-        label: "Granule production",
-      },
+  
     ],
 
     highlights: [
@@ -1262,25 +1248,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/plastic-grinder-machine.jpg",
+        src: "/products/grinder.webp",
         alt: "Plastic Grinder Machine by Dharam Engg Work",
         label: "Machine view",
       },
-      {
-        src: "/images/products/plastic-grinder-machine-blades.jpg",
-        alt: "Plastic crusher cutting blade assembly",
-        label: "Blade assembly",
-      },
-      {
-        src: "/images/products/plastic-grinder-machine-motor.jpg",
-        alt: "Plastic grinder machine motor assembly",
-        label: "Motor assembly",
-      },
-      {
-        src: "/images/products/plastic-grinder-machine-output.jpg",
-        alt: "Plastic scrap after grinding and size reduction",
-        label: "Processed material",
-      },
+      
     ],
 
     highlights: [
@@ -1451,25 +1423,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/plastic-washing-line-drying-unit.jpg",
+        src: "/products/plastic-washing.webp",
         alt: "Plastic Washing Line and Drying Unit by Dharam Engg Work",
         label: "Complete washing line",
       },
-      {
-        src: "/images/products/plastic-washing-line-water-washing.jpg",
-        alt: "Industrial plastic water washing equipment",
-        label: "Water washing",
-      },
-      {
-        src: "/images/products/plastic-washing-line-dewatering.jpg",
-        alt: "Plastic dewatering and water separator equipment",
-        label: "Dewatering unit",
-      },
-      {
-        src: "/images/products/plastic-washing-line-caustic-washing.jpg",
-        alt: "Industrial plastic caustic washing equipment",
-        label: "Caustic washing",
-      },
+  
     ],
 
     highlights: [
@@ -1649,25 +1607,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/dust-separator-machine.jpg",
+        src: "/products/dust-separator.webp",
         alt: "Dust Separator Machine by Dharam Engg Work",
         label: "Machine view",
       },
-      {
-        src: "/images/products/dust-separator-machine-separation-unit.jpg",
-        alt: "Dust separator machine separation unit",
-        label: "Separation unit",
-      },
-      {
-        src: "/images/products/dust-separator-machine-motor.jpg",
-        alt: "Dust separator machine motor assembly",
-        label: "Motor assembly",
-      },
-      {
-        src: "/images/products/dust-separator-machine-output.jpg",
-        alt: "Plastic scrap after dry dust separation",
-        label: "Processed material",
-      },
+  
     ],
 
     highlights: [
@@ -1827,25 +1771,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/pvc-pipe-machine.jpg",
+        src: "/products/pvc-pipe.webp",
         alt: "PVC Pipe Machine by Dharam Engg Work",
         label: "Machine view",
       },
-      {
-        src: "/images/products/pvc-pipe-machine-extruder.jpg",
-        alt: "PVC pipe extrusion machine assembly",
-        label: "Extruder assembly",
-      },
-      {
-        src: "/images/products/pvc-pipe-machine-screw.jpg",
-        alt: "PVC pipe machine screw assembly",
-        label: "Screw assembly",
-      },
-      {
-        src: "/images/products/pvc-pipe-machine-output.jpg",
-        alt: "PVC pipes produced using an industrial extrusion machine",
-        label: "Pipe production",
-      },
+   
     ],
 
     highlights: [
@@ -2017,25 +1947,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/pvc-garden-pipe-machine.jpg",
+        src: "/products/garden-pipe.webp",
         alt: "PVC Garden Pipe Machine by Dharam Engg Work",
         label: "Machine view",
       },
-      {
-        src: "/images/products/pvc-garden-pipe-machine-extruder.jpg",
-        alt: "PVC garden pipe extrusion machine assembly",
-        label: "Extruder assembly",
-      },
-      {
-        src: "/images/products/pvc-garden-pipe-machine-screw.jpg",
-        alt: "PVC garden pipe machine screw assembly",
-        label: "Screw assembly",
-      },
-      {
-        src: "/images/products/pvc-garden-pipe-machine-output.jpg",
-        alt: "PVC garden pipes produced using an extrusion machine",
-        label: "Pipe production",
-      },
+      
     ],
 
     highlights: [
@@ -2208,25 +2124,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/d2-grinder-machine.jpg",
+        src: "/products/d2.webp",
         alt: "D2 Grinder Machine by Dharam Engg Work",
         label: "Machine view",
       },
-      {
-        src: "/images/products/d2-grinder-machine-grinding-unit.jpg",
-        alt: "D2 grinder machine grinding unit",
-        label: "Grinding unit",
-      },
-      {
-        src: "/images/products/d2-grinder-machine-motor.jpg",
-        alt: "D2 grinder machine motor assembly",
-        label: "Motor assembly",
-      },
-      {
-        src: "/images/products/d2-grinder-machine-output.jpg",
-        alt: "Material processed using an industrial D2 grinder",
-        label: "Processed material",
-      },
+    
     ],
 
     highlights: [
@@ -2415,25 +2317,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/hdpe-pipe-machine.jpg",
+        src: "/products/hdpe.webp",
         alt: "HDPE Pipe Machine by Dharam Engg Work",
         label: "Machine view",
       },
-      {
-        src: "/images/products/hdpe-pipe-machine-extruder.jpg",
-        alt: "HDPE pipe extrusion machine assembly",
-        label: "Extruder assembly",
-      },
-      {
-        src: "/images/products/hdpe-pipe-machine-screw.jpg",
-        alt: "HDPE pipe machine screw assembly",
-        label: "Screw assembly",
-      },
-      {
-        src: "/images/products/hdpe-pipe-machine-output.jpg",
-        alt: "HDPE pipes manufactured using an industrial extrusion machine",
-        label: "Pipe production",
-      },
+      
     ],
 
     highlights: [
@@ -2612,15 +2500,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/agriculture-pipe-machine.webp",
+        src: "/products/agri.webp",
         alt: "Agriculture Pipe Machine by Dharam Engg Work",
         label: "Agriculture Pipe Machine",
       },
-      {
-        src: "/images/products/aba-type-ldpe-pipe-machine.webp",
-        alt: "ABA Type LDPE Pipe Extrusion Machine",
-        label: "ABA Type LDPE Pipe Machine",
-      },
+    
     ],
 
     highlights: [
@@ -2824,15 +2708,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/pvc-suction-hose-pipe-plant-without-mixture.webp",
+        src: "/products/suction.webp",
         alt: "PVC Suction Hose Pipe Plant Without Mixture by Dharam Engg Work",
         label: "PVC Suction Hose Pipe Plant",
       },
-      {
-        src: "/images/products/pvc-suction-hose-extrusion-plant.webp",
-        alt: "PVC Suction Hose Extrusion Plant",
-        label: "PVC Hose Extrusion Plant",
-      },
+     
     ],
 
     highlights: [
@@ -3053,15 +2933,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/braided-pipe-machine.webp",
+        src: "/products/bred.webp",
         alt: "Braided Pipe Machine DEWAG 75 × 75 by Dharam Engg Work",
         label: "Braided Pipe Machine",
       },
-      {
-        src: "/images/products/dewag-braided-hose-extrusion-machine.webp",
-        alt: "DEWAG braided hose pipe extrusion and braiding equipment",
-        label: "Braided Pipe Extrusion System",
-      },
+     
     ],
 
     highlights: [
@@ -3146,7 +3022,7 @@ export const products = [
       },
     ],
 
-    modelSpecifications: [
+    modelSpecifications:[
       {
         parameter: "Model",
         specification: "DEWAG 75 × 75",
@@ -3336,15 +3212,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/t-die-sheet-line-machine.webp",
+        src: "/products/t-die.webp",
         alt: "T Die Sheet Line Machine by Dharam Engg Work",
         label: "T Die Sheet Line Machine",
       },
-      {
-        src: "/images/products/plastic-sheet-extrusion-machine.webp",
-        alt: "Plastic Sheet Extrusion Machine",
-        label: "Plastic Sheet Extrusion Line",
-      },
+     
     ],
 
     highlights: [
@@ -3561,15 +3433,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/tarpaulin-machine.webp",
+        src: "/products/tarpaulin.webp",
         alt: "Tarpaulin Machine by Dharam Engg Work",
         label: "Tarpaulin Machine",
       },
-      {
-        src: "/images/products/plastic-tarpaulin-film-extrusion-machine.webp",
-        alt: "Plastic Tarpaulin Film Extrusion Machine",
-        label: "Tarpaulin Film Extrusion Line",
-      },
+      
     ],
 
     highlights: [
@@ -3792,15 +3660,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/twin-screw-pipe-machine.webp",
+        src: "/products/twin-screw.webp",
         alt: "Twin Screw Pipe Machine by Dharam Engg Work",
         label: "Twin Screw Pipe Machine",
       },
-      {
-        src: "/images/products/twin-screw-pipe-extrusion-machine.webp",
-        alt: "Twin Screw Plastic Pipe Extrusion Machine",
-        label: "Twin Screw Pipe Extrusion Line",
-      },
+   
     ],
 
     highlights: [
@@ -4013,15 +3877,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/sutli-machine.webp",
+        src: "/products/sutli.webp",
         alt: "Plastic Sutli Making Machine by Dharam Engg Work",
         label: "Sutli Machine",
       },
-      {
-        src: "/images/products/plastic-twine-extrusion-machine.webp",
-        alt: "Plastic Sutli and Twine Extrusion Machine",
-        label: "Plastic Twine Extrusion Line",
-      },
+     
     ],
 
     highlights: [
@@ -4256,15 +4116,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/box-strapping-machine-plant.webp",
+        src: "/products/box.webp",
         alt: "Box Strapping Machine Plant by Dharam Engg Work",
         label: "Box Strapping Machine Plant",
       },
-      {
-        src: "/images/products/plastic-strapping-band-extrusion-machine.webp",
-        alt: "Plastic Strapping Band Extrusion Machine",
-        label: "Plastic Strapping Extrusion Line",
-      },
+     
     ],
 
     highlights: [
@@ -4474,15 +4330,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/hot-and-cold-mixture-machine.webp",
+        src: "/products/hot-cold.webp",
         alt: "Hot and Cold Mixture Machine by Dharam Engg Work",
         label: "Hot and Cold Mixture Machine",
       },
-      {
-        src: "/images/products/plastic-raw-material-mixing-machine.webp",
-        alt: "Plastic Raw Material Mixing Machine",
-        label: "Plastic Material Mixing System",
-      },
+    
     ],
 
     highlights: [
@@ -4672,15 +4524,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/ldpe-film-machine.webp",
+        src: "/products/ldpe-flim.webp",
         alt: "LDPE Film Extrusion Machine by Dharam Engg Work",
         label: "LDPE Film Machine",
       },
-      {
-        src: "/images/products/ldpe-plastic-film-extrusion-line.webp",
-        alt: "LDPE Plastic Film Extrusion Line",
-        label: "LDPE Film Extrusion Line",
-      },
+     
     ],
 
     highlights: [
@@ -4897,15 +4745,11 @@ export const products = [
 
     images: [
       {
-        src: "/images/products/hm-mini-machine.webp",
+        src: "/products/hm-mini.webp",
         alt: "DEW HM 45 Mini Film Extrusion Machine by Dharam Engg Work",
         label: "HM Mini Machine",
       },
-      {
-        src: "/images/products/mini-plastic-film-extrusion-machine.webp",
-        alt: "Compact Plastic Film Extrusion Machine",
-        label: "Mini Film Extrusion Machine",
-      },
+     
     ],
 
     highlights: [

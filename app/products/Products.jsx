@@ -187,13 +187,15 @@ function ProductCard({ product }) {
     <article className="group relative overflow-hidden rounded-[24px] border border-gray-200 bg-white transition-all duration-500 hover:-translate-y-2 hover:border-[#1261A0]/20 hover:shadow-[0_25px_60px_rgba(7,91,150,0.12)]">
 
       {/* IMAGE */}
-      <div className="relative aspect-[1.15/0.88] overflow-hidden bg-[#F3F7FA]">
+      <div className="relative h-[260] overflow-hidden bg-[#fff]">
 
         <Image
           src={product.images[0].src}
           alt={product.name}
-          fill
-          className="object-cover transition duration-700 group-hover:scale-105"
+          height={100}
+          width={100}
+          unoptimized
+          className="object-contain h-full w-full transition duration-700 group-hover:scale-105"
         />
 
         {/* Image overlay */}

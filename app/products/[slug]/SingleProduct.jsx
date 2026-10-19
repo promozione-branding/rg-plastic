@@ -211,37 +211,80 @@ export default function SingleProduct({ product }) {
           <div>
             <Heading title="Technical specifications" />
 
-            <dl className="mt-10 overflow-hidden rounded-xl border border-slate-200 bg-white">
-              {/* Model Specifications Table */}
-              {product.modelSpecifications?.length > 0 && (
-                <div className="my-6 w-full overflow-x-auto">
-                  <dl>
-                    {/* Labels */}
-                    <div className="grid grid-cols-[1fr_1fr_1fr_1fr] gap-4 px-5 py-3.5 text-sm font-semibold">
-                      <dt>Model</dt>
-                      <dt>Main Motor (HP)</dt>
-                      <dt>Screw Diameter (mm)</dt>
-                      <dt>Max Output (kg/hr)</dt>
-                    </div>
+            
+{/* Product Specifications */}
 
-                    {/* Model Data */}
-                    {product.modelSpecifications.map((i, index) => (
-                      <div
-                        key={i.model}
-                        className={`grid grid-cols-[1fr_1fr_1fr_1fr] gap-4 px-5 py-3.5 text-sm ${
-                          index % 2 ? "bg-slate-50" : ""
-                        }`}
-                      >
-                        <dd className="text-slate-600">{i.model}</dd>
-                        <dd className="font-semibold">{i.mainMotorHP}</dd>
-                        <dd className="text-slate-600">{i.screwDiameterMM}</dd>
-                        <dd className="font-semibold">{i.maxOutputKgHr}</dd>
-                      </div>
-                    ))}
-                  </dl>
-                </div>
-              )}
-            </dl>
+{(product.modelSpecifications?.length > 0 ||
+  product.specifications?.length > 0) && (
+  <div className="mt-10 overflow-hidden rounded-xl border border-slate-200 bg-white">
+
+    {/* Dynamic Model Specifications Table */}
+    {product.modelSpecifications?.length > 0 ? (
+      <div className="w-full overflow-x-auto">
+        <table className="w-full min-w-[650px] text-left text-sm">
+          <thead className="bg-slate-50">
+            <tr>
+              {Object.keys(product.modelSpecifications[0]).map((key) => (
+                <th
+                  key={key}
+                  className="whitespace-nowrap px-5 py-4 font-semibold text-slate-800"
+                >
+                  {product.modelSpecificationHeadings?.[key] ??
+                    key
+                      .replace(/([A-Z])/g, " $1")
+                      .replace(/^./, (char) => char.toUpperCase())}
+                </th>
+              ))}
+            </tr>
+          </thead>
+
+          <tbody>
+            {product.modelSpecifications.map((item, index) => (
+              <tr
+                key={item.specification ?? item.model ?? index}
+                className={`border-t border-slate-200 ${
+                  index % 2 === 1 ? "bg-slate-50" : "bg-white"
+                }`}
+              >
+                {Object.keys(product.modelSpecifications[0]).map((key) => (
+                  <td
+                    key={key}
+                    className="whitespace-nowrap px-5 py-4 text-slate-600"
+                  >
+                    {item[key] ?? "—"}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    ) : (
+
+      /* Custom Heading and Value Specifications */
+      <div className="divide-y divide-slate-200">
+        {product.specifications.map((item, index) => (
+          <div
+            key={item.heading ?? index}
+            className={`grid grid-cols-2 gap-4 px-5 py-4 text-sm ${
+              index % 2 === 0 ? "bg-white" : "bg-slate-50"
+            }`}
+          >
+            <div className="font-medium text-slate-500">
+              {item.heading}
+            </div>
+
+            <div className="font-semibold text-slate-800">
+              {item.value}
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+)}
+
+
           </div>
 
           {/* Sticky Right Side */}
