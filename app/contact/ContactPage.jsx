@@ -122,7 +122,7 @@ export default function ContactPage() {
                   {" "}
                   {/* Email */}{" "}
                   <a
-                    href="mailto:info@plasticextrussion.com"
+                    href="mailto:info@dharamenggwork.com"
                     className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.06] p-4 transition hover:bg-white/10"
                   >
                     {" "}
@@ -138,13 +138,13 @@ export default function ContactPage() {
                       </span>{" "}
                       <span className="mt-1 block text-sm font-medium">
                         {" "}
-                        info@plasticextrussion.com{" "}
+                        info@dharamenggwork.com{" "}
                       </span>{" "}
                     </span>{" "}
                   </a>{" "}
                   {/* Phone */}{" "}
                   <a
-                    href="tel:+919999999999"
+                    href="tel:+919891468647"
                     className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[0.06] p-4 transition hover:bg-white/10"
                   >
                     {" "}
@@ -160,7 +160,7 @@ export default function ContactPage() {
                       </span>{" "}
                       <span className="mt-1 block text-sm font-medium">
                         {" "}
-                        +91 99999 99999{" "}
+                        +91 98914 68647{" "}
                       </span>{" "}
                     </span>{" "}
                   </a>{" "}
@@ -179,7 +179,7 @@ export default function ContactPage() {
                       </span>{" "}
                       <span className="mt-1 block text-sm font-medium">
                         {" "}
-                        India{" "}
+                        Bawana Industrial Area{" "}
                       </span>{" "}
                     </span>{" "}
                   </div>{" "}
@@ -392,9 +392,9 @@ export default function ContactPage() {
               <p className="mt-2 text-sm leading-6 text-gray-500">
                 Dharam Engg Work
                 <br />
-                Add your complete business address
+                Plot No 19, Pocket G, DSIIDC Sector-5,
                 <br />
-                Delhi, India
+                Bawana Industrial Area, North West Delhi
               </p>
             </div>
 
@@ -407,9 +407,11 @@ export default function ContactPage() {
               <h3 className="mt-5 font-semibold">Phone & Enquiries</h3>
 
               <p className="mt-2 text-sm leading-6 text-gray-500">
-                +91 99999 99999
+                <a href="tel:+919891468647">+91 98914 68647</a>
                 <br />
-                info@plasticextrussion.com
+                <a href="mailto:info@dharamenggwork.com">
+                  info@dharamenggwork.com
+                </a>
               </p>
             </div>
 
@@ -434,35 +436,47 @@ export default function ContactPage() {
       {/* =====================================================
           MAP
       ====================================================== */}
-      <section className="bg-white py-6 sm:py-13">
-        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-          <div className="relative h-[400px] overflow-hidden rounded-[28px] border border-gray-200 bg-gray-100 sm:h-[500px]">
-            <iframe
-              title="Dharam Engg Work Location"
-              src="https://www.google.com/maps?q=Delhi,India&output=embed"
-              className="absolute inset-0 h-full w-full border-0 grayscale-[20%]"
-              loading="lazy"
-            />
+     
+<section className="bg-white py-6 sm:py-12">
+  <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+    <div className="relative h-[400px] overflow-hidden rounded-[28px] border border-gray-200 bg-gray-100 sm:h-[500px]">
 
-            {/* Map Label */}
-            <div className="absolute left-5 top-5 rounded-xl bg-white px-5 py-4 shadow-xl sm:left-7 sm:top-7">
-              <div className="flex items-center gap-3">
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#1261A0]">
-                  <Factory size={17} className="text-white" />
-                </div>
+      {/* Google Maps */}
+      <iframe
+        title="Dharam Engg Work Location - Bawana Industrial Area"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.4922588901622!2d77.1841372!3d28.554977399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d8d97516281%3A0x72e4bdfe4c1b9314!2sR%20G%20Plastics%20Machinery!5e0!3m2!1sen!2sin!4v1792563403415!5m2!1sen!2sin" 
+        className="absolute inset-0 h-full w-full border-0"
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        allowFullScreen
+      />
 
-                <div>
-                  <p className="text-sm font-semibold">
-                    Dharam Engg Work
-                  </p>
+      {/* Map Label */}
+      
+<div className="absolute right-4 top-4 z-10 max-w-[calc(100%-2rem)] rounded-xl bg-white px-4 py-3 shadow-xl sm:right-7 sm:top-7 sm:px-5 sm:py-4">
+  <div className="flex items-start gap-3">
+    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#1261A0]">
+      <Factory size={17} className="text-white" />
+    </div>
 
-                  <p className="text-xs text-gray-500">Delhi, India</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div>
+      <p className="text-sm font-semibold text-gray-900">
+        Dharam Engg Work
+      </p>
+
+      <p className="mt-1 text-xs leading-5 text-gray-500">
+        Plot No. 19, Pocket G, DSIIDC Sector-5,
+        Bawana Industrial Area, North West Delhi
+      </p>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
     </main>
   );
 }

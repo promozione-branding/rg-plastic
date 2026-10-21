@@ -91,7 +91,7 @@ export default function Cta() {
                   <div className="mt-8 space-y-3">
                     {/* Phone */}
                     <a
-                      href="tel:+919876543210"
+                      href="tel:+919891468647"
                       className="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.08] p-3.5 transition-all duration-300 hover:bg-white/[0.13]"
                     >
                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/10">
@@ -104,14 +104,14 @@ export default function Cta() {
                         </div>
 
                         <div className="mt-0.5 text-[14px] font-bold">
-                          +91 98765 43210
+                          +91 98914 68647
                         </div>
                       </div>
                     </a>
 
                     {/* Email */}
                     <a
-                      href="mailto:sales@texmoprecision.com"
+                      href="mailto:info@dharamenggwork.com"
                       className="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.08] p-3.5 transition-all duration-300 hover:bg-white/[0.13]"
                     >
                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/10">
@@ -124,14 +124,14 @@ export default function Cta() {
                         </div>
 
                         <div className="mt-0.5 truncate text-[13px] font-bold sm:text-[14px]">
-                          sales@texmoprecision.com
+                          info@dharamenggwork.com
                         </div>
                       </div>
                     </a>
 
                     {/* WhatsApp */}
                     <a
-                      href="https://wa.me/919876543211"
+                      href="https://wa.me/919891468647"
                       target="_blank"
                       rel="noreferrer"
                       className="group flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.08] p-3.5 transition-all duration-300 hover:bg-white/[0.13]"
@@ -146,7 +146,7 @@ export default function Cta() {
                         </div>
 
                         <div className="mt-0.5 text-[14px] font-bold">
-                          +91 98765 43211
+                          +91 98914 68647
                         </div>
                       </div>
                     </a>
@@ -294,7 +294,7 @@ export default function Cta() {
                   </button>
 
                   <a
-                    href="https://wa.me/919876543211"
+                    href="https://wa.me/919891468647"
                     target="_blank"
                     rel="noreferrer"
                     className="flex h-12 w-full items-center justify-center gap-2 rounded-lg border border-[#25D366]/20 bg-[#093372]/[0.07] px-5 text-[13px] font-bold text-[#093372] transition-all duration-300 hover:bg-[#25D366]/[0.12] sm:w-auto"

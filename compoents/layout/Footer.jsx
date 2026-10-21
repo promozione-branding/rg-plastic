@@ -56,13 +56,13 @@ export default function Footer() {
             </p>
 
             {/* Social Icons */}
-            <div className="mt-6 flex items-center gap-2.5">
+            {/* <div className="mt-6 flex items-center gap-2.5">
               <SocialIcon icon={<FiFacebook />} />
               <SocialIcon icon={<FiInstagram />} />
               <SocialIcon icon={<FiLinkedin />} />
               <SocialIcon icon={<FiYoutube />} />
               <SocialIcon icon={<FiTwitter />} />
-            </div>
+            </div> */}
           </div>
 
           {/* =================================================
@@ -75,11 +75,11 @@ export default function Footer() {
 
             <nav className="mt-5 flex flex-col gap-3">
               {[
-                ["Home", "#"],
-                ["About Us", "#about"],
-                ["Products", "#products"],
-                ["Blogs", "#blog"],
-                ["Contact Us", "#contact"],
+                ["Home", "/"],
+                ["About Us", "/about"],
+                ["Products", "/products"],
+                ["Blogs", "/blogs"],
+                ["Contact Us", "/contact"],
               ].map(([label, href]) => (
                 <a
                   key={label}
@@ -135,27 +135,35 @@ export default function Footer() {
             <div className="mt-5 space-y-4">
               {/* Phone */}
               <a
-                href="tel:+919876543210"
+                href="tel:+919891468647"
                 className="group flex items-start gap-3 text-white/65 transition-colors hover:text-[#55B8F2]"
               >
                 <FiPhone className="mt-0.5 shrink-0 text-[15px]" />
 
-                <span className="text-[12px]">+91 98765 43210</span>
+                <span className="text-[12px]">+91 98914 68647</span>
               </a>
 
               {/* Location */}
-              <a
-                href="#"
-                className="group flex items-start gap-3 text-white/65 transition-colors hover:text-[#55B8F2]"
-              >
-                <FiMapPin className="mt-0.5 shrink-0 text-[15px]" />
+             
+<a
+  href="https://maps.app.goo.gl/q27RdELNotqVzsgb9"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group flex items-start gap-3 text-white/65 transition-colors hover:text-[#55B8F2]"
+>
+  <FiMapPin className="mt-0.5 shrink-0 text-[15px]" />
 
-                <span className="text-[12px] leading-5">
-                  Dharam Engg Work
-                  <br />
-                  India
-                </span>
-              </a>
+  <span className="text-[12px] leading-5">
+    Dharam Engg Work
+    <br />
+    Plot No. 19, Pocket G,
+    <br />
+    DSIIDC Sector-5, Bawana Industrial Area,
+    <br />
+    North West Delhi, India
+  </span>
+</a>
+
 
               {/* Email */}
               <a

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 import {
@@ -28,7 +29,6 @@ const navItems = [
   {
     label: "Home",
     href: "/",
-    active: true,
   },
   {
     label: "About Us",
@@ -49,6 +49,12 @@ const navItems = [
   },
 ];
 
+function isNavItemActive(pathname, href) {
+  return href === "/"
+    ? pathname === "/"
+    : pathname === href || pathname.startsWith(`${href}/`);
+}
+
 
 /* =========================================================
    NAVBAR
@@ -56,6 +62,7 @@ const navItems = [
 
 export default function Navbar() {
 
+  const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
    const [isPopupOpen, setIsPopupOpen] = useState(false);
 
@@ -177,6 +184,7 @@ export default function Navbar() {
                     <Link
                       key={item.label}
                       href={item.href}
+                      aria-current={isNavItemActive(pathname, item.href) ? "page" : undefined}
                       className={`
                         group relative flex items-center gap-1
                         rounded-xl px-4 py-3
@@ -185,7 +193,7 @@ export default function Navbar() {
                         xl:px-5
 
                         ${
-                          item.active
+                          isNavItemActive(pathname, item.href)
                             ? "bg-[#EAF5FC] text-[#0070FF]"
                             : "text-[#0070FF] hover:bg-[#F3F8FC] hover:text-[#175a50]"
                         }
@@ -225,7 +233,7 @@ export default function Navbar() {
                   ================================================= */}
 
                   <Link
-  href="tel:+919876543210"
+  href="tel:+919891468647"
   onClick={() => setMobileOpen(false)}
   className="group flex items-center justify-center gap-3 rounded-xl border border-[#D9E5EF] bg-[#F7FAFC] py-2 text-sm font-semibold px-3 text-[#092F4F] transition-all duration-300 hover:border-[#0070FF] hover:text-[#0070FF]"
 >
@@ -245,7 +253,7 @@ export default function Navbar() {
     </span>
 
     <span className="mt-1 font-bold text-[#092F4F] group-hover:text-[#0070FF]">
-      +91 98765 43210
+      +91 98914 68647
     </span>
 
   </span>
@@ -376,16 +384,17 @@ export default function Navbar() {
                           key={item.label}
                           href={item.href}
                           onClick={() => setMobileOpen(false)}
+                          aria-current={isNavItemActive(pathname, item.href) ? "page" : undefined}
                           className={`
                             flex items-center justify-between
                             border-b border-gray-100
-                            py-4
+                            rounded-lg px-3 py-4
                             text-sm font-semibold
                             transition-all duration-300
 
                             ${
-                              item.active
-                                ? "text-[#075B96]"
+                              isNavItemActive(pathname, item.href)
+                                ? "bg-[#EAF5FC] text-[#075B96]"
                                 : "text-[#475663] hover:pl-1 hover:text-[#075B96]"
                             }
                           `}
@@ -406,7 +415,7 @@ export default function Navbar() {
                               transition-all duration-300
 
                               ${
-                                item.active
+                                isNavItemActive(pathname, item.href)
                                   ? "text-[#075B96]"
                                   : "text-gray-300"
                               }
@@ -472,10 +481,10 @@ export default function Navbar() {
                       </span>
 
                       <a
-                        href="tel:+919876543210"
+                        href="tel:+919891468647"
                         className="font-semibold text-[#075B96]"
                       >
-                        +91 98765 43210
+                        +91 98914 68647
                       </a>
 
                     </div>

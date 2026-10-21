@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Play, ArrowRight, CheckCircle2 } from "lucide-react";
+import Link from "next/link";
 
 const processSteps = [
   {
@@ -136,13 +137,13 @@ export default function HowWeWork() {
             </p>
           </div>
 
-          <button className="group flex shrink-0 items-center gap-3 rounded-full bg-[#1261A0] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#0b4d82]">
+          <Link href="tel:+919891468647" className="group flex shrink-0 items-center gap-3 rounded-full bg-[#1261A0] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#0b4d82]">
             Talk to Us
             <ArrowRight
               size={17}
               className="transition-transform group-hover:translate-x-1"
             />
-          </button>
+          </Link>
         </div>
       </div>
     </section>

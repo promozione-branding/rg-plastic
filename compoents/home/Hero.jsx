@@ -106,7 +106,7 @@ export default function Hero() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               {/* Primary */}
               <a
-                href="#products-section"
+                href="#products"
                 className="group inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[#0F52BA] px-6 text-[13px] font-bold text-white shadow-[0_8px_25px_rgba(0,143,130,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00776d]"
               >
                 <span>Explore Machines</span>

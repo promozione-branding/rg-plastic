@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 import { FileDown, Send } from "lucide-react";
+import PopupForm from "@/compoents/PopupForm";
 
 /* Palette: ink #0B2233 · steel #EDF1F4 · paper #FFFFFF · brand #0878D1 · signal #F2A81D */
 
@@ -23,9 +24,8 @@ function Heading({ title, intro, light }) {
   return (
     <div className="max-w-2xl">
       <h2
-        className={`text-4xl font-bold leading-none tracking-tight sm:text-5xl ${
-          light ? "text-white" : "text-[#0B2233]"
-        }`}
+        className={`text-4xl font-bold leading-none tracking-tight sm:text-5xl ${light ? "text-white" : "text-[#0B2233]"
+          }`}
       >
         {title}
       </h2>
@@ -41,6 +41,8 @@ function Heading({ title, intro, light }) {
 }
 
 export default function SingleProduct({ product }) {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   const [active, setActive] = useState(0);
   const [sent, setSent] = useState(false);
   const current = product.images[active];
@@ -53,23 +55,23 @@ export default function SingleProduct({ product }) {
         className="border-b border-slate-200 bg-[#EDF1F4] pt-10"
       >
         <ol className="mx-auto flex max-w-[1360px] flex-wrap items-center gap-2 px-5 py-3.5 text-[13px] text-slate-600 sm:px-8 lg:px-8">
-  {[
-    ["Home", "/"],
-    ["Products", "/products"],
-    [`${product.name}`, `/products/${product.slug}`],
-  ].map(([label, href], index) => (
-    <li key={href} className="flex items-center gap-2">
-      {index > 0 && <span>/</span>}
+          {[
+            ["Home", "/"],
+            ["Products", "/products"],
+            [`${product.name}`, `/products/${product.slug}`],
+          ].map(([label, href], index) => (
+            <li key={href} className="flex items-center gap-2">
+              {index > 0 && <span>/</span>}
 
-      <Link
-        href={href}
-        className={`rounded hover:text-[#0878D1] ${focus}`}
-      >
-        {label}
-      </Link>
-    </li>
-  ))}
-</ol>
+              <Link
+                href={href}
+                className={`rounded hover:text-[#0878D1] ${focus}`}
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ol>
       </nav>
 
       {/* Hero */}
@@ -100,11 +102,10 @@ export default function SingleProduct({ product }) {
                   onClick={() => setActive(i)}
                   aria-label={`Show ${img.label}`}
                   aria-pressed={active === i}
-                  className={`relative h-20 w-20 shrink-0 overflow-hidden rounded-lg border-2 bg-white transition-colors ${focus} ${
-                    active === i
+                  className={`relative h-20 w-20 shrink-0 overflow-hidden rounded-lg border-2 bg-white transition-colors ${focus} ${active === i
                       ? "border-[#0878D1]"
                       : "border-transparent hover:border-slate-300"
-                  }`}
+                    }`}
                 >
                   <Image
                     src={img.src}
@@ -148,29 +149,32 @@ export default function SingleProduct({ product }) {
             </dl> */}
 
             <div className="mt-6 flex flex-col gap-2 sm:flex-row">
-              <Link
-                href="#enquiry"
+              <button
+                onClick={() => setIsPopupOpen(true)}
                 className={`inline-flex items-center justify-center gap-2 rounded-lg bg-[#0878D1] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#0669B8] ${focus}`}
               >
                 <Send size={15} />
                 Get a quote
-              </Link>
+              </button>
 
               <Link
-                href="#enquiry"
+                href="https://wa.me/919891468647"
+
                 className={`inline-flex items-center justify-center gap-2 rounded-lg bg-green-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#0669B8] ${focus}`}
               >
                 <FaWhatsapp size={15} />
                 WhatsApp Now
               </Link>
 
-              <button
-                type="button"
+
+              <a
+                href="/dharam-eng-catelog.pdf"
+                download="Dharam-Engg-Work-Brochure.pdf"
                 className={`inline-flex items-center justify-center gap-2 rounded-lg border border-[#0B2233] px-4 py-2.5 text-sm font-semibold text-[#0B2233] transition hover:bg-[#0B2233] hover:text-white ${focus}`}
               >
                 <FileDown size={15} />
                 Download brochure
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -211,78 +215,76 @@ export default function SingleProduct({ product }) {
           <div>
             <Heading title="Technical specifications" />
 
-            
-{/* Product Specifications */}
 
-{(product.modelSpecifications?.length > 0 ||
-  product.specifications?.length > 0) && (
-  <div className="mt-10 overflow-hidden rounded-xl border border-slate-200 bg-white">
+            {/* Product Specifications */}
 
-    {/* Dynamic Model Specifications Table */}
-    {product.modelSpecifications?.length > 0 ? (
-      <div className="w-full overflow-x-auto">
-        <table className="w-full min-w-[650px] text-left text-sm">
-          <thead className="bg-slate-50">
-            <tr>
-              {Object.keys(product.modelSpecifications[0]).map((key) => (
-                <th
-                  key={key}
-                  className="whitespace-nowrap px-5 py-4 font-semibold text-slate-800"
-                >
-                  {product.modelSpecificationHeadings?.[key] ??
-                    key
-                      .replace(/([A-Z])/g, " $1")
-                      .replace(/^./, (char) => char.toUpperCase())}
-                </th>
-              ))}
-            </tr>
-          </thead>
+            {(product.modelSpecifications?.length > 0 ||
+              product.specifications?.length > 0) && (
+                <div className="mt-10 overflow-hidden rounded-xl border border-slate-200 bg-white">
 
-          <tbody>
-            {product.modelSpecifications.map((item, index) => (
-              <tr
-                key={item.specification ?? item.model ?? index}
-                className={`border-t border-slate-200 ${
-                  index % 2 === 1 ? "bg-slate-50" : "bg-white"
-                }`}
-              >
-                {Object.keys(product.modelSpecifications[0]).map((key) => (
-                  <td
-                    key={key}
-                    className="whitespace-nowrap px-5 py-4 text-slate-600"
-                  >
-                    {item[key] ?? "—"}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    ) : (
+                  {/* Dynamic Model Specifications Table */}
+                  {product.modelSpecifications?.length > 0 ? (
+                    <div className="w-full overflow-x-auto">
+                      <table className="w-full min-w-[650px] text-left text-sm">
+                        <thead className="bg-slate-50">
+                          <tr>
+                            {Object.keys(product.modelSpecifications[0]).map((key) => (
+                              <th
+                                key={key}
+                                className="whitespace-nowrap px-5 py-4 font-semibold text-slate-800"
+                              >
+                                {product.modelSpecificationHeadings?.[key] ??
+                                  key
+                                    .replace(/([A-Z])/g, " $1")
+                                    .replace(/^./, (char) => char.toUpperCase())}
+                              </th>
+                            ))}
+                          </tr>
+                        </thead>
 
-      /* Custom Heading and Value Specifications */
-      <div className="divide-y divide-slate-200">
-        {product.specifications.map((item, index) => (
-          <div
-            key={item.heading ?? index}
-            className={`grid grid-cols-2 gap-4 px-5 py-4 text-sm ${
-              index % 2 === 0 ? "bg-white" : "bg-slate-50"
-            }`}
-          >
-            <div className="font-medium text-slate-500">
-              {item.heading}
-            </div>
+                        <tbody>
+                          {product.modelSpecifications.map((item, index) => (
+                            <tr
+                              key={item.specification ?? item.model ?? index}
+                              className={`border-t border-slate-200 ${index % 2 === 1 ? "bg-slate-50" : "bg-white"
+                                }`}
+                            >
+                              {Object.keys(product.modelSpecifications[0]).map((key) => (
+                                <td
+                                  key={key}
+                                  className="whitespace-nowrap px-5 py-4 text-slate-600"
+                                >
+                                  {item[key] ?? "—"}
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  ) : (
 
-            <div className="font-semibold text-slate-800">
-              {item.value}
-            </div>
-          </div>
-        ))}
-      </div>
-    )}
-  </div>
-)}
+                    /* Custom Heading and Value Specifications */
+                    <div className="divide-y divide-slate-200">
+                      {product.specifications.map((item, index) => (
+                        <div
+                          key={item.heading ?? index}
+                          className={`grid grid-cols-2 gap-4 px-5 py-4 text-sm ${index % 2 === 0 ? "bg-white" : "bg-slate-50"
+                            }`}
+                        >
+                          <div className="font-medium text-slate-500">
+                            {item.heading}
+                          </div>
+
+                          <div className="font-semibold text-slate-800">
+                            {item.value}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
 
 
           </div>
@@ -296,12 +298,14 @@ export default function SingleProduct({ product }) {
               details.
             </p>
 
-            <button
-              type="button"
-              className={`mt-5 w-full rounded-lg bg-[#0B2233] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#0878D1] ${focus}`}
+
+            <a
+              href="/dharam-eng-catelog.pdf"
+              download="Dharam-Engg-Work-Brochure.pdf"
+              className={`mt-5 flex w-full items-center justify-center rounded-lg bg-[#0B2233] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#0878D1] ${focus}`}
             >
               Download brochure
-            </button>
+            </a>
 
             <p className="mt-6 text-xs font-semibold text-slate-500">
               Certifications
@@ -452,6 +456,10 @@ export default function SingleProduct({ product }) {
           </form>
         </div>
       </section>
+      <PopupForm
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+      />
     </main>
   );
 }
