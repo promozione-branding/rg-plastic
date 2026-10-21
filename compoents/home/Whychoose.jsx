@@ -189,7 +189,7 @@ export default function Whychoose() {
                 </div>
 
                 {/* Bottom card */}
-                <div className="absolute bottom-4 left-4 right-4 rounded-xl border border-white/10 bg-[#101d1b]/88 p-4 text-white backdrop-blur-md">
+                <div className="absolute bottom-15 left-4 right-4 rounded-xl border border-white/10 bg-[#101d1b]/88 p-4 text-white backdrop-blur-md">
                   <div className="text-[8px] font-bold uppercase tracking-[0.12em] text-white/45">
                     Manufacturing Capability
                   </div>
@@ -201,12 +201,12 @@ export default function Whychoose() {
               </div>
 
               {/* Experience badge */}
-              <div className="absolute -bottom-5 -left-5 z-20 rounded-xl border border-white bg-white px-4 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.10)]">
-                <div className="text-[27px] font-extrabold leading-none tracking-[-0.04em] text-[#093372]">
+              <div className="absolute w-fit justify-center items-center -bottom-5 left-25  z-20 rounded-xl border border-white bg-white px-4 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.10)]">
+                <div className="text-[27px] text-center font-extrabold leading-none tracking-[-0.04em] text-[#093372]">
                   25+
                 </div>
 
-                <div className="mt-1 text-[8px] font-bold uppercase tracking-[0.1em] text-[#7b8783]">
+                <div className="mt-1 text-[8px]  text-center font-bold uppercase tracking-[0.1em] text-[#7b8783]">
                   Years Experience
                 </div>
               </div>

@@ -185,7 +185,7 @@ export default function ContactPage() {
                   </div>{" "}
                 </div>{" "}
                 {/* Bottom Trust */}{" "}
-                <div className="mt-10 border-t border-white/10 pt-7">
+                {/* <div className="mt-10 border-t border-white/10 pt-7">
                   {" "}
                   <p className="text-xs text-white/50">
                     {" "}
@@ -211,14 +211,14 @@ export default function ContactPage() {
                       </div>
                     ))}{" "}
                   </div>{" "}
-                </div>{" "}
+                </div>{" "} */}
               </div>{" "}
             </div>{" "}
             {/* ================================================= RIGHT FORM ================================================= */}{" "}
             <div className="p-7 sm:p-10 lg:p-12">
               {" "}
               {/* Form Heading */}{" "}
-              <div className="mb-9 flex items-start justify-between gap-5">
+              <div className="mb-9 flex items-start justify-between gap-3">
                 {" "}
                 <div>
                   {" "}
@@ -256,7 +256,7 @@ export default function ContactPage() {
                     <input
                       type="text"
                       placeholder="Your name"
-                      className="h-12 w-full rounded-xl border border-gray-200 bg-gray-50/60 px-4 text-sm text-gray-900 outline-none transition focus:border-[#1261A0] focus:bg-white focus:ring-4 focus:ring-[#1261A0]/5"
+                      className="h-10 w-full rounded-xl border border-gray-200 bg-gray-50/60 px-4 text-sm text-gray-900 outline-none transition focus:border-[#1261A0] focus:bg-white focus:ring-4 focus:ring-[#1261A0]/5"
                     />{" "}
                   </div>{" "}
                   <div className="group">
@@ -267,8 +267,8 @@ export default function ContactPage() {
                     </label>{" "}
                     <input
                       type="tel"
-                      placeholder="+91"
-                      className="h-12 w-full rounded-xl border border-gray-200 bg-gray-50/60 px-4 text-sm text-gray-900 outline-none transition focus:border-[#1261A0] focus:bg-white focus:ring-4 focus:ring-[#1261A0]/5"
+                      placeholder="+91 9876543210"
+                      className="h-10 w-full rounded-xl border border-gray-200 bg-gray-50/60 px-4 text-sm text-gray-900 outline-none transition focus:border-[#1261A0] focus:bg-white focus:ring-4 focus:ring-[#1261A0]/5"
                     />{" "}
                   </div>{" "}
                 </div>{" "}
@@ -284,7 +284,7 @@ export default function ContactPage() {
                     <input
                       type="email"
                       placeholder="you@example.com"
-                      className="h-12 w-full rounded-xl border border-gray-200 bg-gray-50/60 px-4 text-sm text-gray-900 outline-none transition focus:border-[#1261A0] focus:bg-white focus:ring-4 focus:ring-[#1261A0]/5"
+                      className="h-10 w-full rounded-xl border border-gray-200 bg-gray-50/60 px-4 text-sm text-gray-900 outline-none transition focus:border-[#1261A0] focus:bg-white focus:ring-4 focus:ring-[#1261A0]/5"
                     />{" "}
                   </div>{" "}
                   <div>
@@ -295,7 +295,7 @@ export default function ContactPage() {
                     </label>{" "}
                     <select
                       defaultValue=""
-                      className="h-12 w-full rounded-xl border border-gray-200 bg-gray-50/60 px-4 text-sm text-gray-500 outline-none transition focus:border-[#1261A0] focus:bg-white focus:ring-4 focus:ring-[#1261A0]/5"
+                      className="h-10 w-full rounded-xl border border-gray-200 bg-gray-50/60 px-4 text-sm text-gray-500 outline-none transition focus:border-[#1261A0] focus:bg-white focus:ring-4 focus:ring-[#1261A0]/5"
                     >
                       {" "}
                       <option value="" disabled>
@@ -324,7 +324,7 @@ export default function ContactPage() {
                   />{" "}
                 </div>{" "}
                 {/* ================================================= BOTTOM CTA ================================================= */}{" "}
-                <div className="flex flex-col gap-5 border-t border-gray-200 pt-7 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex flex-col gap-5 border-t border-gray-200 pt-3 sm:flex-row sm:items-center sm:justify-between">
                   {" "}
                   <p className="max-w-xs text-xs leading-5 text-gray-400">
                     {" "}
