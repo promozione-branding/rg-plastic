@@ -18,7 +18,7 @@ export default function Sitemap() {
     { name: "About Us", path: "/about", icon: FiInfo },
     { name: "Products", path: "/products", icon: FiGrid },
     { name: "Contact Us", path: "/contact", icon: FiPhone },
-    { name: "Sitemap", path: "/sitemap", icon: FiMap },
+    { name: "Blogs", path: "/blogs", icon: FiFileText },
   ];
 
   return (
