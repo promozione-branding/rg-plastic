@@ -239,7 +239,7 @@ function ProductCard({ product }) {
 
         {/* View Product */}
         <a
-          href={`/products/${product.name
+          href={`/products/${product.slug
             .toLowerCase()
             .replace(/[^a-z0-9]+/g, "-")
             .replace(/(^-|-$)/g, "")}`}
