@@ -120,7 +120,7 @@ export default function AboutIntro() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
 
                 {/* Image Caption */}
-                <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between sm:bottom-7 sm:left-7 sm:right-7">
+                <div className="absolute bottom-5 left-30 right-5 flex items-end justify-between sm:bottom-7 sm:left-25 sm:right-7">
                   <div>
                     <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/70">
                       Dharam Engg Work
