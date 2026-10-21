@@ -13,14 +13,15 @@ import Link from "next/link";
 
 const products = [
   {
-    slug:"vented-extruder-granule-machine",
+    slug: "vented-extruder-granule-machine",
     title: "Vented Extruders Granule Machine",
     description:
       "Designed for efficient plastic recycling and granule production, vented extruder granule machines support material processing with moisture and volatile removal during extrusion.",
     image:
       "/products/Vented.webp",
   },
-  {slug:'two-stage-granule-machine',
+  {
+    slug: 'two-stage-granule-machine',
     title: "Two Stage Granule Machine",
     description:
       "Two-stage granule machines are designed for plastic recycling applications that require multi-stage processing, helping improve melt filtration, material consistency, and granule quality.",
@@ -35,7 +36,7 @@ const products = [
   //     "/products/two-gran.webp",
   // },
   {
-    slug:'mixture-machine',
+    slug: 'mixture-machine',
     title: "Granule Machine for Thermocol & EPS Recycling",
     description:
       "Specially designed for Thermocol and expanded polystyrene (EPS) recycling applications, these machines help process recyclable foam materials into reusable granules for further manufacturing.",
@@ -44,18 +45,19 @@ const products = [
   },
   {
     title: "Mixture Machine",
-        slug:'mixture-machine',
+    slug: 'mixture-machine',
 
     description:
       "Built for efficient material mixing, mixture machines help blend plastic raw materials, additives, colours, and other compatible ingredients to support consistent processing and production requirements",
     image:
       "/products/mixture.webp",
   },
-  {slug:'agglomerator-machine',
+  {
+    slug: 'agglomerator-machine',
     title: "Agglomerator",
     description:
       "Agglomerators are designed to process lightweight plastic films and other suitable plastic waste into denser material, making handling, feeding, and subsequent recycling operations more efficient.",
-    image:  
+    image:
       "/products/agglo.webp",
   },
 ];
@@ -135,10 +137,9 @@ export default function ProductSlider() {
                   className={`
                     group h-full overflow-hidden rounded-[14px] border bg-white
                     transition-all duration-300
-                    ${
-                      active
-                        ? "border-[#093372] shadow-[0_8px_25px_rgba(240,178,11,0.14)]"
-                        : "border-[#ebe7de] shadow-[0_6px_20px_rgba(0,0,0,0.035)]"
+                    ${active
+                      ? "border-[#093372] shadow-[0_8px_25px_rgba(240,178,11,0.14)]"
+                      : "border-[#ebe7de] shadow-[0_6px_20px_rgba(0,0,0,0.035)]"
                     }
                     hover:-translate-y-1
                     hover:border-[#093372]

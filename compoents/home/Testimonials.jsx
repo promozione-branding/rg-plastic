@@ -38,7 +38,7 @@ const testimonials = [
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
   const testimonial = testimonials[activeIndex];
-   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
 
   useEffect(() => {
@@ -233,11 +233,10 @@ export default function Testimonials() {
                   aria-label={`Show testimonial ${index + 1}`}
                   aria-current={index === activeIndex ? "true" : undefined}
                   onClick={() => setActiveIndex(index)}
-                  className={`h-2 rounded-full transition-all ${
-                    index === activeIndex
+                  className={`h-2 rounded-full transition-all ${index === activeIndex
                       ? "w-6 bg-[#093372]"
                       : "w-2 bg-[#cbd6d2] hover:bg-[#008f82]"
-                  }`}
+                    }`}
                 />
               ))}
             </div>
@@ -260,7 +259,7 @@ export default function Testimonials() {
               </div>
 
               <button
-                 onClick={() => setIsPopupOpen(true)}
+                onClick={() => setIsPopupOpen(true)}
                 className="group inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.08em] text-[#093372]"
               >
                 Start Your Project

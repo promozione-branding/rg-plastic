@@ -80,7 +80,7 @@ export default function Footer() {
                 ["Products", "/products"],
                 ["Contact Us", "/contact"],
                 ["Sitemap", "/sitemap"],
-                 ["Blogs", "/blogs"],
+                ["Blogs", "/blogs"],
               ].map(([label, href]) => (
                 <a
                   key={label}
@@ -145,25 +145,25 @@ export default function Footer() {
               </a>
 
               {/* Location */}
-             
-<a
-  href="https://maps.app.goo.gl/q27RdELNotqVzsgb9"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="group flex items-start gap-3 text-white/65 transition-colors hover:text-[#55B8F2]"
->
-  <FiMapPin className="mt-0.5 shrink-0 text-[15px]" />
 
-  <span className="text-[12px] leading-5">
-    Dharam Engg Work
-    <br />
-    Plot No. 19, Pocket G,
-    <br />
-    DSIIDC Sector-5, Bawana Industrial Area,
-    <br />
-    North West Delhi, India
-  </span>
-</a>
+              <a
+                href="https://maps.app.goo.gl/q27RdELNotqVzsgb9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-start gap-3 text-white/65 transition-colors hover:text-[#55B8F2]"
+              >
+                <FiMapPin className="mt-0.5 shrink-0 text-[15px]" />
+
+                <span className="text-[12px] leading-5">
+                  Dharam Engg Work
+                  <br />
+                  Plot No. 19, Pocket G,
+                  <br />
+                  DSIIDC Sector-5, Bawana Industrial Area,
+                  <br />
+                  North West Delhi, India
+                </span>
+              </a>
 
 
               {/* Email */}

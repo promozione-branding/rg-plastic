@@ -13,8 +13,8 @@ import PopupForm from "@/compoents/PopupForm";
 import { useState } from "react";
 
 export default function Products() {
-  let allproducts= products.length;
-   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  let allproducts = products.length;
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   return (
     <main className="bg-white text-[#101820]">
@@ -60,7 +60,7 @@ export default function Products() {
               </span>
             </h1>
 
-          
+
 
           </div>
 
@@ -177,9 +177,9 @@ export default function Products() {
 
         </div>
         <PopupForm
-        isOpen={isPopupOpen}
-        onClose={() => setIsPopupOpen(false)}
-      />
+          isOpen={isPopupOpen}
+          onClose={() => setIsPopupOpen(false)}
+        />
       </section>
 
     </main>
@@ -210,7 +210,7 @@ function ProductCard({ product }) {
         {/* Image overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
 
-        
+
 
       </div>
 
@@ -231,10 +231,10 @@ function ProductCard({ product }) {
         </div>
 
 
-       
 
 
-        
+
+
 
 
         {/* View Product */}

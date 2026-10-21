@@ -37,22 +37,22 @@ const sections = [
       "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1400&q=85",
     reverse: true,
   },
-//   {
-//     title: "Our Journey",
-//     eyebrow: "BUILT ON EXPERIENCE",
-//     number: "03",
-//     description:
-//       "Our journey has been shaped by a commitment to quality, engineering excellence and customer satisfaction. From supplying individual machines to developing complete machinery solutions, R G Plastics Machinery continues to grow through trust, experience and consistent performance.",
-//     points: [
-//       "Strong Industry Experience",
-//       "Growing Customer Network",
-//       "Quality-Driven Approach",
-//       "A Foundation Built on Trust",
-//     ],
-//     image:
-//       "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1400&q=85",
-//     reverse: false,
-//   },
+  //   {
+  //     title: "Our Journey",
+  //     eyebrow: "BUILT ON EXPERIENCE",
+  //     number: "03",
+  //     description:
+  //       "Our journey has been shaped by a commitment to quality, engineering excellence and customer satisfaction. From supplying individual machines to developing complete machinery solutions, R G Plastics Machinery continues to grow through trust, experience and consistent performance.",
+  //     points: [
+  //       "Strong Industry Experience",
+  //       "Growing Customer Network",
+  //       "Quality-Driven Approach",
+  //       "A Foundation Built on Trust",
+  //     ],
+  //     image:
+  //       "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1400&q=85",
+  //     reverse: false,
+  //   },
 ];
 
 export default function AboutStory() {
@@ -106,11 +106,10 @@ export default function AboutStory() {
           {sections.map((section, index) => (
             <div
               key={section.title}
-              className={`grid items-center gap-12 lg:grid-cols-2 lg:gap-20 ${
-                section.reverse
+              className={`grid items-center gap-12 lg:grid-cols-2 lg:gap-20 ${section.reverse
                   ? "lg:[&>*:first-child]:order-2"
                   : ""
-              }`}
+                }`}
             >
 
               {/* =================================================
@@ -121,11 +120,10 @@ export default function AboutStory() {
 
                 {/* Background number */}
                 <div
-                  className={`pointer-events-none absolute z-0 select-none text-[130px] font-bold leading-none tracking-[-0.08em] text-[#1261A0]/[0.055] sm:text-[170px] ${
-                    section.reverse
+                  className={`pointer-events-none absolute z-0 select-none text-[130px] font-bold leading-none tracking-[-0.08em] text-[#1261A0]/[0.055] sm:text-[170px] ${section.reverse
                       ? "-right-3 -top-16"
                       : "-left-3 -top-16"
-                  }`}
+                    }`}
                 >
                   {section.number}
                 </div>
@@ -171,20 +169,18 @@ export default function AboutStory() {
 
                 {/* Blue corner block */}
                 <div
-                  className={`absolute -bottom-5 z-0 h-24 w-24 rounded-2xl bg-[#1261A0] sm:-bottom-7 sm:h-28 sm:w-28 ${
-                    section.reverse
+                  className={`absolute -bottom-5 z-0 h-24 w-24 rounded-2xl bg-[#1261A0] sm:-bottom-7 sm:h-28 sm:w-28 ${section.reverse
                       ? "-left-5 sm:-left-7"
                       : "-right-5 sm:-right-7"
-                  }`}
+                    }`}
                 />
 
                 {/* Number badge */}
                 <div
-                  className={`absolute -top-5 z-20 flex h-[58px] w-[58px] items-center justify-center rounded-full bg-[#1261A0] text-sm font-semibold text-white shadow-xl ${
-                    section.reverse
+                  className={`absolute -top-5 z-20 flex h-[58px] w-[58px] items-center justify-center rounded-full bg-[#1261A0] text-sm font-semibold text-white shadow-xl ${section.reverse
                       ? "left-5 sm:left-7"
                       : "left-5 sm:left-7"
-                  }`}
+                    }`}
                 >
                   {section.number}
                 </div>

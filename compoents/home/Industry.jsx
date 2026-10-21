@@ -118,14 +118,14 @@ export default function Industry() {
             <h2 className="max-w-4xl text-[38px] font-extrabold leading-[0.98] tracking-[-0.045em] text-[#13211f] sm:text-[50px] lg:text-[64px]">
               One Technology.
               <span className="block text-[#093372]">
-                 Multiple Applications.
+                Multiple Applications.
               </span>
             </h2>
           </div>
 
           <div className="lg:pb-1">
             <p className="max-w-lg text-[13px] leading-6 text-[#687874] sm:text-[14px] sm:leading-7">
-             Dharam Engg Work delivers reliable plastic recycling and processing machinery backed by <span className="font-bold">40 years of experience</span>, serving diverse industrial requirements.
+              Dharam Engg Work delivers reliable plastic recycling and processing machinery backed by <span className="font-bold">40 years of experience</span>, serving diverse industrial requirements.
             </p>
 
             <div className="mt-5 flex items-center gap-3">
@@ -261,7 +261,7 @@ export default function Industry() {
                 </h3>
 
                 <p className="mt-4 max-w-[290px] text-[12px] leading-6 text-white/70">
-                 Solutions tailored to your specific processing requirements.
+                  Solutions tailored to your specific processing requirements.
                 </p>
               </div>
             </div>
@@ -298,7 +298,7 @@ export default function Industry() {
             href="/contact"
             className="group inline-flex shrink-0 items-center gap-3 text-[10px] font-bold uppercase tracking-[0.12em] text-[#008f82]"
           >
-            Contact Us 
+            Contact Us
 
             <span className="flex h-7 w-7 items-center justify-center rounded-full border border-[#008f82]/20 transition-all duration-300 group-hover:bg-[#008f82] group-hover:text-white">
               <FiArrowRight className="text-[13px] transition-transform duration-300 group-hover:translate-x-0.5" />

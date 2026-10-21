@@ -201,7 +201,7 @@ export const products = [
         alt: "Two Stage Granule Machine by Dharam Engg Work",
         label: "Machine view",
       },
-    
+
     ],
 
     highlights: [
@@ -384,7 +384,7 @@ export const products = [
         alt: "Thermocol and EPS Recycling Granule Machine by Dharam Engg Work",
         label: "Machine view",
       },
-  
+
     ],
 
     highlights: [
@@ -1084,7 +1084,7 @@ export const products = [
         alt: "Cast Washing Machine by Dharam Engg Work",
         label: "Machine view",
       },
-    
+
     ],
 
     highlights: [
@@ -1252,7 +1252,7 @@ export const products = [
         alt: "Plastic Grinder Machine by Dharam Engg Work",
         label: "Machine view",
       },
-      
+
     ],
 
     highlights: [
@@ -1427,7 +1427,7 @@ export const products = [
         alt: "Plastic Washing Line and Drying Unit by Dharam Engg Work",
         label: "Complete washing line",
       },
-  
+
     ],
 
     highlights: [
@@ -1611,7 +1611,7 @@ export const products = [
         alt: "Dust Separator Machine by Dharam Engg Work",
         label: "Machine view",
       },
-  
+
     ],
 
     highlights: [
@@ -1775,7 +1775,7 @@ export const products = [
         alt: "PVC Pipe Machine by Dharam Engg Work",
         label: "Machine view",
       },
-   
+
     ],
 
     highlights: [
@@ -1951,7 +1951,7 @@ export const products = [
         alt: "PVC Garden Pipe Machine by Dharam Engg Work",
         label: "Machine view",
       },
-      
+
     ],
 
     highlights: [
@@ -2128,7 +2128,7 @@ export const products = [
         alt: "D2 Grinder Machine by Dharam Engg Work",
         label: "Machine view",
       },
-    
+
     ],
 
     highlights: [
@@ -2321,7 +2321,7 @@ export const products = [
         alt: "HDPE Pipe Machine by Dharam Engg Work",
         label: "Machine view",
       },
-      
+
     ],
 
     highlights: [
@@ -2504,7 +2504,7 @@ export const products = [
         alt: "Agriculture Pipe Machine by Dharam Engg Work",
         label: "Agriculture Pipe Machine",
       },
-    
+
     ],
 
     highlights: [
@@ -2712,7 +2712,7 @@ export const products = [
         alt: "PVC Suction Hose Pipe Plant Without Mixture by Dharam Engg Work",
         label: "PVC Suction Hose Pipe Plant",
       },
-     
+
     ],
 
     highlights: [
@@ -2937,7 +2937,7 @@ export const products = [
         alt: "Braided Pipe Machine DEWAG 75 × 75 by Dharam Engg Work",
         label: "Braided Pipe Machine",
       },
-     
+
     ],
 
     highlights: [
@@ -3022,7 +3022,7 @@ export const products = [
       },
     ],
 
-    modelSpecifications:[
+    modelSpecifications: [
       {
         parameter: "Model",
         specification: "DEWAG 75 × 75",
@@ -3216,7 +3216,7 @@ export const products = [
         alt: "T Die Sheet Line Machine by Dharam Engg Work",
         label: "T Die Sheet Line Machine",
       },
-     
+
     ],
 
     highlights: [
@@ -3437,7 +3437,7 @@ export const products = [
         alt: "Tarpaulin Machine by Dharam Engg Work",
         label: "Tarpaulin Machine",
       },
-      
+
     ],
 
     highlights: [
@@ -3664,7 +3664,7 @@ export const products = [
         alt: "Twin Screw Pipe Machine by Dharam Engg Work",
         label: "Twin Screw Pipe Machine",
       },
-   
+
     ],
 
     highlights: [
@@ -3881,7 +3881,7 @@ export const products = [
         alt: "Plastic Sutli Making Machine by Dharam Engg Work",
         label: "Sutli Machine",
       },
-     
+
     ],
 
     highlights: [
@@ -4120,7 +4120,7 @@ export const products = [
         alt: "Box Strapping Machine Plant by Dharam Engg Work",
         label: "Box Strapping Machine Plant",
       },
-     
+
     ],
 
     highlights: [
@@ -4334,7 +4334,7 @@ export const products = [
         alt: "Hot and Cold Mixture Machine by Dharam Engg Work",
         label: "Hot and Cold Mixture Machine",
       },
-    
+
     ],
 
     highlights: [
@@ -4528,7 +4528,7 @@ export const products = [
         alt: "LDPE Film Extrusion Machine by Dharam Engg Work",
         label: "LDPE Film Machine",
       },
-     
+
     ],
 
     highlights: [
@@ -4749,7 +4749,7 @@ export const products = [
         alt: "DEW HM 45 Mini Film Extrusion Machine by Dharam Engg Work",
         label: "HM Mini Machine",
       },
-     
+
     ],
 
     highlights: [

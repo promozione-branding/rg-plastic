@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Mail, Phone, MapPin, Clock3, Factory ,CheckCircle2 } from "lucide-react";
+import { ArrowRight, Mail, Phone, MapPin, Clock3, Factory, CheckCircle2 } from "lucide-react";
 
 
 export default function ContactPage() {
@@ -436,46 +436,46 @@ export default function ContactPage() {
       {/* =====================================================
           MAP
       ====================================================== */}
-     
-<section className="bg-white py-6 sm:py-12">
-  <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-    <div className="relative h-[400px] overflow-hidden rounded-[28px] border border-gray-200 bg-gray-100 sm:h-[500px]">
 
-      {/* Google Maps */}
-      <iframe
-        title="Dharam Engg Work Location - Bawana Industrial Area"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.4922588901622!2d77.1841372!3d28.554977399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d8d97516281%3A0x72e4bdfe4c1b9314!2sR%20G%20Plastics%20Machinery!5e0!3m2!1sen!2sin!4v1792563403415!5m2!1sen!2sin" 
-        className="absolute inset-0 h-full w-full border-0"
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-        allowFullScreen
-      />
+      <section className="bg-white py-6 sm:py-12">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+          <div className="relative h-[400px] overflow-hidden rounded-[28px] border border-gray-200 bg-gray-100 sm:h-[500px]">
 
-      {/* Map Label */}
-      
-<div className="absolute right-4 top-4 z-10 max-w-[calc(100%-2rem)] rounded-xl bg-white px-4 py-3 shadow-xl sm:right-7 sm:top-7 sm:px-5 sm:py-4">
-  <div className="flex items-start gap-3">
-    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#1261A0]">
-      <Factory size={17} className="text-white" />
-    </div>
+            {/* Google Maps */}
+            <iframe
+              title="Dharam Engg Work Location - Bawana Industrial Area"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.4922588901622!2d77.1841372!3d28.554977399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d8d97516281%3A0x72e4bdfe4c1b9314!2sR%20G%20Plastics%20Machinery!5e0!3m2!1sen!2sin!4v1792563403415!5m2!1sen!2sin"
+              className="absolute inset-0 h-full w-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
 
-    <div>
-      <p className="text-sm font-semibold text-gray-900">
-        Dharam Engg Work
-      </p>
+            {/* Map Label */}
 
-      <p className="mt-1 text-xs leading-5 text-gray-500">
-        Plot No. 19, Pocket G, DSIIDC Sector-5,
-        Bawana Industrial Area, North West Delhi
-      </p>
-    </div>
-  </div>
-</div>
+            <div className="absolute right-4 top-4 z-10 max-w-[calc(100%-2rem)] rounded-xl bg-white px-4 py-3 shadow-xl sm:right-7 sm:top-7 sm:px-5 sm:py-4">
+              <div className="flex items-start gap-3">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#1261A0]">
+                  <Factory size={17} className="text-white" />
+                </div>
+
+                <div>
+                  <p className="text-sm font-semibold text-gray-900">
+                    Dharam Engg Work
+                  </p>
+
+                  <p className="mt-1 text-xs leading-5 text-gray-500">
+                    Plot No. 19, Pocket G, DSIIDC Sector-5,
+                    Bawana Industrial Area, North West Delhi
+                  </p>
+                </div>
+              </div>
+            </div>
 
 
-    </div>
-  </div>
-</section>
+          </div>
+        </div>
+      </section>
 
     </main>
   );

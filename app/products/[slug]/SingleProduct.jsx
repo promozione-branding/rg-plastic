@@ -103,8 +103,8 @@ export default function SingleProduct({ product }) {
                   aria-label={`Show ${img.label}`}
                   aria-pressed={active === i}
                   className={`relative h-20 w-20 shrink-0 overflow-hidden rounded-lg border-2 bg-white transition-colors ${focus} ${active === i
-                      ? "border-[#0878D1]"
-                      : "border-transparent hover:border-slate-300"
+                    ? "border-[#0878D1]"
+                    : "border-transparent hover:border-slate-300"
                     }`}
                 >
                   <Image

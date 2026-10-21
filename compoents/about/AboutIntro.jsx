@@ -19,7 +19,7 @@ export default function AboutIntro() {
           <div className="max-w-xl">
 
             {/* Breadcrumb */}
-           
+
 
             {/* Small Label */}
             <div className="mb-5 flex items-center gap-3">
@@ -74,7 +74,7 @@ export default function AboutIntro() {
               ))}
             </div>
 
-           
+
           </div>
 
           {/* =====================================================

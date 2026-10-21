@@ -64,7 +64,7 @@ export default function Navbar() {
 
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
-   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
 
 
@@ -192,10 +192,9 @@ export default function Navbar() {
                         transition-all duration-300
                         xl:px-5
 
-                        ${
-                          isNavItemActive(pathname, item.href)
-                            ? "bg-[#EAF5FC] text-[#0070FF]"
-                            : "text-[#0070FF] hover:bg-[#F3F8FC] hover:text-[#175a50]"
+                        ${isNavItemActive(pathname, item.href)
+                          ? "bg-[#EAF5FC] text-[#0070FF]"
+                          : "text-[#0070FF] hover:bg-[#F3F8FC] hover:text-[#175a50]"
                         }
                       `}
                     >
@@ -233,34 +232,34 @@ export default function Navbar() {
                   ================================================= */}
 
                   <Link
-  href="tel:+919891468647"
-  onClick={() => setMobileOpen(false)}
-  className="group flex items-center justify-center gap-3 rounded-xl border border-[#D9E5EF] bg-[#F7FAFC] py-2 text-sm font-semibold px-3 text-[#092F4F] transition-all duration-300 hover:border-[#0070FF] hover:text-[#0070FF]"
->
-  {/* Call Icon */}
-  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#EAF5FC] text-[#0070FF] transition-all duration-300 group-hover:bg-[#0070FF] group-hover:text-white">
-    <FiPhoneCall
-      size={16}
-      className="transition-transform duration-300 group-hover:rotate-12"
-    />
-  </span>
+                    href="tel:+919891468647"
+                    onClick={() => setMobileOpen(false)}
+                    className="group flex items-center justify-center gap-3 rounded-xl border border-[#D9E5EF] bg-[#F7FAFC] py-2 text-sm font-semibold px-3 text-[#092F4F] transition-all duration-300 hover:border-[#0070FF] hover:text-[#0070FF]"
+                  >
+                    {/* Call Icon */}
+                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#EAF5FC] text-[#0070FF] transition-all duration-300 group-hover:bg-[#0070FF] group-hover:text-white">
+                      <FiPhoneCall
+                        size={16}
+                        className="transition-transform duration-300 group-hover:rotate-12"
+                      />
+                    </span>
 
-  {/* Phone Number */}
-  <span className="flex flex-col items-start leading-none">
+                    {/* Phone Number */}
+                    <span className="flex flex-col items-start leading-none">
 
-    <span className="text-[9px] font-bold uppercase tracking-[0.12em] text-gray-400">
-      Call Us
-    </span>
+                      <span className="text-[9px] font-bold uppercase tracking-[0.12em] text-gray-400">
+                        Call Us
+                      </span>
 
-    <span className="mt-1 font-bold text-[#092F4F] group-hover:text-[#0070FF]">
-      +91 98914 68647
-    </span>
+                      <span className="mt-1 font-bold text-[#092F4F] group-hover:text-[#0070FF]">
+                        +91 98914 68647
+                      </span>
 
-  </span>
+                    </span>
 
-  
 
-</Link>
+
+                  </Link>
 
 
                   {/* =================================================
@@ -317,10 +316,9 @@ export default function Navbar() {
                   <span
                     className={`
                       absolute transition-all duration-300
-                      ${
-                        mobileOpen
-                          ? "scale-75 rotate-90 opacity-0"
-                          : "scale-100 rotate-0 opacity-100"
+                      ${mobileOpen
+                        ? "scale-75 rotate-90 opacity-0"
+                        : "scale-100 rotate-0 opacity-100"
                       }
                     `}
                   >
@@ -333,10 +331,9 @@ export default function Navbar() {
                   <span
                     className={`
                       absolute transition-all duration-300
-                      ${
-                        mobileOpen
-                          ? "scale-100 rotate-0 opacity-100"
-                          : "scale-75 -rotate-90 opacity-0"
+                      ${mobileOpen
+                        ? "scale-100 rotate-0 opacity-100"
+                        : "scale-75 -rotate-90 opacity-0"
                       }
                     `}
                   >
@@ -359,10 +356,9 @@ export default function Navbar() {
                   transition-all duration-500
                   lg:hidden
 
-                  ${
-                    mobileOpen
-                      ? "grid-rows-[1fr] opacity-100"
-                      : "grid-rows-[0fr] opacity-0"
+                  ${mobileOpen
+                    ? "grid-rows-[1fr] opacity-100"
+                    : "grid-rows-[0fr] opacity-0"
                   }
                 `}
               >
@@ -392,10 +388,9 @@ export default function Navbar() {
                             text-sm font-semibold
                             transition-all duration-300
 
-                            ${
-                              isNavItemActive(pathname, item.href)
-                                ? "bg-[#EAF5FC] text-[#075B96]"
-                                : "text-[#475663] hover:pl-1 hover:text-[#075B96]"
+                            ${isNavItemActive(pathname, item.href)
+                              ? "bg-[#EAF5FC] text-[#075B96]"
+                              : "text-[#475663] hover:pl-1 hover:text-[#075B96]"
                             }
                           `}
                           style={{
@@ -414,10 +409,9 @@ export default function Navbar() {
                             className={`
                               transition-all duration-300
 
-                              ${
-                                isNavItemActive(pathname, item.href)
-                                  ? "text-[#075B96]"
-                                  : "text-gray-300"
+                              ${isNavItemActive(pathname, item.href)
+                                ? "text-[#075B96]"
+                                : "text-gray-300"
                               }
                             `}
                           />
@@ -440,7 +434,7 @@ export default function Navbar() {
                           MOBILE EXPERT CTA
                       ================================================= */}
 
-                  
+
 
 
                       {/* =================================================
@@ -448,7 +442,7 @@ export default function Navbar() {
                       ================================================= */}
 
                       <button
-                       onClick={() => setIsPopupOpen(true)}
+                        onClick={() => setIsPopupOpen(true)}
                         className="group flex h-12 items-center justify-center gap-2 rounded-xl bg-[#075B96] text-sm font-semibold text-white shadow-lg shadow-[#075B96]/15 transition-all px-2 duration-300 hover:bg-[#0F52BA]"
                       >
 
@@ -501,9 +495,9 @@ export default function Navbar() {
 
         </div>
         <PopupForm
-        isOpen={isPopupOpen}
-        onClose={() => setIsPopupOpen(false)}
-      />
+          isOpen={isPopupOpen}
+          onClose={() => setIsPopupOpen(false)}
+        />
 
       </header>
     </>

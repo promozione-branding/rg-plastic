@@ -54,7 +54,7 @@ export default function Work() {
         {/* Teal glow */}
         <div className="absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-[#008f82]/[0.06] blur-[130px]" />
 
-       
+
 
         {/* Bottom glow */}
         <div className="absolute bottom-[-200px] right-[-100px] h-[450px] w-[450px] rounded-full bg-[#008f82]/[0.04] blur-[100px]" />
@@ -96,11 +96,10 @@ export default function Work() {
             return (
               <div
                 key={step.number}
-                className={`group relative px-5 py-5 sm:px-6 lg:px-7 ${
-                  index !== processSteps.length - 1
+                className={`group relative px-5 py-5 sm:px-6 lg:px-7 ${index !== processSteps.length - 1
                     ? "border-b border-white/[0.07] sm:border-b-0 lg:border-r lg:border-white/[0.07]"
                     : ""
-                }`}
+                  }`}
               >
 
                 {/* =================================================

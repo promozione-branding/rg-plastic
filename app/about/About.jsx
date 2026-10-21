@@ -7,10 +7,10 @@ import React from 'react'
 export default function About() {
   return (
     <>
-    <AboutIntro/>
-    <CompanyStats/>
-    <AboutStory/>
-    <HowWeWork/>
+      <AboutIntro />
+      <CompanyStats />
+      <AboutStory />
+      <HowWeWork />
     </>
   )
 }

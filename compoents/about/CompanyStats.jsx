@@ -59,11 +59,10 @@ export default function CompanyStats() {
           {stats.map((stat, index) => (
             <div
               key={stat.label}
-              className={`text-center ${
-                index !== 0
+              className={`text-center ${index !== 0
                   ? "sm:border-l sm:border-gray-200"
                   : ""
-              }`}
+                }`}
             >
               <div className="text-4xl font-semibold tracking-tight text-[#111] sm:text-5xl lg:text-[52px]">
                 {stat.number}

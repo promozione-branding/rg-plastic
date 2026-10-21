@@ -77,7 +77,7 @@ export default function AboutSection() {
             {/* =================================================
                 SMALL TRUST BADGE
             ================================================== */}
-       
+
 
           </div>
 
@@ -101,7 +101,7 @@ export default function AboutSection() {
 
               {/* Heading */}
               <h2 className="relative max-w-full text-[31px] font-extrabold uppercase leading-[1.08] tracking-[-0.025em] text-white sm:text-[39px] lg:text-[42px] xl:text-[48px]">
-                Leading Plant Processing{" "} 
+                Leading Plant Processing{" "}
                 <span className=" text-[#54a2bc]">
                   Machine Manufacturer
                 </span>
@@ -140,7 +140,7 @@ export default function AboutSection() {
 
                 <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.06em] text-white/70">
                   <FiCheckCircle className="shrink-0 text-[#78d5c8]" />
-                  Customer Satisfaction 
+                  Customer Satisfaction
                 </div>
               </div>
 

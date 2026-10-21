@@ -55,11 +55,10 @@ export default function FAQSection() {
               return (
                 <div
                   key={faq.question}
-                  className={`overflow-hidden rounded-2xl border transition-all duration-300 ${
-                    isOpen
+                  className={`overflow-hidden rounded-2xl border transition-all duration-300 ${isOpen
                       ? "border-[#1261A0]/20 bg-[#F4F9FD] shadow-[0_8px_30px_rgba(7,91,150,0.06)]"
                       : "border-gray-100 bg-white hover:border-[#1261A0]/15 hover:shadow-sm"
-                  }`}
+                    }`}
                 >
 
                   {/* Question */}
@@ -74,11 +73,10 @@ export default function FAQSection() {
                     <span className="flex items-center gap-3">
 
                       <span
-                        className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[10px] font-bold transition-colors ${
-                          isOpen
+                        className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[10px] font-bold transition-colors ${isOpen
                             ? "bg-[#1261A0] text-white"
                             : "bg-[#EAF4FB] text-[#1261A0]"
-                        }`}
+                          }`}
                       >
                         {String(index + 1).padStart(2, "0")}
                       </span>
@@ -90,17 +88,15 @@ export default function FAQSection() {
                     </span>
 
                     <span
-                      className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-all duration-300 ${
-                        isOpen
+                      className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-all duration-300 ${isOpen
                           ? "bg-[#1261A0] text-white"
                           : "bg-gray-100 text-gray-500"
-                      }`}
+                        }`}
                     >
                       <ChevronDown
                         size={15}
-                        className={`transition-transform duration-300 ${
-                          isOpen ? "rotate-180" : ""
-                        }`}
+                        className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+                          }`}
                       />
                     </span>
 
@@ -109,11 +105,10 @@ export default function FAQSection() {
 
                   {/* Answer */}
                   <div
-                    className={`grid transition-[grid-template-rows,opacity] duration-300 ${
-                      isOpen
+                    className={`grid transition-[grid-template-rows,opacity] duration-300 ${isOpen
                         ? "grid-rows-[1fr] opacity-100"
                         : "grid-rows-[0fr] opacity-0"
-                    }`}
+                      }`}
                   >
 
                     <div className="min-h-0 overflow-hidden">
