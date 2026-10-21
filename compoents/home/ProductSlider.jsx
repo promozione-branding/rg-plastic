@@ -9,17 +9,18 @@ import {
 } from "react-icons/fi";
 
 import "swiper/css";
+import Link from "next/link";
 
 const products = [
   {
-    slug:"",
+    slug:"vented-extruder-granule-machine",
     title: "Vented Extruders Granule Machine",
     description:
       "Designed for efficient plastic recycling and granule production, vented extruder granule machines support material processing with moisture and volatile removal during extrusion.",
     image:
       "/products/Vented.webp",
   },
-  {
+  {slug:'two-stage-granule-machine',
     title: "Two Stage Granule Machine",
     description:
       "Two-stage granule machines are designed for plastic recycling applications that require multi-stage processing, helping improve melt filtration, material consistency, and granule quality.",
@@ -34,6 +35,7 @@ const products = [
   //     "/products/two-gran.webp",
   // },
   {
+    slug:'mixture-machine',
     title: "Granule Machine for Thermocol & EPS Recycling",
     description:
       "Specially designed for Thermocol and expanded polystyrene (EPS) recycling applications, these machines help process recyclable foam materials into reusable granules for further manufacturing.",
@@ -42,16 +44,18 @@ const products = [
   },
   {
     title: "Mixture Machine",
+        slug:'mixture-machine',
+
     description:
       "Built for efficient material mixing, mixture machines help blend plastic raw materials, additives, colours, and other compatible ingredients to support consistent processing and production requirements",
     image:
       "/products/mixture.webp",
   },
-  {
+  {slug:'agglomerator-machine',
     title: "Agglomerator",
     description:
       "Agglomerators are designed to process lightweight plastic films and other suitable plastic waste into denser material, making handling, feeding, and subsequent recycling operations more efficient.",
-    image:
+    image:  
       "/products/agglo.webp",
   },
 ];
@@ -74,7 +78,7 @@ export default function ProductSlider() {
             <div className="mb-4 text-[11px] font-bold text-[#34312d]">
               Our Products
             </div>
-d
+
             <h2 className="max-w-[700px] text-[38px] font-extrabold uppercase leading-[1.05] tracking-[-0.045em] text-[#25221f] sm:text-[48px] ">
               High-Performance Plastic Recycling
               <span className="block text-[#093372]">
@@ -83,8 +87,8 @@ d
             </h2>
           </div>
 
-          <a
-            href="#all-products"
+          <Link
+            href="/products"
             className="group inline-flex h-11 shrink-0 items-center gap-3 self-start rounded-full bg-[#297eff] pl-5 pr-2 text-[11px] font-extrabold uppercase tracking-[0.04em] text-[#fff] shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#093372] hover:shadow-lg md:self-auto"
           >
             <span>Explore Products</span>
@@ -92,7 +96,7 @@ d
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white">
               <FiArrowUpRight className="text-[15px] text-[#297eff] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </span>
-          </a>
+          </Link>
         </div>
 
         {/* Swiper */}
@@ -164,7 +168,7 @@ d
                     </p>
 
                     <a
-                      href="#contact-quote-section"
+                      href={`/products/${product.slug}`}
                       className="group/link mt-4 inline-flex items-center gap-2 text-[10px] font-extrabold uppercase tracking-[0.08em] text-[#25221f]"
                     >
                       <span className="border-b border-transparent transition-colors group-hover/link:border-[#008f82]">

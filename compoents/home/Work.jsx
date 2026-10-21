@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import {
   FiMessageSquare,
   FiSettings,
@@ -194,8 +195,8 @@ export default function Work() {
             CTA
         ================================================== */}
         <div className="mt-14 flex justify-center">
-          <a
-            href="#contact-quote-section"
+          <Link
+            href="/contact"
             className="group inline-flex h-12 items-center gap-3 rounded-md bg-[#297eff] px-6 text-[12px] font-bold uppercase tracking-[0.05em] text-white shadow-[0_8px_25px_rgba(0,143,130,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0c49a4] hover:shadow-[0_12px_32px_rgba(0,143,130,0.25)]"
           >
             <span>Contact Us for Plant Processing Machinery</span>
@@ -203,7 +204,7 @@ export default function Work() {
             <span className="flex h-7 w-7 items-center justify-center rounded-md bg-white/10">
               <FiArrowRight className="text-[14px] transition-transform duration-300 group-hover:translate-x-1" />
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

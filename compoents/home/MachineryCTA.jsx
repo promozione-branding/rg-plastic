@@ -1,8 +1,12 @@
 "use client";
 
 import { ArrowRight, PhoneCall } from "lucide-react";
+import PopupForm from "../PopupForm";
+import { useState } from "react";
 
 export default function MachineryCTA() {
+   const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   return (
     <section className="px-4 py-2 sm:px-2">
       <div className="relative mx-auto max-w-[1400px] overflow-hidden rounded-lg bg-gradient-to-r from-[#1969e0] via-[#159ed8] to-[#1969e0] px-6 py-16 sm:px-10 sm:py-20 lg:px-20">
@@ -43,8 +47,8 @@ export default function MachineryCTA() {
           <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
 
             {/* Get Quote */}
-            <a
-              href="#quote"
+            <button
+               onClick={() => setIsPopupOpen(true)}
               className="group flex min-w-[175px] items-center justify-center gap-3 rounded-md bg-white px-6 py-3.5 text-sm font-semibold text-[#075B96] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-50 hover:shadow-xl"
             >
               Get a Quote
@@ -53,7 +57,7 @@ export default function MachineryCTA() {
                 size={17}
                 className="transition-transform duration-300 group-hover:translate-x-1"
               />
-            </a>
+            </button>
 
 
             {/* Call Us */}
@@ -75,6 +79,10 @@ export default function MachineryCTA() {
         </div>
 
       </div>
+      <PopupForm
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+      />
     </section>
   );
 }

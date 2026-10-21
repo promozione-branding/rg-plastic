@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { BsFillChatQuoteFill } from "react-icons/bs";
 import { FiArrowRight, FiCheckCircle, FiStar } from "react-icons/fi";
+import PopupForm from "../PopupForm";
 
 
 
@@ -37,6 +38,8 @@ const testimonials = [
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
   const testimonial = testimonials[activeIndex];
+   const [isPopupOpen, setIsPopupOpen] = useState(false);
+
 
   useEffect(() => {
     const slideInterval = setInterval(() => {
@@ -256,18 +259,22 @@ export default function Testimonials() {
                 Built for demanding industries
               </div>
 
-              <a
-                href="#contact-quote-section"
+              <button
+                 onClick={() => setIsPopupOpen(true)}
                 className="group inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.08em] text-[#093372]"
               >
                 Start Your Project
 
                 <FiArrowRight className="text-[14px] transition-transform duration-300 group-hover:translate-x-1" />
-              </a>
+              </button>
             </div>
           </div>
         </div>
       </div>
+      <PopupForm
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+      />
     </section>
   );
 }

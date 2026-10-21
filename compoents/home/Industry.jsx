@@ -1,6 +1,7 @@
 
 "use client";
 
+import Link from "next/link";
 import {
   FiArrowRight,
   FiCpu,
@@ -266,8 +267,8 @@ export default function Industry() {
             </div>
 
             {/* CTA */}
-            <a
-              href="#contact-quote-section"
+            <Link
+              href="/contact"
               className="group/link relative z-10 inline-flex w-fit items-center gap-3 text-[10px] font-bold uppercase tracking-[0.13em] text-white"
             >
               <span className="border-b border-white/30 pb-1 transition-colors duration-300 group-hover/link:border-white">
@@ -277,7 +278,7 @@ export default function Industry() {
               <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/10 transition-all duration-300 group-hover/link:bg-[#f5a14a] group-hover/link:text-[#13211f]">
                 <FiArrowRight className="text-[13px] transition-transform duration-300 group-hover/link:translate-x-0.5" />
               </span>
-            </a>
+            </Link>
           </article>
         </div>
 
@@ -293,16 +294,16 @@ export default function Industry() {
             </p>
           </div>
 
-          <a
-            href="#contact-quote-section"
+          <Link
+            href="/contact"
             className="group inline-flex shrink-0 items-center gap-3 text-[10px] font-bold uppercase tracking-[0.12em] text-[#008f82]"
           >
-            Discuss Your Application
+            Contact Us 
 
             <span className="flex h-7 w-7 items-center justify-center rounded-full border border-[#008f82]/20 transition-all duration-300 group-hover:bg-[#008f82] group-hover:text-white">
               <FiArrowRight className="text-[13px] transition-transform duration-300 group-hover:translate-x-0.5" />
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

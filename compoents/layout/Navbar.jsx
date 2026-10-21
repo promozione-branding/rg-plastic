@@ -17,6 +17,7 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoCloseOutline } from "react-icons/io5";
 
 import MachineMarquee from "../MachineMarquee";
+import PopupForm from "../PopupForm";
 
 
 /* =========================================================
@@ -56,6 +57,8 @@ const navItems = [
 export default function Navbar() {
 
   const [mobileOpen, setMobileOpen] = useState(false);
+   const [isPopupOpen, setIsPopupOpen] = useState(false);
+
 
 
   return (
@@ -256,8 +259,8 @@ export default function Navbar() {
                       GET A QUOTE
                   ================================================= */}
 
-                  <Link
-                    href="#quote"
+                  <button
+                    onClick={() => setIsPopupOpen(true)}
                     className="group relative flex h-11 items-center gap-2 overflow-hidden rounded-xl bg-[#0F52BA] px-5 text-[13px] font-semibold text-white shadow-[0_6px_18px_rgba(7,91,150,0.22)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#4289f5] hover:shadow-[0_9px_24px_rgba(7,91,150,0.28)]"
                   >
 
@@ -280,7 +283,7 @@ export default function Navbar() {
 
                     <span className="absolute inset-y-0 -left-full w-1/2 -skew-x-12 bg-white/15 transition-all duration-700 group-hover:left-[130%]" />
 
-                  </Link>
+                  </button>
 
                 </div>
 
@@ -435,10 +438,9 @@ export default function Navbar() {
                           MOBILE GET QUOTE
                       ================================================= */}
 
-                      <Link
-                        href="#quote"
-                        onClick={() => setMobileOpen(false)}
-                        className="group flex h-12 items-center justify-center gap-2 rounded-xl bg-[#075B96] text-sm font-semibold text-white shadow-lg shadow-[#075B96]/15 transition-all duration-300 hover:bg-[#0F52BA]"
+                      <button
+                       onClick={() => setIsPopupOpen(true)}
+                        className="group flex h-12 items-center justify-center gap-2 rounded-xl bg-[#075B96] text-sm font-semibold text-white shadow-lg shadow-[#075B96]/15 transition-all px-2 duration-300 hover:bg-[#0F52BA]"
                       >
 
                         <FiFileText size={17} />
@@ -452,7 +454,7 @@ export default function Navbar() {
                           className="transition-transform duration-300 group-hover:translate-x-1"
                         />
 
-                      </Link>
+                      </button>
 
                     </div>
 
@@ -489,6 +491,10 @@ export default function Navbar() {
           </div>
 
         </div>
+        <PopupForm
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+      />
 
       </header>
     </>

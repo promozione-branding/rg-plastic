@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import {
   FiArrowRight,
   FiAward,
@@ -146,8 +147,8 @@ export default function AboutSection() {
               {/* =================================================
                   CTA
               ================================================== */}
-              <a
-                href="#manufacturing-facility"
+              <Link
+                href="/about"
                 className="group relative mt-8 inline-flex h-11 items-center gap-2 overflow-hidden rounded-md bg-[#0F52BA] px-5 text-[12px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00776d] hover:shadow-[0_10px_25px_rgba(0,143,130,0.22)]"
               >
                 <span className="relative z-10">
@@ -157,7 +158,7 @@ export default function AboutSection() {
                 <FiArrowRight className="relative z-10 text-[15px] transition-transform duration-300 group-hover:translate-x-1" />
 
                 <span className="absolute inset-y-0 -left-full w-1/2 -skew-x-12 bg-white/15 transition-all duration-700 group-hover:left-[130%]" />
-              </a>
+              </Link>
             </div>
 
             {/* Bottom decorative line */}

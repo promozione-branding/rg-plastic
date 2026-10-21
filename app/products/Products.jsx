@@ -9,9 +9,13 @@ import {
 } from "lucide-react";
 
 import { products } from "@/data/data";
+import PopupForm from "@/compoents/PopupForm";
+import { useState } from "react";
 
 export default function Products() {
   let allproducts= products.length;
+   const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   return (
     <main className="bg-white text-[#101820]">
 
@@ -155,8 +159,8 @@ export default function Products() {
               </div>
 
 
-              <a
-                href="#contact"
+              <button
+                onClick={() => setIsPopupOpen(true)}
                 className="group flex w-fit shrink-0 items-center gap-3 rounded-xl bg-white px-6 py-3.5 text-sm font-semibold text-[#075B96] transition hover:-translate-y-1 hover:shadow-xl"
               >
                 Get a Quote
@@ -165,13 +169,17 @@ export default function Products() {
                   size={17}
                   className="transition-transform group-hover:translate-x-1"
                 />
-              </a>
+              </button>
 
             </div>
 
           </div>
 
         </div>
+        <PopupForm
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+      />
       </section>
 
     </main>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 import {
   FiPhoneCall,
   FiMail,
@@ -298,7 +299,7 @@ export default function Cta() {
                     rel="noreferrer"
                     className="flex h-12 w-full items-center justify-center gap-2 rounded-lg border border-[#25D366]/20 bg-[#093372]/[0.07] px-5 text-[13px] font-bold text-[#093372] transition-all duration-300 hover:bg-[#25D366]/[0.12] sm:w-auto"
                   >
-                    <FiMessageCircle className="text-[17px]" />
+                    <FaWhatsapp size={23} />
                     WhatsApp Chat
                   </a>
                 </div>
