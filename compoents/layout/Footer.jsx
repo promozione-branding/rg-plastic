@@ -78,8 +78,9 @@ export default function Footer() {
                 ["Home", "/"],
                 ["About Us", "/about"],
                 ["Products", "/products"],
-                ["Blogs", "/blogs"],
                 ["Contact Us", "/contact"],
+                ["Sitemap", "/sitemap"],
+                 ["Blogs", "/blogs"],
               ].map(([label, href]) => (
                 <a
                   key={label}
