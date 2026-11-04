@@ -30,6 +30,21 @@ const faqs = [
     answer:
       "To get a quotation, contact Dharam Engg Work with details about your required machine, plastic material, desired production capacity, and application. Our team can help you explore suitable machinery options and obtain a price quotation based on your requirements.",
   },
+  {
+    question: "What types of plastic recycling machines does Dharam Engg Work manufacture?",
+    answer:
+      "Dharam Engg Work manufactures plastic recycling and processing machinery, including vented extruders, two-stage granule machines, die face cutter granule machines, Thermocol and EPS recycling machines, mixture machines, and agglomerators.",
+  },
+  {
+    question: "What is the price of a plastic granule machine?",
+    answer:
+      "The price of a plastic granule machine depends on machine type, production capacity, material specifications, configuration, and technical requirements. Contact Dharam Engg Work for a machine price quotation based on your specific needs.",
+  },
+  {
+    question: "What is the cost of a Thermocol and EPS recycling machine?",
+    answer:
+      "The cost of a Thermocol and EPS recycling machine varies according to processing capacity, machine configuration, and application requirements. Contact Dharam Engg Work to discuss your requirements and request a customized price estimate.",
+  },
 ];
 
 export default function FAQSection() {
@@ -170,36 +185,37 @@ export default function FAQSection() {
 
 
             {/* IMAGE */}
-            <div className="relative mt-7 h-110 overflow-hidden rounded-2xl">
+         
+{/* IMAGE */}
+<div className="relative mt-7 h-[280px] overflow-hidden rounded-2xl sm:h-[340px] lg:h-[390px]">
 
-              <div className="relative ">
+  <Image
+    src="/faq.avif"
+    alt="Dharam Engineering Works plastic recycling machinery"
+    fill
+    priority
+    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
+    className="object-cover object-center transition-transform duration-700 hover:scale-105"
+  />
 
-                <img
-                  src="/faq.avif"
-                  fill
-                  className="object-cover h-full transition duration-700 hover:scale-105"
-                />
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-t from-[#061A2A]/50 via-transparent to-transparent" />
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#061A2A]/40 via-transparent to-transparent" />
+  {/* Floating Stat */}
+  <div className="absolute bottom-4 left-4 rounded-2xl bg-white/95 px-5 py-4 shadow-[0_10px_35px_rgba(0,0,0,0.15)] backdrop-blur-md sm:bottom-5 sm:left-5">
 
-              </div>
+    <div className="text-3xl font-bold tracking-tight text-[#1261A0]">
+      100+
+    </div>
 
+    <div className="mt-0.5 text-xs font-medium text-gray-600">
+      Customers Served
+    </div>
 
-              {/* Floating Stat */}
-              <div className="absolute bottom-4 left-4 rounded-2xl bg-white px-5 py-4 shadow-[0_10px_35px_rgba(0,0,0,0.15)] sm:bottom-5 sm:left-5">
+  </div>
 
-                <div className="text-3xl font-bold tracking-tight text-[#1261A0]">
-                  100+
-                </div>
+</div>
 
-                <div className="mt-0.5 text-xs font-medium text-gray-600">
-                  Customers Served
-                </div>
-
-              </div>
-
-            </div>
 
           </div>
 
