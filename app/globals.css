@@ -25,6 +25,81 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.blog-article-content {
+  color: #334155;
+  font-size: 1rem;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
+.blog-article-content :where(h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote) {
+  margin-block: 0 !important;
+}
+
+.blog-article-content > * + * {
+  margin-top: 0.8rem !important;
+}
+
+.blog-article-content :where(h1, h2, h3, h4, h5, h6) {
+  color: #061a2a;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.blog-article-content h1 {
+  font-size: 1.875rem;
+}
+
+.blog-article-content h2 {
+  font-size: 1.5rem;
+}
+
+.blog-article-content h3 {
+  font-size: 1.25rem;
+}
+
+.blog-article-content :where(ul, ol) {
+  padding-inline-start: 1.5rem;
+}
+
+.blog-article-content ul {
+  list-style: disc;
+}
+
+.blog-article-content ol {
+  list-style: decimal;
+}
+
+.blog-article-content li {
+  margin-block: 0.2rem;
+  padding-inline-start: 0.2rem;
+}
+
+.blog-article-content li > :where(p, ul, ol) {
+  margin-block: 0.25rem !important;
+}
+
+.blog-article-content :where(p:empty, p:has(> br:only-child)) {
+  display: none;
+}
+
+.blog-article-content :where(img, video) {
+  height: auto;
+  max-width: 100%;
+}
+
+.blog-article-content blockquote {
+  border-left: 3px solid #00356b;
+  padding-left: 1rem;
+  color: #475569;
+}
+
+.blog-article-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 
 .clarity{
   font-family: "Clarity City", sans-serif;
