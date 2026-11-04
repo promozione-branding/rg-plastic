@@ -19,13 +19,13 @@ export default function Home() {
       
       <Hero/>
       <AboutSection/>
-      <Work/>
       <ProductSlider/>
+      <Work/>
       <Whychoose/>
       {/* <Why2/> */}
-      <MachineryCTA/>
       <Industry/>
       <Testimonials/>
+      <MachineryCTA/>
       <FAQSection/>
       <Cta/>
    

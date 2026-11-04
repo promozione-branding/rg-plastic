@@ -272,18 +272,47 @@ function ProductCard({ product }) {
    HERO STAT
 ========================================================= */
 
+
 function HeroStat({ number, label }) {
   return (
-    <div className="border-r border-white/10 px-4 py-5 first:pl-0 last:border-r-0">
+    <div className="group relative isolate px-2 py-5 first:pl-0">
 
-      <div className="text-2xl font-semibold text-white">
-        {number}
+      {/* 3D Card */}
+      <div
+        className="
+          relative overflow-hidden rounded-xl
+          border border-white/10
+          bg-gradient-to-br from-white/[0.12] via-white/[0.05] to-white/[0.01]
+          px-5 py-5
+          shadow-[0_12px_30px_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.15)]
+          backdrop-blur-md
+          transition-all duration-500 ease-out
+          group-hover:-translate-y-2
+          group-hover:border-[#00356B]/50
+          group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.35),0_0_25px_rgba(143,207,104,0.12)]
+        "
+      >
+
+        {/* Top Shine */}
+        <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-1000 group-hover:translate-x-full" />
+
+        {/* Glow */}
+        <div className="absolute -right-5 -top-5 h-20 w-20 rounded-full bg-[#8fcf68]/10 blur-2xl transition-all duration-500 group-hover:bg-[#8fcf68]/25" />
+
+        {/* Number */}
+        <div className="relative text-3xl font-black tracking-tight text-white drop-shadow-[0_3px_8px_rgba(0,0,0,0.4)] transition-all duration-500 group-hover:scale-105 group-hover:text-[#ba8e32]">
+          {number}
+        </div>
+
+        {/* Label */}
+        <div className="relative mt-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/50 transition-colors duration-300 group-hover:text-white/80">
+          {label}
+        </div>
+
+        {/* Bottom Accent */}
+        <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-[#00356B] to-transparent transition-all duration-500 group-hover:w-full" />
+
       </div>
-
-      <div className="mt-1 text-[10px] uppercase tracking-wider text-white/45">
-        {label}
-      </div>
-
     </div>
   );
 }

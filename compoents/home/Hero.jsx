@@ -1,56 +1,94 @@
+
 "use client";
 
 import {
   FiArrowRight,
   FiFileText,
-  FiCheckCircle,
-  FiShield,
-  FiGlobe,
-  FiActivity,
 } from "react-icons/fi";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/effect-fade";
+
+const heroImages = [
+  
+  "https://www.goodfishgroup.com/wp-content/uploads/2023/12/IMG_5330-scaled.webp",
+  "/slide2.png",
+];
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#101d1b] pt-[108px] sm:pt-13 ">
+    <section className="relative overflow-hidden bg-[#101d1b] pt-[108px] sm:pt-13">
+
       {/* =====================================================
           BACKGROUND
       ====================================================== */}
       <div className="absolute inset-0">
-        {/* Dark base */}
         <div className="absolute inset-0 bg-[#101d1b]" />
 
-        {/* Technical gradient */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(0,143,130,0.18),transparent_40%),radial-gradient(circle_at_90%_20%,rgba(255,255,255,0.04),transparent_35%)]" />
-
-        {/* Grid */}
       </div>
 
       {/* =====================================================
           HERO CONTAINER
       ====================================================== */}
-      <div className="relative mx-auto max-w-[1440px] px-4 sm:px-0 ">
+      <div className="relative mx-auto max-w-[1440px] px-4 sm:px-0">
+
         <div className="grid min-h-[650px] items-center lg:grid-cols-12">
+
           {/* =================================================
-              LEFT IMAGE
+              LEFT IMAGE SLIDER
           ================================================== */}
-          <div className="relative order-2 h-[420px] sm:h-[610px] lg:order-1 lg:col-span-7 ">
+          <div className="relative order-2 h-[420px] sm:h-[610px] lg:order-1 lg:col-span-7">
+
             {/* Glow behind image */}
             <div className="absolute left-[-10%] top-1/2 h-[75%] w-[75%] -translate-y-1/2 rounded-full bg-[#008f82]/10 blur-[100px]" />
 
             {/* Main image frame */}
-            <div className="absolute inset-y-8 left-0 right-[-25%] overflow-hidden rounded-r-[32px]  shadow-[0_25px_60px_rgba(0,0,0,0.35)] lg:inset-y-10 lg:right-[-18%]">
-              <img
-                src="https://www.goodfishgroup.com/wp-content/uploads/2023/12/IMG_5330-scaled.webp"
-                className="h-full w-full object-cover object-center transition-transform duration-1000 hover:scale-[1.02]"
-              />
+            <div className="absolute inset-y-8 left-0 right-[-25%] overflow-hidden rounded-r-[32px] shadow-[0_25px_60px_rgba(0,0,0,0.35)] lg:inset-y-10 lg:right-[-18%]">
+
+              {/* Swiper */}
+              <Swiper
+                modules={[Autoplay, EffectFade]}
+                effect="fade"
+                fadeEffect={{
+                  crossFade: true,
+                }}
+                slidesPerView={1}
+                loop={true}
+                speed={1000}
+                autoplay={{
+                  delay: 4000,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: true,
+                }}
+                className="h-full w-full"
+              >
+                {heroImages.map((image, index) => (
+                  <SwiperSlide
+                    key={index}
+                    className="h-full w-full"
+                  >
+                    <img
+                      src={image}
+                      alt={`Plastic Recycling Machine ${index + 1}`}
+                      className="h-full w-full object-cover object-center transition-transform duration-1000 hover:scale-[1.02]"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
 
               {/* Image overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#101d1b]/80" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0a1210]/50 via-transparent to-transparent" />
+              <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-r from-transparent via-transparent to-[#101d1b]/80" />
+
+              <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-[#0a1210]/50 via-transparent to-transparent" />
 
               {/* Machine status */}
-              <div className="absolute left-5 top-5 sm:left-7 sm:top-7">
+              <div className="absolute left-5 top-5 z-20 sm:left-7 sm:top-7">
                 <div className="flex items-center gap-2 rounded-full border border-white/10 bg-[#101d1b]/75 px-3.5 py-2 text-white backdrop-blur-xl">
+
                   <span className="relative flex h-2 w-2">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#0F52BA] opacity-70" />
                     <span className="relative inline-flex h-2 w-2 rounded-full bg-[#0F52BA]" />
@@ -59,12 +97,14 @@ export default function Hero() {
                   <span className="text-[9px] font-bold uppercase tracking-[0.12em] sm:text-[10px]">
                     Production Ready
                   </span>
+
                 </div>
               </div>
 
               {/* Bottom machine card */}
-              <div className="absolute bottom-5 left-5 sm:bottom-7 sm:left-7">
+              <div className="absolute bottom-5 left-5 z-20 sm:bottom-7 sm:left-7">
                 <div className="rounded-xl border border-white/10 bg-[#101d1b]/80 px-4 py-3 text-white backdrop-blur-xl">
+
                   <div className="text-[8px] font-semibold uppercase tracking-[0.12em] text-white/45">
                     Plastic Recycling
                   </div>
@@ -72,38 +112,46 @@ export default function Hero() {
                   <div className="mt-1 text-[13px] font-bold sm:text-[14px]">
                     Machine Manufacturer
                   </div>
+
                 </div>
               </div>
+
             </div>
 
             {/* Orange/teal accent line */}
             <div className="absolute bottom-4 left-0 right-[-10%] h-[3px] bg-gradient-to-r from-[#008f82] via-[#0F52BA] to-transparent lg:right-[-8%]" />
+
           </div>
 
           {/* =================================================
               RIGHT CONTENT
           ================================================== */}
           <div className="relative z-10 order-1 py-12 lg:order-2 lg:col-span-5 lg:-ml-4 lg:py-16">
-            {/* Small label */}
 
             {/* Heading */}
-            <h1 className="max-w-[620px] text-[40px] font-extrabold leading-[1.03] tracking-[-0.045em] text-white sm:text-[52px] lg:text-[56px] ">
+            <h1 className="max-w-[620px] text-[40px] font-extrabold leading-[1.03] tracking-[-0.045em] text-white sm:text-[52px] lg:text-[56px]">
+
               Plastic Recycling{" "}
+
               <span className="bg-gradient-to-r from-[#19c5b5] via-[#159ed8] to-[#1969e0] bg-clip-text text-transparent">
                 Machine Manufacturer.
               </span>
+
             </h1>
 
             {/* Description */}
             <p className="mt-6 max-w-[560px] text-[14px] leading-5 text-white/65 sm:text-[15px] sm:leading-5 lg:text-[16px]">
+
               Dharam Engg Work is an experienced Plant Processing Machine
               Manufacturer offering vented extruders, granule machines,
               Thermocol and EPS recycling machines, mixture machines, and
               agglomerators for efficient plastic recycling and processing.
+
             </p>
 
             {/* CTA */}
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+
               {/* Primary */}
               <a
                 href="#products"
@@ -123,17 +171,17 @@ export default function Hero() {
 
                 <span>Request a Quote</span>
               </a>
-            </div>
 
-            {/* =================================================
-                TRUST POINTS
-            ================================================== */}
+            </div>
 
             {/* =================================================
                 STATS
             ================================================== */}
             <div className="mt-9 grid max-w-[560px] grid-cols-3 border-y border-white/10">
+
+              {/* Stat 1 */}
               <div className="py-4 pr-4">
+
                 <div className="text-[25px] font-extrabold tracking-[-0.04em] text-white sm:text-[30px]">
                   40+
                 </div>
@@ -143,9 +191,12 @@ export default function Hero() {
                   <br />
                   of Engineering Expertise
                 </div>
+
               </div>
 
+              {/* Stat 2 */}
               <div className="border-x border-white/10 px-4 py-4">
+
                 <div className="text-[25px] font-extrabold tracking-[-0.04em] text-white sm:text-[30px]">
                   6+
                 </div>
@@ -153,9 +204,12 @@ export default function Hero() {
                 <div className="mt-1 text-[8px] font-bold uppercase tracking-[0.1em] text-white/40 sm:text-[9px]">
                   Plastic Processing Solutions
                 </div>
+
               </div>
 
+              {/* Stat 3 */}
               <div className="py-4 pl-4">
+
                 <div className="text-[25px] font-extrabold tracking-[-0.04em] text-white sm:text-[30px]">
                   End-to-End
                 </div>
@@ -165,9 +219,13 @@ export default function Hero() {
                   <br />
                   Solutions
                 </div>
+
               </div>
+
             </div>
+
           </div>
+
         </div>
       </div>
 
@@ -175,9 +233,13 @@ export default function Hero() {
           BOTTOM ANGLED EDGE
       ====================================================== */}
       <div className="absolute bottom-0 left-0 right-0 h-7 overflow-hidden">
+
         <div className="absolute bottom-[-18px] left-[-2%] h-10 w-[104%] rotate-[1.3deg] bg-[#0F52BA]" />
+
         <div className="absolute bottom-[-23px] left-[-2%] h-10 w-[104%] rotate-[1.3deg] bg-[#101d1b]" />
+
       </div>
+
     </section>
   );
 }

@@ -66,6 +66,9 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
+  if (pathname === "/admin" || pathname.startsWith("/admin/")) {
+    return null;
+  }
 
 
   return (
@@ -188,7 +191,7 @@ export default function Navbar() {
                       className={`
                         group relative flex items-center gap-1
                         rounded-xl px-4 py-3
-                        text-[13px] font-semibold
+                        text-[15px] font-semibold
                         transition-all duration-300
                         xl:px-5
 

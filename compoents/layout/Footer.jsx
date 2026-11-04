@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   FiPhone,
   FiMapPin,
@@ -15,6 +16,12 @@ import {
 } from "react-icons/fi";
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  if (pathname === "/admin" || pathname.startsWith("/admin/")) {
+    return null;
+  }
+
   return (
     <footer className="relative overflow-hidden bg-[#061A2A] text-white">
       {/* subtle texture */}

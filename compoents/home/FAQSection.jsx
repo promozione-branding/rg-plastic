@@ -175,7 +175,7 @@ export default function FAQSection() {
               <div className="relative aspect-[1.7/1]">
 
                 <Image
-                  src="https://images.unsplash.com/photo-1655294706775-90c348b0ecc9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fG1vdWRsaW5nJTIwbWFjaGluZXxlbnwwfHwwfHx8MA%3D%3D"
+                  src="/faq.avif"
                   fill
                   className="object-cover transition duration-700 hover:scale-105"
                 />

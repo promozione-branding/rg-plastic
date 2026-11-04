@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useRef, useState } from "react";
@@ -17,48 +18,35 @@ const products = [
     title: "Vented Extruders Granule Machine",
     description:
       "Designed for efficient plastic recycling and granule production, vented extruder granule machines support material processing with moisture and volatile removal during extrusion.",
-    image:
-      "/products/Vented.webp",
+    image: "/products/Vented.webp",
   },
   {
-    slug: 'two-stage-granule-machine',
+    slug: "two-stage-granule-machine",
     title: "Two Stage Granule Machine",
     description:
       "Two-stage granule machines are designed for plastic recycling applications that require multi-stage processing, helping improve melt filtration, material consistency, and granule quality.",
-    image:
-      "/products/two-gran.webp",
+    image: "/products/two-gran.webp",
   },
-  // {
-  //   title: "Granule Machine with Die Face Cutter",
-  //   description:
-  //     "Engineered for efficient plastic pelletizing, granule machines with die face cutters cut extruded plastic directly at the die face to produce uniform granules for further processing and reuse.",
-  //   image:
-  //     "/products/two-gran.webp",
-  // },
   {
-    slug: 'mixture-machine',
+    slug: "thermocol-eps-granule-machine",
     title: "Granule Machine for Thermocol & EPS Recycling",
     description:
       "Specially designed for Thermocol and expanded polystyrene (EPS) recycling applications, these machines help process recyclable foam materials into reusable granules for further manufacturing.",
-    image:
-      "/products/gran.webp",
+    image: "/products/gran.webp",
   },
   {
+    slug: "mixture-machine",
     title: "Mixture Machine",
-    slug: 'mixture-machine',
-
     description:
-      "Built for efficient material mixing, mixture machines help blend plastic raw materials, additives, colours, and other compatible ingredients to support consistent processing and production requirements",
-    image:
-      "/products/mixture.webp",
+      "Built for efficient material mixing, mixture machines help blend plastic raw materials, additives, colours, and other compatible ingredients to support consistent processing and production requirements.",
+    image: "/products/mixture.webp",
   },
   {
-    slug: 'agglomerator-machine',
+    slug: "agglomerator-machine",
     title: "Agglomerator",
     description:
       "Agglomerators are designed to process lightweight plastic films and other suitable plastic waste into denser material, making handling, feeding, and subsequent recycling operations more efficient.",
-    image:
-      "/products/agglo.webp",
+    image: "/products/agglo.webp",
   },
 ];
 
@@ -69,21 +57,24 @@ export default function ProductSlider() {
   return (
     <section
       id="products"
-      className="relative overflow-hidden bg-[#fcf8ef] py-6 sm:py-13"
+      className="relative overflow-hidden bg-[#fcf8ef] py-12 sm:py-16 lg:py-20"
     >
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
 
-        {/* Header */}
-        <div className="mb-10 flex flex-col gap-6 sm:mb-12 md:flex-row md:items-end md:justify-between">
-
+        {/* HEADER */}
+        <div className="mb-9 flex flex-col gap-6 sm:mb-12 md:flex-row md:items-end md:justify-between">
           <div>
-            <div className="mb-4 text-[11px] font-bold text-[#34312d]">
-              Our Products
+            <div className="mb-4 flex items-center gap-3">
+              <span className="h-[2px] w-8 bg-[#297eff]" />
+
+              <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#34312d]">
+                Our Products
+              </span>
             </div>
 
-            <h2 className="max-w-[700px] text-[38px] font-extrabold uppercase leading-[1.05] tracking-[-0.045em] text-[#25221f] sm:text-[48px] ">
+            <h2 className="max-w-[700px] text-[34px] font-extrabold uppercase leading-[1.08] tracking-[-0.045em] text-[#25221f] sm:text-[48px]">
               High-Performance Plastic Recycling
-              <span className="block text-[#093372]">
+              <span className="mt-1 block text-[#093372]">
                 & Processing Machinery
               </span>
             </h2>
@@ -91,17 +82,17 @@ export default function ProductSlider() {
 
           <Link
             href="/products"
-            className="group inline-flex h-11 shrink-0 items-center gap-3 self-start rounded-full bg-[#297eff] pl-5 pr-2 text-[11px] font-extrabold uppercase tracking-[0.04em] text-[#fff] shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#093372] hover:shadow-lg md:self-auto"
+            className="group inline-flex h-12 shrink-0 items-center gap-3 self-start rounded-full bg-[#297eff] pl-5 pr-2 text-[11px] font-extrabold uppercase tracking-[0.04em] text-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:bg-[#093372] hover:shadow-xl md:self-auto"
           >
             <span>Explore Products</span>
 
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white">
-              <FiArrowUpRight className="text-[15px] text-[#297eff] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white">
+              <FiArrowUpRight className="text-[16px] text-[#297eff] transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" />
             </span>
           </Link>
         </div>
 
-        {/* Swiper */}
+        {/* PRODUCT SLIDER */}
         <Swiper
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
@@ -115,99 +106,252 @@ export default function ProductSlider() {
           breakpoints={{
             640: {
               slidesPerView: 2,
-              spaceBetween: 18,
+              spaceBetween: 20,
             },
             1024: {
               slidesPerView: 3,
-              spaceBetween: 20,
+              spaceBetween: 22,
             },
             1280: {
               slidesPerView: 4,
-              spaceBetween: 20,
+              spaceBetween: 22,
             },
           }}
-          className="!overflow-visible"
+          className="!overflow-visible !pb-3"
         >
           {products.map((product, index) => {
             const active = index === activeIndex;
 
             return (
-              <SwiperSlide key={product.title}>
-                <div
+              <SwiperSlide key={product.slug}>
+                <article
                   className={`
-                    group h-full overflow-hidden rounded-[14px] border bg-white
-                    transition-all duration-300
-                    ${active
-                      ? "border-[#093372] shadow-[0_8px_25px_rgba(240,178,11,0.14)]"
-                      : "border-[#ebe7de] shadow-[0_6px_20px_rgba(0,0,0,0.035)]"
+                    product-shine-card group relative flex h-full flex-col
+                    overflow-hidden rounded-[18px] border bg-white
+                    transition-all duration-500 ease-out
+                    ${
+                      active
+                        ? "border-[#093372]/40 shadow-[0_10px_35px_rgba(9,51,114,0.10)]"
+                        : "border-[#e9e4d9] shadow-[0_5px_20px_rgba(0,0,0,0.035)]"
                     }
-                    hover:-translate-y-1
-                    hover:border-[#093372]
-                    hover:shadow-[0_12px_28px_rgba(0,0,0,0.07)]
+                    hover:-translate-y-2
+                    hover:border-[#297eff]/50
+                    hover:shadow-[0_18px_45px_rgba(9,51,114,0.13)]
                   `}
                 >
-                  {/* Image */}
-                  <div className="m-1.5 overflow-hidden rounded-[10px]">
-                    <div className="h-[220] bg-[#fff]">
+                  {/* MOVING SHINE */}
+                  <div className="product-shine pointer-events-none absolute inset-0 z-20 overflow-hidden rounded-[18px]" />
+
+                  {/* TOP ACCENT */}
+                  <div className="absolute left-0 top-0 z-10 h-[3px] w-full origin-left scale-x-0 bg-gradient-to-r from-[#297eff] via-[#5ca4ff] to-[#093372] transition-transform duration-500 group-hover:scale-x-100" />
+
+                  {/* PRODUCT IMAGE */}
+                  <div className="relative mx-2 mt-2 overflow-hidden rounded-[13px] bg-[#f8f9fb]">
+                    <div className="relative flex h-[215px] items-center justify-center overflow-hidden sm:h-[225px]">
                       <img
                         src={product.image}
                         alt={product.title}
-                        className="h-full w-full object-contain transition-transform duration-700 group-hover:scale-[1.06]"
+                        loading="lazy"
+                        className="h-full w-full object-contain p-3 transition-transform duration-700 ease-out group-hover:scale-[1.09]"
                       />
+
+                      {/* IMAGE OVERLAY */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#093372]/[0.04] via-transparent to-white/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+
+                      {/* PRODUCT NUMBER */}
+                      <span className="absolute right-3 top-3 flex h-8 min-w-8 items-center justify-center rounded-full border border-white/80 bg-white/85 px-2 text-[10px] font-extrabold tracking-wider text-[#093372] shadow-sm backdrop-blur-sm transition-all duration-300 group-hover:bg-[#093372] group-hover:text-white">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
                     </div>
                   </div>
 
-                  {/* Content */}
-                  <div className="px-4 pb-5 pt-3 sm:px-5 sm:pb-6">
+                  {/* CONTENT */}
+                  <div className="relative z-10 flex flex-1 flex-col px-4 pb-5 pt-4 sm:px-5 sm:pb-6">
 
-                    <h3 className="text-[16px] font-extrabold uppercase leading-tight tracking-[-0.02em] text-[#27231f]">
-                      {product.title}
+                    {/* CATEGORY LABEL */}
+                    <div className="mb-2 flex items-center gap-2">
+                      <span className="h-[5px] w-[5px] rounded-full bg-[#297eff] transition-transform duration-300 group-hover:scale-[1.8]" />
+
+                      <span className="text-[9px] font-bold uppercase tracking-[0.17em] text-[#8b8b8b]">
+                        Industrial Machinery
+                      </span>
+                    </div>
+
+                    {/* ANIMATED PRODUCT TITLE */}
+                    <h3 className="product-title min-h-[42px] text-[15px] font-extrabold uppercase leading-[1.35] tracking-[-0.025em] text-[#25221f] sm:text-[16px]">
+                      <span className="product-title-text">
+                        {product.title}
+                      </span>
                     </h3>
 
-                    <p className="mt-2 min-h-[58px] text-[11px] leading-5 text-[#72706b] sm:text-[12px]">
+                    {/* DESCRIPTION - 2 LINE CLAMP */}
+                    <p className="mt-2 line-clamp-2 min-h-[40px] text-[11px] leading-[1.8] text-[#77736d] sm:text-[12px]">
                       {product.description}
                     </p>
 
-                    <a
+                    {/* DIVIDER */}
+                    <div className="my-4 h-px w-full bg-[#eeeae2] transition-colors duration-300 group-hover:bg-[#c8d9f3]" />
+
+                    {/* VIEW PRODUCT */}
+                    <Link
                       href={`/products/${product.slug}`}
-                      className="group/link mt-4 inline-flex items-center gap-2 text-[10px] font-extrabold uppercase tracking-[0.08em] text-[#25221f]"
+                      className="group/link mt-auto inline-flex w-fit items-center gap-2 text-[10px] font-extrabold uppercase tracking-[0.1em] text-[#25221f]"
                     >
-                      <span className="border-b border-transparent transition-colors group-hover/link:border-[#008f82]">
+                      <span className="relative">
                         View Product
+
+                        <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-[#297eff] transition-all duration-300 group-hover/link:w-full" />
                       </span>
 
-                      <FiArrowUpRight className="text-[13px] text-[#093372] transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
-                    </a>
+                      <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#edf3ff] transition-all duration-300 group-hover/link:bg-[#093372]">
+                        <FiArrowUpRight className="text-[14px] text-[#093372] transition-all duration-300 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5 group-hover/link:text-white" />
+                      </span>
+                    </Link>
                   </div>
-                </div>
+                </article>
               </SwiperSlide>
             );
           })}
         </Swiper>
 
-        {/* Bottom navigation */}
-        <div className="mt-8 flex items-center justify-center gap-3">
+        {/* BOTTOM NAVIGATION */}
+        <div className="mt-8 flex items-center justify-between sm:mt-10">
 
-          <button
-            type="button"
-            aria-label="Previous products"
-            onClick={() => swiperRef.current?.slidePrev()}
-            className="group flex h-11 w-11 items-center justify-center rounded-full bg-[#093372] text-[#fff] shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
-          >
-            <FiArrowLeft className="text-[17px] transition-transform duration-300 group-hover:-translate-x-0.5" />
-          </button>
+          {/* SLIDE COUNTER */}
+          <div className="flex items-center gap-2">
+            <span className="text-[13px] font-extrabold text-[#093372]">
+              {String(activeIndex + 1).padStart(2, "0")}
+            </span>
 
-          <button
-            type="button"
-            aria-label="Next products"
-            onClick={() => swiperRef.current?.slideNext()}
-            className="group flex h-11 w-11 items-center border border-[#093372] justify-center rounded-full bg-white text-[#25221f] shadow-[0_4px_15px_rgba(0,0,0,0.07)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
-          >
-            <FiArrowRight className="text-[17px] transition-transform duration-300 group-hover:translate-x-0.5" />
-          </button>
+            <span className="h-px w-8 bg-[#c8c1b4]" />
 
+            <span className="text-[11px] font-bold text-[#9b968d]">
+              {String(products.length).padStart(2, "0")}
+            </span>
+          </div>
+
+          {/* NAVIGATION BUTTONS */}
+          <div className="flex items-center gap-3">
+            <button
+              type="button"
+              aria-label="Previous products"
+              onClick={() => swiperRef.current?.slidePrev()}
+              disabled={activeIndex === 0}
+              className="group flex h-11 w-11 items-center justify-center rounded-full border border-[#093372] bg-white text-[#093372] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-[#093372] hover:text-white hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-35 disabled:hover:translate-y-0 disabled:hover:bg-white disabled:hover:text-[#093372]"
+            >
+              <FiArrowLeft className="text-[17px] transition-transform duration-300 group-hover:-translate-x-1" />
+            </button>
+
+            <button
+              type="button"
+              aria-label="Next products"
+              onClick={() => swiperRef.current?.slideNext()}
+              disabled={activeIndex >= products.length - 1}
+              className="group flex h-11 w-11 items-center justify-center rounded-full bg-[#093372] text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-[#297eff] hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-35 disabled:hover:translate-y-0 disabled:hover:bg-[#093372]"
+            >
+              <FiArrowRight className="text-[17px] transition-transform duration-300 group-hover:translate-x-1" />
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* CUSTOM ANIMATIONS */}
+      <style jsx>{`
+        /* CARD SHINE EFFECT */
+        .product-shine::after {
+          content: "";
+          position: absolute;
+          top: -100%;
+          left: -100%;
+          width: 55%;
+          height: 300%;
+          transform: rotate(25deg);
+          background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.08),
+            rgba(255, 255, 255, 0.65),
+            rgba(255, 255, 255, 0.08),
+            transparent
+          );
+          opacity: 0;
+        }
+
+        .product-shine-card:hover .product-shine::after {
+          opacity: 1;
+          animation: cardShine 0.85s ease-in-out;
+        }
+
+        @keyframes cardShine {
+          0% {
+            left: -100%;
+          }
+
+          100% {
+            left: 160%;
+          }
+        }
+
+        /* PRODUCT TITLE GRADIENT */
+        .product-title {
+          position: relative;
+          width: fit-content;
+          max-width: 100%;
+          cursor: default;
+        }
+
+        .product-title-text {
+          display: inline;
+          background-image: linear-gradient(
+            90deg,
+            #093372 0%,
+            #297eff 35%,
+            #72b5ff 50%,
+            #093372 70%
+          );
+          background-size: 220% 100%;
+          background-position: 100% 50%;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: #25221f;
+          transition:
+            background-position 0.7s ease,
+            letter-spacing 0.5s ease;
+        }
+
+        /* TITLE HOVER */
+        .product-shine-card:hover .product-title-text {
+          background-position: 0% 50%;
+          -webkit-text-fill-color: transparent;
+          letter-spacing: 0.005em;
+        }
+
+        /* ANIMATED UNDERLINE */
+        .product-title::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 2px;
+          margin-top: 5px;
+          border-radius: 10px;
+          background: linear-gradient(90deg, #093372, #297eff);
+          transition: width 0.45s ease;
+        }
+
+        .product-shine-card:hover .product-title::after {
+          width: 48px;
+        }
+
+        /* ACCESSIBILITY */
+        @media (prefers-reduced-motion: reduce) {
+          .product-shine-card,
+          .product-shine-card *,
+          .product-title::after {
+            transition-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }

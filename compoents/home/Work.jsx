@@ -44,20 +44,15 @@ export default function Work() {
   return (
     <section
       id="process"
-      className="relative overflow-hidden bg-[#0b1110] py-6 text-white sm:py-13"
+      className="relative overflow-hidden bg-white py-6 text-[#061A2A] sm:py-13"
     >
       {/* =====================================================
           BACKGROUND
       ====================================================== */}
       <div className="pointer-events-none absolute inset-0">
 
-        {/* Teal glow */}
-        <div className="absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-[#008f82]/[0.06] blur-[130px]" />
-
-
-
-        {/* Bottom glow */}
-        <div className="absolute bottom-[-200px] right-[-100px] h-[450px] w-[450px] rounded-full bg-[#008f82]/[0.04] blur-[100px]" />
+        <div className="absolute left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-[#00356B]/[0.04] blur-[130px]" />
+        <div className="absolute bottom-[-200px] right-[-100px] h-[450px] w-[450px] rounded-full bg-[#00356B]/[0.035] blur-[100px]" />
       </div>
 
       <div className="relative mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
@@ -67,17 +62,17 @@ export default function Work() {
         ================================================== */}
         <div className="mx-auto max-w-5xl text-center">
 
-          <div className="mb-4 inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.18em] text-[#fff]">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#fff]" />
+          <div className="mb-4 inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.18em] text-[#00356B]">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#00356B]" />
             How We Work
           </div>
 
-          <h2 className="text-[34px] font-extrabold uppercase leading-[1.05] tracking-[-0.035em] text-white sm:text-[44px] lg:text-[52px]">
+          <h2 className="text-[34px] font-extrabold uppercase leading-[1.05] tracking-[-0.035em] text-[#061A2A] sm:text-[44px] lg:text-[52px]">
             Our Plant Processing{" "}
-            <span className="text-[#297eff]">Machine Manufacturing Process</span>
+            <span className="text-[#00356B]">Machine Manufacturing Process</span>
           </h2>
 
-          <p className="mx-auto mt-4 max-w-xl text-[13px] leading-6 text-white/45 sm:text-[14px] sm:leading-7">
+          <p className="mx-auto mt-4 max-w-xl text-[13px] leading-6 text-slate-600 sm:text-[14px] sm:leading-7">
             At Dharam Engg Work, we follow a structured approach to delivering reliable industrial machinery. As a Plant Processing Machine Manufacturer, we focus on understanding customer requirements, planning suitable machine solutions, maintaining manufacturing quality, and ensuring dependable performance at every stage of the process.
           </p>
         </div>
@@ -88,7 +83,7 @@ export default function Work() {
         <div className="relative mt-6 grid grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-4">
 
           {/* Connecting line */}
-          <div className="pointer-events-none absolute left-[8%] right-[8%] top-[108px] hidden h-px bg-white/10 lg:block" />
+          <div className="pointer-events-none absolute left-[8%] right-[8%] top-[108px] hidden h-px bg-slate-200 lg:block" />
 
           {processSteps.map((step, index) => {
             const Icon = step.icon;
@@ -97,7 +92,7 @@ export default function Work() {
               <div
                 key={step.number}
                 className={`group relative px-5 py-5 sm:px-6 lg:px-7 ${index !== processSteps.length - 1
-                    ? "border-b border-white/[0.07] sm:border-b-0 lg:border-r lg:border-white/[0.07]"
+                    ? "border-b border-slate-200 sm:border-b-0 lg:border-r"
                     : ""
                   }`}
               >
@@ -114,12 +109,12 @@ export default function Work() {
                       text-[100px]
                       leading-none
                       tracking-[-0.08em]
-                      text-white/[0.22]
+                      text-[#00356B]/[0.09]
                       transition-all
                       duration-500
                       ease-out
                       group-hover:-translate-y-7
-                      group-hover:text-[#4884dd]
+                      group-hover:text-[#00356B]/[0.88]
                       group-hover:scale-[1.04]
                     "
                   >
@@ -132,11 +127,11 @@ export default function Work() {
                       absolute bottom-2 left-0
                       h-[2px]
                       w-10
-                      bg-white/30
+                      bg-[#00356B]/25
                       transition-all
                       duration-500
                       group-hover:w-20
-                      group-hover:bg-[#297eff]
+                      group-hover:bg-[#00356B]
                     "
                   />
                 </div>
@@ -147,22 +142,22 @@ export default function Work() {
                 <div className="relative">
 
                   {/* Icon */}
-                  <div className="mb-5 flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/[0.04] text-white/50 transition-all duration-300 group-hover:border-[#008f82]/30 group-hover:bg-[#008f82]/10 group-hover:text-[#297eff]">
+                  <div className="mb-5 flex h-9 w-9 items-center justify-center rounded-lg border border-[#00356B]/10 bg-[#00356B]/[0.04] text-[#00356B]/70 transition-all duration-300 group-hover:border-[#00356B]/30 group-hover:bg-[#00356B]/10 group-hover:text-[#00356B]">
                     <Icon className="text-[16px]" />
                   </div>
 
                   {/* Title */}
-                  <h3 className="max-w-[250px] text-[12px] font-extrabold uppercase leading-5 tracking-[0.05em] text-white transition-colors duration-300 group-hover:text-[#297eff] sm:text-[13px]">
+                  <h3 className="max-w-[250px] text-[12px] font-extrabold uppercase leading-5 tracking-[0.05em] text-[#061A2A] transition-colors duration-300 group-hover:text-[#00356B] sm:text-[13px]">
                     {step.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="mt-3 max-w-[270px] text-[11px] leading-6 text-white/45 transition-colors duration-300 group-hover:text-white/60 sm:text-[12px]">
+                  <p className="mt-3 max-w-[270px] text-[11px] leading-5 text-slate-600 transition-colors duration-300 group-hover:text-slate-800 sm:text-[12px]">
                     {step.description}
                   </p>
 
                   {/* Learn more */}
-                  <div className="mt-5 flex items-center gap-2 overflow-hidden text-[9px] font-bold uppercase tracking-[0.1em] text-[#297eff]">
+                  <div className="mt-5 flex items-center gap-2 overflow-hidden text-[9px] font-bold uppercase tracking-[0.1em] text-[#00356B]">
                     <span
                       className="
                         translate-y-3 opacity-0
@@ -196,7 +191,7 @@ export default function Work() {
         <div className="mt-14 flex justify-center">
           <Link
             href="/contact"
-            className="group inline-flex h-12 items-center gap-3 rounded-md bg-[#297eff] px-6 text-[12px] font-bold uppercase tracking-[0.05em] text-white shadow-[0_8px_25px_rgba(0,143,130,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0c49a4] hover:shadow-[0_12px_32px_rgba(0,143,130,0.25)]"
+            className="group inline-flex h-12 items-center gap-3 rounded-md bg-[#00356B] px-6 text-[12px] font-bold uppercase tracking-[0.05em] text-white shadow-[0_8px_25px_rgba(0,53,107,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#061A2A] hover:shadow-[0_12px_32px_rgba(0,53,107,0.25)]"
           >
             <span>Contact Us for Plant Processing Machinery</span>
 

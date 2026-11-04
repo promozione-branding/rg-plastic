@@ -1,106 +1,45 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import {
-  ArrowDownRight,
   ArrowRight,
   ArrowUpRight,
   CalendarDays,
   CheckCircle2,
-  ChevronRight,
   Clock3,
   Factory,
-  Menu,
   Search,
-  Tag,
-  X,
 } from "lucide-react";
 
-const blogs = [
-  {
-    id: 1,
-    title:
-      "How to Choose the Right Plastic Recycling Machine for Your Business",
-    excerpt:
-      "Explore the key factors to consider when selecting plastic recycling equipment, from processing capacity and material compatibility to energy efficiency.",
-    category: "Recycling Technology",
-    date: "October 08, 2026",
-    readTime: "7 min read",
-    image:
-      "https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1000&q=85",
-    slug: "choose-right-plastic-recycling-machine",
-    featured: true,
-  },
-  {
-    id: 2,
-    title: "Understanding the Plastic Granulation Process",
-    excerpt:
-      "Discover how plastic granulators transform scrap into reusable material and why particle consistency matters for downstream production.",
-    category: "Processing Machinery",
-    date: "October 02, 2026",
-    readTime: "5 min read",
-    image:
-      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1000&q=85",
-    slug: "plastic-granulation-process",
-  },
-  {
-    id: 3,
-    title: "The Future of Sustainable Plastic Manufacturing",
-    excerpt:
-      "Learn how modern recycling systems and smarter manufacturing processes can reduce waste and support a more circular plastics industry.",
-    category: "Sustainability",
-    date: "September 25, 2026",
-    readTime: "6 min read",
-    image:
-      "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1000&q=85",
-    slug: "sustainable-plastic-manufacturing",
-  },
-  {
-    id: 4,
-    title: "Plastic Washing Lines: Improving Material Quality",
-    excerpt:
-      "A practical look at washing line stages, contamination removal, drying systems, and the role of clean feedstock in recycling.",
-    category: "Processing Machinery",
-    date: "September 18, 2026",
-    readTime: "8 min read",
-    image:
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=85",
-    slug: "plastic-washing-lines-material-quality",
-  },
-  {
-    id: 5,
-    title: "How Automation Is Transforming Industrial Production",
-    excerpt:
-      "Understand how automation, process monitoring, and intelligent controls help manufacturers improve consistency and production efficiency.",
-    category: "Industry Insights",
-    date: "September 10, 2026",
-    readTime: "5 min read",
-    image:
-      "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=1000&q=85",
-    slug: "automation-industrial-production",
-  },
-  {
-    id: 6,
-    title: "Reducing Production Waste Through Better Material Recovery",
-    excerpt:
-      "Explore practical strategies for recovering production scrap, improving material utilization, and building a more resource-efficient facility.",
-    category: "Sustainability",
-    date: "September 03, 2026",
-    readTime: "6 min read",
-    image:
-      "https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=1000&q=85",
-    slug: "production-waste-material-recovery",
-  },
-];
+function toBlogCard(blog) {
+  const contentText = (blog.content || "")
+    .replace(/<[^>]*>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  const excerpt = blog.metaDescription || contentText;
+  const date = blog.date ? new Date(blog.date) : null;
 
-const categories = [
-  "All Articles",
-  "Recycling Technology",
-  "Processing Machinery",
-  "Sustainability",
-  "Industry Insights",
-];
+  return {
+    id: blog._id,
+    title: blog.title,
+    excerpt:
+      excerpt.length > 180 ? `${excerpt.slice(0, 180).trim()}...` : excerpt,
+    category: blog.category || "Industry Insights",
+    date:
+      date && !Number.isNaN(date.getTime())
+        ? date.toLocaleDateString("en-US", {
+            month: "long",
+            day: "2-digit",
+            year: "numeric",
+          })
+        : "Date unavailable",
+    readTime: `${Math.max(1, Math.ceil(contentText.split(/\s+/).filter(Boolean).length / 200))} min read`,
+    image: blog.image,
+    slug: blog.permalink,
+  };
+}
 
 function SectionLabel({ children }) {
   return (
@@ -121,12 +60,18 @@ function BlogCard({ blog, index }) {
         aria-label={`Read ${blog.title}`}
         className="relative block aspect-[16/10] overflow-hidden bg-slate-200"
       >
-        <img
-          src={blog.image}
-          alt={blog.title}
-          loading="lazy"
-          className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-        />
+        {blog.image ? (
+          <img
+            src={blog.image}
+            alt={blog.title}
+            loading="lazy"
+            className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+          />
+        ) : (
+          <div className="flex h-full items-center justify-center text-slate-400">
+            <Factory size={44} strokeWidth={1.25} />
+          </div>
+        )}
 
         <div className="absolute inset-0 bg-gradient-to-t from-[#071318]/75 via-transparent to-transparent" />
 
@@ -183,9 +128,48 @@ function BlogCard({ blog, index }) {
 }
 
 export default function Blogs() {
+  const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState("");
   const [activeCategory, setActiveCategory] = useState("All Articles");
   const [searchQuery, setSearchQuery] = useState("");
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    async function fetchBlogs() {
+      try {
+        const response = await fetch("/api/blog");
+        if (!response.ok) {
+          throw new Error(`Failed to fetch blogs (${response.status})`);
+        }
+
+        const data = await response.json();
+        if (!Array.isArray(data)) {
+          throw new Error("The blog API returned an invalid response.");
+        }
+
+        if (isMounted) {
+          setBlogs(data.map(toBlogCard));
+        }
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+        if (isMounted) {
+          setLoadError("Unable to load articles. Please try again later.");
+        }
+      } finally {
+        if (isMounted) {
+          setLoading(false);
+        }
+      }
+    }
+
+    fetchBlogs();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   const filteredBlogs = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
@@ -202,7 +186,7 @@ export default function Blogs() {
 
       return matchesCategory && matchesSearch;
     });
-  }, [activeCategory, searchQuery]);
+  }, [activeCategory, blogs, searchQuery]);
 
   return (
     <main className="min-h-screen overflow-hidden mt-10 bg-[#f4f7f7] text-[#10252e]">
@@ -242,7 +226,18 @@ export default function Blogs() {
           </div>
 
           {/* Cards */}
-          {filteredBlogs.length > 0 ? (
+          {loading ? (
+            <div className="rounded-xl border border-slate-200 bg-white px-5 py-16 text-center text-sm text-slate-500">
+              Loading articles...
+            </div>
+          ) : loadError ? (
+            <div
+              role="alert"
+              className="rounded-xl border border-red-200 bg-white px-5 py-16 text-center text-sm text-red-700"
+            >
+              {loadError}
+            </div>
+          ) : filteredBlogs.length > 0 ? (
             <div className="grid gap-5 sm:grid-cols-2 sm:gap-6 xl:grid-cols-3">
               {filteredBlogs.map((blog, index) => (
                 <BlogCard key={blog.id} blog={blog} index={index} />

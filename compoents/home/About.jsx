@@ -48,7 +48,7 @@ export default function AboutSection() {
             <div className="relative z-10 overflow-hidden rounded-[18px] sm:rounded-[22px]">
               <div className="aspect-[4/3] overflow-hidden bg-[#edf3f1]">
                 <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1JR0yqweW2K_3C46sN0m4jVV76xjzAXCup3Uva6gGE4rNjPxAVdFzEexzoP6T_sReljaxdJs9xdif0WQvgQbWk-duOVwU4QCCwZ6chsn3JkZOI8MYUfP914fODCCjgWb0Mcg9jRS36S1Fv0qpqjwr5qe-Xv5OyWroe_sJJwQEWTjf4VRSgI7d0fwlpV0GijyfHNSGEzOCLJ9HibZnB0w_41-wV9VcKtNVBmCUs9fGk6jOmfn7Z5RK8g"
+                  src="https://5.imimg.com/data5/SELLER/Default/2026/6/617893268/UQ/HL/GP/262831669/automotive-plastic-components-1000x1000.jpeg"
                   alt="Texmo Precision Machinery manufacturing facility"
                   className="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.025]"
                 />
