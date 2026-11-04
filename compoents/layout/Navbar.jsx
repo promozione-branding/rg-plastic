@@ -152,7 +152,7 @@ export default function Navbar() {
                   NAVBAR INNER
               ================================================= */}
 
-              <div className="flex h-[70px] items-center justify-between px-4 sm:px-6 lg:h-[76px]">
+              <div className="flex h-[70px] items-center justify-between px-4 sm:px-6 lg:h-[89px]">
 
 
                 {/* =================================================
@@ -161,7 +161,7 @@ export default function Navbar() {
 
                 <Link
                   href="/"
-                  className="group flex shrink-0 items-center"
+                  className="group flex shrink-0 my-2 items-center"
                 >
 
                   <Image
