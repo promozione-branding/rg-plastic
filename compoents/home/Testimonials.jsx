@@ -253,7 +253,7 @@ export default function Testimonials() {
             {/* Bottom CTA */}
             <div className="mt-9 flex flex-col gap-4 border-t border-[#e7ecea] pt-6 sm:flex-row sm:items-center sm:justify-between">
 
-              <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.08em] text-[#7d8784]">
+              <div className="flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.08em] text-[#7d8784]">
                 <FiCheckCircle className="text-[#093372]" />
                 Built for demanding industries
               </div>
@@ -287,7 +287,7 @@ function TrustItem({ text }) {
     <div className="flex items-center gap-2 rounded-lg bg-[#f6f9f8] px-3 py-3">
       <FiCheckCircle className="shrink-0 text-[14px] text-[#093372]" />
 
-      <span className="text-[10px] font-bold text-[#56625f]">
+      <span className="text-[14px] font-bold text-[#56625f]">
         {text}
       </span>
     </div>
