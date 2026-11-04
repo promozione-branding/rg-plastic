@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import HomeReveal from "./HomeReveal";
 import {
   FiMessageSquare,
   FiSettings,
@@ -89,14 +90,14 @@ export default function Work() {
             const Icon = step.icon;
 
             return (
-              <div
+              <HomeReveal
                 key={step.number}
+                delay={index * 0.1}
                 className={`group relative px-5 py-5 sm:px-6 lg:px-7 ${index !== processSteps.length - 1
                     ? "border-b border-slate-200 sm:border-b-0 lg:border-r"
                     : ""
                   }`}
               >
-
                 {/* =================================================
                     NUMBER
                 ================================================== */}
@@ -134,7 +135,7 @@ export default function Work() {
                       group-hover:bg-[#00356B]
                     "
                   />
-                </div>
+                  </div>
 
                 {/* =================================================
                     CONTENT
@@ -180,7 +181,7 @@ export default function Work() {
                     />
                   </div>
                 </div>
-              </div>
+                </HomeReveal>
             );
           })}
         </div>

@@ -9,6 +9,7 @@ import Testimonials from "@/compoents/home/Testimonials";
 // import Why2 from "@/compoents/home/Why2";
 import Whychoose from "@/compoents/home/Whychoose";
 import Work from "@/compoents/home/Work";
+import HomeReveal from "@/compoents/home/HomeReveal";
 // import Footer from "@/compoents/layout/Footer";
 // import Navbar from "@/compoents/layout/Navbar";
 // import Image from "next/image";
@@ -17,17 +18,17 @@ export default function Home() {
   return (
     <>
       
-      <Hero/>
-      <AboutSection/>
-      <ProductSlider/>
-      <Work/>
-      <Whychoose/>
+      <HomeReveal><Hero/></HomeReveal>
+      <HomeReveal><AboutSection/></HomeReveal>
+      <HomeReveal><ProductSlider/></HomeReveal>
+      <HomeReveal><Work/></HomeReveal>
+      <HomeReveal><Whychoose/></HomeReveal>
       {/* <Why2/> */}
-      <Industry/>
-      <Testimonials/>
-      <MachineryCTA/>
-      <FAQSection/>
-      <Cta/>
+      <HomeReveal><Industry/></HomeReveal>
+      <HomeReveal><Testimonials/></HomeReveal>
+      <HomeReveal><MachineryCTA/></HomeReveal>
+      <HomeReveal><FAQSection/></HomeReveal>
+      <HomeReveal><Cta/></HomeReveal>
    
     </>
   );

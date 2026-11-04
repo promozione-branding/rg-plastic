@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import HomeReveal from "./HomeReveal";
 import {
   FiArrowRight,
   FiAward,
@@ -39,7 +40,7 @@ export default function AboutSection() {
           {/* =================================================
               LEFT IMAGE
           ================================================== */}
-          <div className="relative lg:col-span-6">
+          <HomeReveal className="relative lg:col-span-6">
 
             {/* Decorative corner */}
             <div className="absolute -left-3 -top-3 z-0 h-20 w-20 rounded-tl-[28px] border-l border-t border-[#008f82]/20" />
@@ -79,12 +80,12 @@ export default function AboutSection() {
             ================================================== */}
 
 
-          </div>
+          </HomeReveal>
 
           {/* =================================================
               RIGHT SIDE
           ================================================== */}
-          <div className="relative z-20 lg:col-span-6 lg:-ml-20 xl:-ml-28">
+          <HomeReveal className="relative z-20 lg:col-span-6 lg:-ml-20 xl:-ml-28" delay={0.12}>
 
             {/* Black content card */}
             <div className="relative overflow-hidden rounded-[16px] bg-[#101716] p-7 shadow-[0_22px_55px_rgba(0,0,0,0.18)] sm:p-9 lg:p-10 xl:p-12">
@@ -163,7 +164,7 @@ export default function AboutSection() {
 
             {/* Bottom decorative line */}
             <div className="absolute -bottom-3 right-5 h-[3px] w-24 rounded-full bg-[#0096c7] sm:right-8" />
-          </div>
+          </HomeReveal>
         </div>
       </div>
     </section>

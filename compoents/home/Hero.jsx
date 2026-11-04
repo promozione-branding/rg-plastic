@@ -15,12 +15,12 @@ import "swiper/css/effect-fade";
 const heroImages = [
   
   "https://www.goodfishgroup.com/wp-content/uploads/2023/12/IMG_5330-scaled.webp",
-  "/slide2.png",
+  "/slide3.png",
 ];
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#101d1b] pt-[108px] sm:pt-13">
+    <section className="relative overflow-hidden bg-[#101d1b] pt-[108px] sm:pt-18">
 
       {/* =====================================================
           BACKGROUND
@@ -47,7 +47,7 @@ export default function Hero() {
             <div className="absolute left-[-10%] top-1/2 h-[75%] w-[75%] -translate-y-1/2 rounded-full bg-[#008f82]/10 blur-[100px]" />
 
             {/* Main image frame */}
-            <div className="absolute inset-y-8 left-0 right-[-25%] overflow-hidden rounded-r-[32px] shadow-[0_25px_60px_rgba(0,0,0,0.35)] lg:inset-y-10 lg:right-[-18%]">
+            <div className="absolute inset-y-2 left-0 right-[-25%] overflow-hidden rounded-r-[32px] shadow-[0_25px_60px_rgba(0,0,0,0.35)] lg:inset-y-10 lg:right-[-18%]">
 
               {/* Swiper */}
               <Swiper

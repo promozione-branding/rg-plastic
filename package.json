@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1161.0",
+    "framer-motion": "^14.9.1",
     "jodit-react": "^5.9.1",
     "lucide-react": "^1.49.0",
     "mongoose": "^9.11.4",
