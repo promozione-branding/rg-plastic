@@ -170,14 +170,14 @@ export default function FAQSection() {
 
 
             {/* IMAGE */}
-            <div className="relative mt-7 overflow-hidden rounded-2xl">
+            <div className="relative mt-7 h-110 overflow-hidden rounded-2xl">
 
-              <div className="relative aspect-[1.7/1]">
+              <div className="relative ">
 
-                <Image
+                <img
                   src="/faq.avif"
                   fill
-                  className="object-cover transition duration-700 hover:scale-105"
+                  className="object-cover h-full transition duration-700 hover:scale-105"
                 />
 
                 {/* Overlay */}
