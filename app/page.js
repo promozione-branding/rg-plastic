@@ -10,6 +10,7 @@ import Testimonials from "@/compoents/home/Testimonials";
 import Whychoose from "@/compoents/home/Whychoose";
 import Work from "@/compoents/home/Work";
 import HomeReveal from "@/compoents/home/HomeReveal";
+import ServiceSupport from "@/compoents/home/ServiceSupport";
 // import Footer from "@/compoents/layout/Footer";
 // import Navbar from "@/compoents/layout/Navbar";
 // import Image from "next/image";
@@ -22,6 +23,7 @@ export default function Home() {
       <HomeReveal><AboutSection/></HomeReveal>
       <HomeReveal><ProductSlider/></HomeReveal>
       <HomeReveal><Work/></HomeReveal>
+      <HomeReveal><ServiceSupport/></HomeReveal>
       <HomeReveal><Whychoose/></HomeReveal>
       {/* <Why2/> */}
       <HomeReveal><Industry/></HomeReveal>
