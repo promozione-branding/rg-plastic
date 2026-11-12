@@ -85,7 +85,7 @@ export default function Testimonials() {
           <div className="relative lg:col-span-6">
 
             {/* Label */}
-            <div className="mb-6 flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.18em] text-[#008f82]">
+            <div className="mb-6 flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.18em] text-[#0d2461]">
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#eaf5f2]">
                 <BsFillChatQuoteFill className="text-[12px]" />
               </span>
@@ -96,7 +96,7 @@ export default function Testimonials() {
             {/* Heading */}
             <h2 className="max-w-[620px] text-[36px] font-extrabold leading-[1.06] tracking-[-0.04em] text-[#162321] sm:text-[46px] ">
               Trusted by Manufacturers for{" "}
-              <span className="text-[#093372]">
+              <span className="text-[#0d2461]">
                 Reliable Performance
               </span>
             </h2>
@@ -104,7 +104,7 @@ export default function Testimonials() {
             {/* CTA */}
             <a
               href="#contact-quote-section"
-              className="group mt-7 inline-flex h-11 items-center gap-2 rounded-lg bg-[#093372] px-5 text-[12px] font-bold text-white shadow-[0_8px_20px_rgba(0,143,130,0.16)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#2a4b7d]"
+              className="group mt-7 inline-flex h-11 items-center gap-2 rounded-lg bg-[#0d2461] px-5 text-[12px] font-bold text-white shadow-[0_8px_20px_rgba(0,143,130,0.16)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#2a4b7d]"
             >
               Discuss Your Requirement
 
@@ -181,7 +181,7 @@ export default function Testimonials() {
 
             {/* Large stat */}
             <div className="mb-8">
-              <div className="text-[72px] font-extrabold leading-none tracking-[-0.06em] text-[#093372] sm:text-[88px]">
+              <div className="text-[72px] font-extrabold leading-none tracking-[-0.06em] text-[#0d2461] sm:text-[88px]">
                 25+
               </div>
 
@@ -260,7 +260,7 @@ export default function Testimonials() {
 
               <button
                 onClick={() => setIsPopupOpen(true)}
-                className="group inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.08em] text-[#093372]"
+                className="group inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.08em] text-[#0d2461]"
               >
                 Start Your Project
 

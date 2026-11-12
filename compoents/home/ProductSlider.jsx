@@ -57,7 +57,7 @@ export default function ProductSlider() {
   return (
     <section
       id="products"
-      className="relative overflow-hidden bg-[#fcf8ef] py-12 sm:py-16 lg:py-20"
+      className="relative overflow-hidden bg-[#fff] py-12 sm:py-16 lg:py-20"
     >
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
 
@@ -65,14 +65,14 @@ export default function ProductSlider() {
         <div className="mb-9 flex flex-col gap-6 sm:mb-12 md:flex-row md:items-end md:justify-between">
           <div>
             <div className="mb-4 flex items-center gap-3">
-              <span className="h-[2px] w-8 bg-[#297eff]" />
+              <span className="h-[2px] w-8 bg-[#0d2461]" />
 
               <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#34312d]">
                 Our Products
               </span>
             </div>
 
-            <h2 className="max-w-[700px] text-[34px] font-extrabold uppercase leading-[1.08] tracking-[-0.045em] text-[#25221f] sm:text-[48px]">
+            <h2 className="max-w-[800px] text-[34px] font-extrabold  leading-[1.08] tracking-[-0.045em] text-[#25221f] sm:text-[48px]">
               High-Performance Plastic Recycling
               <span className="mt-1 block text-[#093372]">
                 & Processing Machinery
@@ -82,12 +82,12 @@ export default function ProductSlider() {
 
           <Link
             href="/products"
-            className="group inline-flex h-12 shrink-0 items-center gap-3 self-start rounded-full bg-[#297eff] pl-5 pr-2 text-[11px] font-extrabold uppercase tracking-[0.04em] text-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:bg-[#093372] hover:shadow-xl md:self-auto"
+            className="group inline-flex h-12 shrink-0 items-center gap-3 self-start rounded-full bg-[#0d2461] pl-5 pr-2 text-[11px] font-extrabold uppercase tracking-[0.04em] text-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:bg-[#bb8e2e] hover:shadow-xl md:self-auto"
           >
             <span>Explore Products</span>
 
             <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white">
-              <FiArrowUpRight className="text-[16px] text-[#297eff] transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" />
+              <FiArrowUpRight className="text-[16px] text-[#0d2461] transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" />
             </span>
           </Link>
         </div>
@@ -200,7 +200,7 @@ export default function ProductSlider() {
                       <span className="relative">
                         View Product
 
-                        <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-[#297eff] transition-all duration-300 group-hover/link:w-full" />
+                        <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-[#0d2461] transition-all duration-300 group-hover/link:w-full" />
                       </span>
 
                       <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#edf3ff] transition-all duration-300 group-hover/link:bg-[#093372]">

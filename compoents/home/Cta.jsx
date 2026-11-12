@@ -56,7 +56,7 @@ export default function Cta() {
             {/* =================================================
                 LEFT PANEL
             ================================================== */}
-            <div className="relative overflow-hidden bg-[#093372] p-7 text-white sm:p-7 lg:col-span-5 ">
+            <div className="relative overflow-hidden bg-[#0d2461] p-7 text-white sm:p-7 lg:col-span-5 ">
               {/* Decorative circles */}
               <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full border-[50px] border-white/[0.05]" />
               <div className="pointer-events-none absolute -bottom-28 -left-28 h-72 w-72 rounded-full border-[50px] border-white/[0.04]" />
@@ -187,7 +187,7 @@ export default function Cta() {
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
                     <label className="mb-1.5 block text-[11px] font-bold text-[#34403d]">
-                      Name <span className="text-[#008f82]">*</span>
+                      Name <span className="text-[#0d2461]">*</span>
                     </label>
 
                     <input
@@ -195,13 +195,13 @@ export default function Cta() {
                       name="name"
                       placeholder="Your name"
                       required
-                      className="h-12 w-full rounded-xl border border-[#dde5e2] bg-[#f8faf9] px-4 text-[13px] text-[#25312f] outline-none transition-all duration-300 placeholder:text-[#a1aaa7] focus:border-[#008f82]/40 focus:bg-white focus:ring-4 focus:ring-[#008f82]/[0.07]"
+                      className="h-12 w-full rounded-xl border border-[#dde5e2] bg-[#f8faf9] px-4 text-[13px] text-[#25312f] outline-none transition-all duration-300 placeholder:text-[#a1aaa7] focus:border-[#0d2461]/40 focus:bg-white focus:ring-4 focus:ring-[#0d2461]/[0.07]"
                     />
                   </div>
 
                   <div>
                     <label className="mb-1.5 block text-[11px] font-bold text-[#34403d]">
-                      Email <span className="text-[#093372]">*</span>
+                      Email <span className="text-[#0d2461]">*</span>
                     </label>
 
                     <input
@@ -209,7 +209,7 @@ export default function Cta() {
                       name="email"
                       placeholder="name@company.com"
                       required
-                      className="h-12 w-full rounded-xl border border-[#dde5e2] bg-[#f8faf9] px-4 text-[13px] text-[#25312f] outline-none transition-all duration-300 placeholder:text-[#a1aaa7] focus:border-[#008f82]/40 focus:bg-white focus:ring-4 focus:ring-[#008f82]/[0.07]"
+                      className="h-12 w-full rounded-xl border border-[#dde5e2] bg-[#f8faf9] px-4 text-[13px] text-[#25312f] outline-none transition-all duration-300 placeholder:text-[#a1aaa7] focus:border-[#0d2461]/40 focus:bg-white focus:ring-4 focus:ring-[#0d2461]/[0.07]"
                     />
                   </div>
                 </div>
@@ -218,7 +218,7 @@ export default function Cta() {
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
                     <label className="mb-1.5 block text-[11px] font-bold text-[#34403d]">
-                      Phone <span className="text-[#008f82]">*</span>
+                      Phone <span className="text-[#0d2461]">*</span>
                     </label>
 
                     <input
@@ -226,20 +226,20 @@ export default function Cta() {
                       name="phone"
                       placeholder="+91 98765 43210"
                       required
-                      className="h-12 w-full rounded-xl border border-[#dde5e2] bg-[#f8faf9] px-4 text-[13px] text-[#25312f] outline-none transition-all duration-300 placeholder:text-[#a1aaa7] focus:border-[#008f82]/40 focus:bg-white focus:ring-4 focus:ring-[#008f82]/[0.07]"
+                      className="h-12 w-full rounded-xl border border-[#dde5e2] bg-[#f8faf9] px-4 text-[13px] text-[#25312f] outline-none transition-all duration-300 placeholder:text-[#a1aaa7] focus:border-[#0d2461]/40 focus:bg-white focus:ring-4 focus:ring-[#0d2461]/[0.07]"
                     />
                   </div>
 
                   <div>
                     <label className="mb-1.5 block text-[11px] font-bold text-[#34403d]">
-                      Product <span className="text-[#008f82]">*</span>
+                      Product <span className="text-[#0d2461]">*</span>
                     </label>
 
                     <select
                       name="product"
                       required
                       defaultValue=""
-                      className="h-12 w-full cursor-pointer rounded-xl border border-[#dde5e2] bg-[#f8faf9] px-4 text-[13px] text-[#25312f] outline-none transition-all duration-300 focus:border-[#008f82]/40 focus:bg-white focus:ring-4 focus:ring-[#008f82]/[0.07]"
+                      className="h-12 w-full cursor-pointer rounded-xl border border-[#dde5e2] bg-[#f8faf9] px-4 text-[13px] text-[#25312f] outline-none transition-all duration-300 focus:border-[#0d2461]/40 focus:bg-white focus:ring-4 focus:ring-[#008f82]/[0.07]"
                     >
                       <option value="" disabled>
                         Select Product
@@ -276,7 +276,7 @@ export default function Cta() {
                     name="message"
                     rows={5}
                     placeholder="Tell us about your requirements..."
-                    className="w-full resize-none rounded-xl border border-[#dde5e2] bg-[#f8faf9] px-4 py-3 text-[13px] text-[#25312f] outline-none transition-all duration-300 placeholder:text-[#a1aaa7] focus:border-[#008f82]/40 focus:bg-white focus:ring-4 focus:ring-[#008f82]/[0.07]"
+                    className="w-full resize-none rounded-xl border border-[#dde5e2] bg-[#f8faf9] px-4 py-3 text-[13px] text-[#25312f] outline-none transition-all duration-300 placeholder:text-[#a1aaa7] focus:border-[#0d2461]/40 focus:bg-white focus:ring-4 focus:ring-[#008f82]/[0.07]"
                   />
                 </div>
 
@@ -284,7 +284,7 @@ export default function Cta() {
                 <div className="flex flex-col gap-3 pt-1 sm:flex-row">
                   <button
                     type="submit"
-                    className="group flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-[#093372] px-5 text-[13px] font-bold text-white shadow-[0_7px_18px_rgba(0,143,130,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00796f] hover:shadow-[0_10px_24px_rgba(0,143,130,0.23)] sm:w-auto"
+                    className="group flex h-12 w-full items-center justify-center gap-2 rounded-lg bg-[#093372] px-5 text-[13px] font-bold text-white shadow-[0_7px_18px_rgba(0,143,130,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#bb8e2e] hover:shadow-[0_10px_24px_rgba(0,143,130,0.23)] sm:w-auto"
                   >
                     <FiSend className="text-[16px] transition-transform duration-300 group-hover:translate-x-0.5" />
 

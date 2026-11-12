@@ -13,134 +13,78 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 
 const heroImages = [
-  
-  "https://www.goodfishgroup.com/wp-content/uploads/2023/12/IMG_5330-scaled.webp",
+  "/slide3.png",
   "/slide3.png",
 ];
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#101d1b] pt-[108px] sm:pt-18">
+    <section className="relative isolate min-h-[750px] h-screen w-full overflow-hidden bg-[#101d1b]">
 
-      {/* =====================================================
-          BACKGROUND
-      ====================================================== */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[#101d1b]" />
-
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(0,143,130,0.18),transparent_40%),radial-gradient(circle_at_90%_20%,rgba(255,255,255,0.04),transparent_35%)]" />
+      {/* FULL BACKGROUND IMAGE SLIDER */}
+      <div className="absolute inset-0 z-0">
+        <Swiper
+          modules={[Autoplay, EffectFade]}
+          effect="fade"
+          fadeEffect={{ crossFade: true }}
+          slidesPerView={1}
+          loop={true}
+          speed={1200}
+          autoplay={{
+            delay: 4500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          className="h-full w-full"
+        >
+          {heroImages.map((image, index) => (
+            <SwiperSlide key={index} className="h-screen mt-20 w-full">
+              <img
+                src={image}
+                alt={`Plastic Recycling Machine ${index + 1}`}
+                className="h-full w-full object-cover object-center"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
-      {/* =====================================================
-          HERO CONTAINER
-      ====================================================== */}
-      <div className="relative mx-auto max-w-[1440px] px-4 sm:px-0">
+      {/* DARK OVERLAY */}
 
-        <div className="grid min-h-[650px] items-center lg:grid-cols-12">
+      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-[#07110f]/55 via-[#07110f]/5 to-transparent" />
 
-          {/* =================================================
-              LEFT IMAGE SLIDER
-          ================================================== */}
-          <div className="relative order-2 h-[420px] sm:h-[610px] lg:order-1 lg:col-span-7">
+      <div className="absolute inset-0 z-[1] bg-gradient-to-t from-[#07110f] via-[#07110f]/15 to-transparent" />
 
-            {/* Glow behind image */}
-            <div className="absolute left-[-10%] top-1/2 h-[75%] w-[75%] -translate-y-1/2 rounded-full bg-[#008f82]/10 blur-[100px]" />
+    
 
-            {/* Main image frame */}
-            <div className="absolute inset-y-2 left-0 right-[-25%] overflow-hidden rounded-r-[32px] shadow-[0_25px_60px_rgba(0,0,0,0.35)] lg:inset-y-10 lg:right-[-18%]">
+      {/* BOTTOM LEFT CONTENT */}
+      <div className="absolute inset-x-0 bottom-0 z-10">
+        <div className="mx-auto w-full max-w-[1500px] px-5 pb-16 sm:px-10 sm:pb-20 lg:px-16 lg:pb-20">
 
-              {/* Swiper */}
-              <Swiper
-                modules={[Autoplay, EffectFade]}
-                effect="fade"
-                fadeEffect={{
-                  crossFade: true,
-                }}
-                slidesPerView={1}
-                loop={true}
-                speed={1000}
-                autoplay={{
-                  delay: 4000,
-                  disableOnInteraction: false,
-                  pauseOnMouseEnter: true,
-                }}
-                className="h-full w-full"
-              >
-                {heroImages.map((image, index) => (
-                  <SwiperSlide
-                    key={index}
-                    className="h-full w-full"
-                  >
-                    <img
-                      src={image}
-                      alt={`Plastic Recycling Machine ${index + 1}`}
-                      className="h-full w-full object-cover object-center transition-transform duration-1000 hover:scale-[1.02]"
-                    />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+          <div className="max-w-[850px]">
 
-              {/* Image overlay */}
-              <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-r from-transparent via-transparent to-[#101d1b]/80" />
+            {/* SMALL LABEL */}
+            <div className="mb-5 flex items-center gap-3">
+              <span className="h-[2px] w-10 bg-[#159ed8]" />
 
-              <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-[#0a1210]/50 via-transparent to-transparent" />
-
-              {/* Machine status */}
-              <div className="absolute left-5 top-5 z-20 sm:left-7 sm:top-7">
-                <div className="flex items-center gap-2 rounded-full border border-white/10 bg-[#101d1b]/75 px-3.5 py-2 text-white backdrop-blur-xl">
-
-                  <span className="relative flex h-2 w-2">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#0F52BA] opacity-70" />
-                    <span className="relative inline-flex h-2 w-2 rounded-full bg-[#0F52BA]" />
-                  </span>
-
-                  <span className="text-[9px] font-bold uppercase tracking-[0.12em] sm:text-[10px]">
-                    Production Ready
-                  </span>
-
-                </div>
-              </div>
-
-              {/* Bottom machine card */}
-              <div className="absolute bottom-5 left-5 z-20 sm:bottom-7 sm:left-7">
-                <div className="rounded-xl border border-white/10 bg-[#101d1b]/80 px-4 py-3 text-white backdrop-blur-xl">
-
-                  <div className="text-[8px] font-semibold uppercase tracking-[0.12em] text-white/45">
-                    Plastic Recycling
-                  </div>
-
-                  <div className="mt-1 text-[13px] font-bold sm:text-[14px]">
-                    Machine Manufacturer
-                  </div>
-
-                </div>
-              </div>
-
+              <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#59c4e8] sm:text-xs">
+                Dharam Engg Work
+              </span>
             </div>
 
-            {/* Orange/teal accent line */}
-            <div className="absolute bottom-4 left-0 right-[-10%] h-[3px] bg-gradient-to-r from-[#008f82] via-[#0F52BA] to-transparent lg:right-[-8%]" />
+            {/* HEADING */}
+            <h1 className="max-w-[850px] text-[39px] font-extrabold leading-[1.04] tracking-[-0.045em] text-white sm:text-[55px] ">
 
-          </div>
+              Plastic Recycling
 
-          {/* =================================================
-              RIGHT CONTENT
-          ================================================== */}
-          <div className="relative z-10 order-1 py-12 lg:order-2 lg:col-span-5 lg:-ml-4 lg:py-16">
-
-            {/* Heading */}
-            <h1 className="max-w-[620px] text-[40px] font-extrabold leading-[1.03] tracking-[-0.045em] text-white sm:text-[52px] lg:text-[56px]">
-
-              Plastic Recycling{" "}
-
-              <span className="bg-gradient-to-r from-[#19c5b5] via-[#159ed8] to-[#1969e0] bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[#159ed8] to-[#1969e0] bg-clip-text text-transparent">
                 Machine Manufacturer.
               </span>
 
             </h1>
 
-            {/* Description */}
-            <p className="mt-6 max-w-[560px] text-[14px] leading-5 text-white/65 sm:text-[15px] sm:leading-5 lg:text-[16px]">
+            {/* DESCRIPTION */}
+            <p className="mt-5 max-w-[650px] text-[13px] leading-6 text-white/75 sm:text-[15px] sm:leading-6 ">
 
               Dharam Engg Work is an experienced Plant Processing Machine
               Manufacturer offering vented extruders, granule machines,
@@ -149,96 +93,70 @@ export default function Hero() {
 
             </p>
 
-            {/* CTA */}
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            {/* CTA BUTTONS */}
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
 
-              {/* Primary */}
               <a
                 href="#products"
-                className="group inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[#0F52BA] px-6 text-[13px] font-bold text-white shadow-[0_8px_25px_rgba(0,143,130,0.2)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00776d]"
+                className="group inline-flex h-12 items-center justify-center gap-3 rounded-md bg-[#0d2461] px-7 text-[13px] font-bold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#1969e0]"
               >
-                <span>Explore Machines</span>
+                Explore Machines
 
-                <FiArrowRight className="text-[17px] transition-transform duration-300 group-hover:translate-x-1" />
+                <FiArrowRight className="text-lg transition-transform duration-300 group-hover:translate-x-1" />
               </a>
 
-              {/* Secondary */}
               <a
                 href="#contact-quote-section"
-                className="group inline-flex h-12 items-center justify-center gap-2 rounded-md border border-white/20 bg-white/[0.06] px-6 text-[13px] font-bold text-white backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/10"
+                className="group inline-flex h-12 items-center justify-center gap-3 rounded-md border border-white/30 bg-white/10 px-7 text-[13px] font-bold text-white backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-white/20"
               >
-                <FiFileText className="text-[16px] text-[#8de0d2]" />
+                <FiFileText className="text-base" />
 
-                <span>Request a Quote</span>
+                Request a Quote
               </a>
 
             </div>
 
-            {/* =================================================
-                STATS
-            ================================================== */}
-            <div className="mt-9 grid max-w-[560px] grid-cols-3 border-y border-white/10">
+            {/* STATS */}
+            {/* <div className="mt-9 grid max-w-[650px] grid-cols-3 border-t border-white/20 pt-5">
 
-              {/* Stat 1 */}
-              <div className="py-4 pr-4">
-
-                <div className="text-[25px] font-extrabold tracking-[-0.04em] text-white sm:text-[30px]">
+              <div className="pr-3 sm:pr-6">
+                <div className="text-[25px] font-extrabold tracking-tight text-white sm:text-[32px]">
                   40+
                 </div>
 
-                <div className="mt-1 text-[8px] font-bold uppercase tracking-[0.1em] text-white/40 sm:text-[9px]">
-                  Years
-                  <br />
-                  of Engineering Expertise
-                </div>
-
+                <p className="mt-1 text-[8px] font-bold uppercase leading-4 tracking-wider text-white/55 sm:text-[10px]">
+                  Years of Engineering Expertise
+                </p>
               </div>
 
-              {/* Stat 2 */}
-              <div className="border-x border-white/10 px-4 py-4">
-
-                <div className="text-[25px] font-extrabold tracking-[-0.04em] text-white sm:text-[30px]">
+              <div className="border-x border-white/20 px-3 sm:px-6">
+                <div className="text-[25px] font-extrabold tracking-tight text-white sm:text-[32px]">
                   6+
                 </div>
 
-                <div className="mt-1 text-[8px] font-bold uppercase tracking-[0.1em] text-white/40 sm:text-[9px]">
+                <p className="mt-1 text-[8px] font-bold uppercase leading-4 tracking-wider text-white/55 sm:text-[10px]">
                   Plastic Processing Solutions
-                </div>
-
+                </p>
               </div>
 
-              {/* Stat 3 */}
-              <div className="py-4 pl-4">
-
-                <div className="text-[25px] font-extrabold tracking-[-0.04em] text-white sm:text-[30px]">
+              <div className="pl-3 sm:pl-6">
+                <div className="text-[20px] font-extrabold tracking-tight text-white sm:text-[28px]">
                   End-to-End
                 </div>
 
-                <div className="mt-1 text-[8px] font-bold uppercase tracking-[0.1em] text-white/40 sm:text-[9px]">
-                  Machinery
-                  <br />
-                  Solutions
-                </div>
-
+                <p className="mt-1 text-[8px] font-bold uppercase leading-4 tracking-wider text-white/55 sm:text-[10px]">
+                  Complete Machinery Solutions
+                </p>
               </div>
 
-            </div>
+            </div> */}
 
           </div>
-
         </div>
       </div>
 
-      {/* =====================================================
-          BOTTOM ANGLED EDGE
-      ====================================================== */}
-      <div className="absolute bottom-0 left-0 right-0 h-7 overflow-hidden">
-
-        <div className="absolute bottom-[-18px] left-[-2%] h-10 w-[104%] rotate-[1.3deg] bg-[#0F52BA]" />
-
-        <div className="absolute bottom-[-23px] left-[-2%] h-10 w-[104%] rotate-[1.3deg] bg-[#101d1b]" />
-
-      </div>
+      {/* BOTTOM ACCENT */}
+      <div className="absolute bottom-0 left-0 z-20 h-[4px] w-full bg-gradient-to-r from-[#159ed8] via-[#0d2461] to-transparent" />
 
     </section>
   );

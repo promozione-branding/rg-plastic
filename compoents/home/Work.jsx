@@ -68,12 +68,12 @@ export default function Work() {
             How We Work
           </div>
 
-          <h2 className="text-[34px] font-extrabold uppercase leading-[1.05] tracking-[-0.035em] text-[#061A2A] sm:text-[44px] lg:text-[52px]">
+          <h2 className="text-[34px] font-extrabold  leading-[1.05] tracking-[-0.035em] text-[#061A2A] sm:text-[44px] lg:text-[52px]">
             Our Plant Processing{" "}
-            <span className="text-[#00356B]">Machine Manufacturing Process</span>
+            <span className="text-[#0d2461]">Machine Manufacturing Process</span>
           </h2>
 
-          <p className="mx-auto mt-4 max-w-xl text-[13px] leading-6 text-slate-600 sm:text-[14px] sm:leading-7">
+          <p className="mx-auto mt-4 max-w-2xl text-[13px] leading-6 text-slate-600 sm:text-[14px] sm:leading-7">
             At Dharam Engg Work, we follow a structured approach to delivering reliable industrial machinery. As a Plant Processing Machine Manufacturer, we focus on understanding customer requirements, planning suitable machine solutions, maintaining manufacturing quality, and ensuring dependable performance at every stage of the process.
           </p>
         </div>
@@ -115,7 +115,7 @@ export default function Work() {
                       duration-500
                       ease-out
                       group-hover:-translate-y-7
-                      group-hover:text-[#00356B]/[0.88]
+                      group-hover:text-[#0d2461]/[0.88]
                       group-hover:scale-[1.04]
                     "
                   >

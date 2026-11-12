@@ -9,7 +9,7 @@ export default function MachineryCTA() {
 
   return (
     <section className="px-4 py-2 sm:px-2">
-      <div className="relative mx-auto max-w-[1400px] overflow-hidden rounded-lg bg-gradient-to-r from-[#1969e0] via-[#159ed8] to-[#1969e0] px-6 py-16 sm:px-10 sm:py-20 lg:px-20">
+      <div className="relative mx-auto max-w-[1400px] overflow-hidden rounded-lg bg-[#0d2461] px-6 py-16 sm:px-10 sm:py-20 lg:px-20">
 
         {/* =====================================================
             DECORATIVE CIRCLES

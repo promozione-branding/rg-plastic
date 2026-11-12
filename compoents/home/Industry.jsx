@@ -108,16 +108,16 @@ export default function Industry() {
 
           <div>
             <div className="mb-5 flex items-center gap-3">
-              <span className="h-[1px] w-10 bg-[#093372]" />
+              <span className="h-[1px] w-10 bg-[#0d2461]" />
 
-              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#093372]">
+              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#0d2461]">
                 Industries We Serve
               </span>
             </div>
 
             <h2 className="max-w-4xl text-[38px] font-extrabold leading-[0.98] tracking-[-0.045em] text-[#13211f] sm:text-[50px] lg:text-[64px]">
               One Technology.
-              <span className="block text-[#093372]">
+              <span className="block text-[#0d2461]">
                 Multiple Applications.
               </span>
             </h2>
@@ -130,11 +130,11 @@ export default function Industry() {
 
             <div className="mt-5 flex items-center gap-3">
               <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#008f82] opacity-40" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-[#093372]" />
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#bb8e2e] opacity-40" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-[#0d2461]" />
               </span>
 
-              <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#093372]">
+              <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#0d2461]">
                 Engineering for diverse applications
               </span>
             </div>
@@ -173,14 +173,14 @@ export default function Industry() {
                 <div className="absolute left-5 right-5 top-5 flex items-center justify-between">
 
                   <div className="flex items-center gap-2">
-                    <span className="h-1.5 w-1.5 rounded-full bg-[#f5a14a]" />
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#bb8e2e]" />
 
                     <span className="text-[9px] font-bold uppercase tracking-[0.17em] text-white/80">
                       {industry.number} / {industry.category}
                     </span>
                   </div>
 
-                  <div className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-black/20 text-white backdrop-blur-md transition-all duration-300 group-hover:border-[#f5a14a] group-hover:bg-[#f5a14a] group-hover:text-[#13211f]">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-black/20 text-white backdrop-blur-md transition-all duration-300 group-hover:border-[#bb8e2e] group-hover:bg-[#bb8e2e] group-hover:text-[#13211f]">
                     <Icon className="text-[15px]" />
                   </div>
                 </div>
@@ -189,9 +189,9 @@ export default function Industry() {
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
 
                   <div className="mb-4 flex items-center gap-2">
-                    <span className="h-[2px] w-7 bg-[#f5a14a] transition-all duration-500 group-hover:w-14" />
+                    <span className="h-[2px] w-7 bg-[#bb8e2e] transition-all duration-500 group-hover:w-14" />
 
-                    <span className="text-[9px] font-bold uppercase tracking-[0.14em] text-[#f5a14a] opacity-0 transition-all duration-300 group-hover:opacity-100">
+                    <span className="text-[9px] font-bold uppercase tracking-[0.14em] text-[#bb8e2e] opacity-0 transition-all duration-300 group-hover:opacity-100">
                       Application
                     </span>
                   </div>
@@ -204,7 +204,7 @@ export default function Industry() {
                     {industry.description}
                   </p> */}
 
-                  <div className="mt-5 flex translate-y-3 items-center gap-2 text-[10px] font-bold uppercase tracking-[0.12em] text-[#f5a14a] opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                  <div className="mt-5 flex translate-y-3 items-center gap-2 text-[10px] font-bold uppercase tracking-[0.12em] text-[#bb8e2e] opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                     Explore application
                     <FiArrowRight className="text-[14px] transition-transform duration-300 group-hover:translate-x-1" />
                   </div>
@@ -214,7 +214,7 @@ export default function Industry() {
           })}
 
           {/* ================= CUSTOM CARD ================= */}
-          <article className="group relative flex h-[380px] flex-col justify-between overflow-hidden rounded-[22px] bg-[#093372] p-6 shadow-[0_18px_45px_rgba(0,143,130,0.16)] sm:p-7">
+          <article className="group relative flex h-[380px] flex-col justify-between overflow-hidden rounded-[22px] bg-[#0d2461] p-6 shadow-[0_18px_45px_rgba(0,143,130,0.16)] sm:p-7">
 
             {/* Decorative ring */}
             <div className="pointer-events-none absolute -right-24 -top-24 h-[300px] w-[300px] rounded-full border-[55px] border-white/[0.055] transition-transform duration-700 group-hover:scale-110" />
@@ -296,11 +296,11 @@ export default function Industry() {
 
           <Link
             href="/contact"
-            className="group inline-flex shrink-0 items-center gap-3 text-[10px] font-bold uppercase tracking-[0.12em] text-[#008f82]"
+            className="group inline-flex shrink-0 items-center gap-3 text-[10px] font-bold uppercase tracking-[0.12em] text-[#0d2461]"
           >
             Contact Us
 
-            <span className="flex h-7 w-7 items-center justify-center rounded-full border border-[#008f82]/20 transition-all duration-300 group-hover:bg-[#008f82] group-hover:text-white">
+            <span className="flex h-7 w-7 items-center justify-center rounded-full border border-[#008f82]/20 transition-all duration-300 group-hover:bg-[#0d2461] group-hover:text-white">
               <FiArrowRight className="text-[13px] transition-transform duration-300 group-hover:translate-x-0.5" />
             </span>
           </Link>

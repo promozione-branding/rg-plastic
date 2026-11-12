@@ -111,8 +111,8 @@ export default function Navbar() {
                     xl:px-5
                     ${
                       active
-                        ? "bg-[#EAF5FC] text-[#0070FF]"
-                        : "text-[#0070FF] hover:bg-[#F3F8FC] hover:text-[#175a50]"
+                        ? "bg-[#0d2461]/5 text-[#0d2461]"
+                        : "text-[#0d2461] hover:bg-[#F3F8FC] hover:text-[#175a50]"
                     }
                   `;
 
@@ -171,7 +171,7 @@ export default function Navbar() {
                           <div className="relative overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-[0_25px_70px_rgba(0,0,0,0.16)]">
 
                             {/* TOP ACCENT */}
-                            <div className="h-[3px] bg-[#0F52BA]" />
+                            <div className="h-[3px] bg-[#0d2461]" />
 
                             {/* HEADER */}
 
@@ -205,11 +205,11 @@ export default function Navbar() {
                                       onClick={() =>
                                         setProductsOpen(false)
                                       }
-                                      className="group/item flex items-center gap-3 rounded-xl px-3 py-3 transition-all duration-200 hover:bg-[#0F52BA]"
+                                      className="group/item flex items-center gap-3 rounded-xl px-3 py-3 transition-all duration-200 hover:bg-[#0d2461]"
                                     >
 
                                       {/* NUMBER */}
-                                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-[10px] font-bold text-slate-500 transition-all duration-300 group-hover/item:bg-[#0F52BA] group-hover:border-2 group-hover:border-amber-50 group-hover/item:text-white">
+                                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-[10px] font-bold text-slate-500 transition-all duration-300 group-hover/item:bg-[#0d2461] group-hover:border-2 group-hover:border-amber-50 group-hover/item:text-white">
                                         {String(index + 1).padStart(
                                           2,
                                           "0"
@@ -224,7 +224,7 @@ export default function Navbar() {
                                       {/* ARROW */}
                                       <FiArrowRight
                                         size={15}
-                                        className="shrink-0 text-slate-300 transition-all duration-300 group-hover/item:translate-x-1 group-hover/item:text-[#0F52BA]"
+                                        className="shrink-0 text-slate-300 transition-all duration-300 group-hover/item:translate-x-1 group-hover/item:text-[#0d2461]"
                                       />
 
                                     </Link>
@@ -239,7 +239,7 @@ export default function Navbar() {
                                 onClick={() =>
                                   setProductsOpen(false)
                                 }
-                                className="group mt-3 flex items-center justify-between rounded-xl bg-[#101d1b] px-5 py-4 transition-all duration-300 hover:bg-[#0F52BA]"
+                                className="group mt-3 flex items-center justify-between rounded-xl bg-[#0d2461] px-5 py-4 transition-all duration-300 hover:bg-[#000]"
                               >
 
                                 <div>
@@ -293,10 +293,10 @@ export default function Navbar() {
                 {/* TALK TO EXPERT */}
                 <Link
                   href="tel:+919891468647"
-                  className="group flex items-center justify-center gap-3 rounded-xl border border-[#D9E5EF] bg-[#F7FAFC] px-3 py-2 text-sm font-semibold text-[#092F4F] transition-all duration-300 hover:border-[#0070FF] hover:text-[#0070FF]"
+                  className="group flex items-center justify-center gap-3 rounded-xl border border-[#D9E5EF] bg-[#F7FAFC] px-3 py-2 text-sm font-semibold text-[#092F4F] transition-all duration-300 hover:border-[#0d2461] hover:text-[#0070FF]"
                 >
 
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#EAF5FC] text-[#0070FF] transition-all duration-300 group-hover:bg-[#0070FF] group-hover:text-white">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#EAF5FC] text-[#0d2461] transition-all duration-300 group-hover:bg-[#0d2461] group-hover:text-white">
 
                     <FiPhoneCall
                       size={16}
@@ -311,7 +311,7 @@ export default function Navbar() {
                       Call Us
                     </span>
 
-                    <span className="mt-1 font-bold text-[#092F4F] group-hover:text-[#0070FF]">
+                    <span className="mt-1 font-bold text-[#092F4F] group-hover:text-[#0d2461]">
                       +91 98914 68647
                     </span>
 
@@ -322,7 +322,7 @@ export default function Navbar() {
                 {/* GET A QUOTE */}
                 <button
                   onClick={openQuotePopup}
-                  className="group relative flex h-11 items-center gap-2 overflow-hidden rounded-xl bg-[#0F52BA] px-5 text-[13px] font-semibold text-white shadow-[0_6px_18px_rgba(7,91,150,0.22)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#4289f5] hover:shadow-[0_9px_24px_rgba(7,91,150,0.28)]"
+                  className="group relative flex h-11 items-center gap-2 overflow-hidden rounded-xl bg-[#0d2461] px-5 text-[13px] font-semibold text-white shadow-[0_6px_18px_rgba(7,91,150,0.22)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#bb8e2e] hover:shadow-[0_9px_24px_rgba(7,91,150,0.28)]"
                 >
 
                   <FiFileText
@@ -422,7 +422,7 @@ export default function Navbar() {
                                 onClick={closeMobileMenu}
                                 className={`flex-1 rounded-lg px-3 py-4 text-sm font-semibold transition-colors ${
                                   active
-                                    ? "text-[#075B96]"
+                                    ? "text-[#0d2461]"
                                     : "text-[#475663]"
                                 }`}
                               >

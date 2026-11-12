@@ -18,7 +18,7 @@ export default function AboutSection() {
           BACKGROUND
       ====================================================== */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-40 bottom-0 h-80 w-80 rounded-full bg-[#008f82]/[0.035] blur-3xl" />
+        <div className="absolute -left-40 bottom-0 h-80 w-80 rounded-full bg-[#caccd0] blur-3xl" />
 
         <div
           className="absolute bottom-0 left-0 h-64 w-1/3 opacity-[0.02]"
@@ -62,7 +62,7 @@ export default function AboutSection() {
             {/* =================================================
                 EXPERIENCE BADGE
             ================================================== */}
-            <div className="absolute -bottom-5 left-4 z-20 flex items-center gap-3 rounded-lg bg-[#0F52BA] px-4 py-3 text-white shadow-[0_12px_30px_rgba(0,143,130,0.22)] sm:-bottom-6 sm:left-8 sm:px-5 sm:py-4">
+            <div className="absolute -bottom-5 left-4 z-20 flex items-center gap-3 rounded-lg bg-[#0d2461] px-4 py-3 text-white shadow-[0_12px_30px_rgba(0,143,130,0.22)] sm:-bottom-6 sm:left-8 sm:px-5 sm:py-4">
 
               <div className="text-[34px] font-extrabold leading-none tracking-[-0.04em] sm:text-[40px]">
                 25+
@@ -88,31 +88,31 @@ export default function AboutSection() {
           <HomeReveal className="relative z-20 lg:col-span-6 lg:-ml-20 xl:-ml-28" delay={0.12}>
 
             {/* Black content card */}
-            <div className="relative overflow-hidden rounded-[16px] bg-[#101716] p-7 shadow-[0_22px_55px_rgba(0,0,0,0.18)] sm:p-9 lg:p-10 xl:p-12">
+            <div className="relative overflow-hidden rounded-[16px] bg-[#e9edf5] p-7 shadow-[0_22px_55px_rgba(0,0,0,0.18)] sm:p-9 lg:p-10 xl:p-12">
 
               {/* Decorative teal glow */}
               <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-[#008f82]/10 blur-3xl" />
 
               {/* Small top line */}
-              <div className="relative mb-5 flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.18em] text-[#7bd8cb]">
-                <span className="h-5 w-5 rounded-full border border-[#008f82]/30 bg-[#008f82]/10" />
+              <div className="relative mb-5 flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.18em] text-[#0d2461]">
+                <span className="h-5 w-5 rounded-full border border-[#0d2461]/30 bg-[#0d2461]/10" />
 
                 About Us
               </div>
 
               {/* Heading */}
-              <h2 className="relative max-w-full text-[31px] font-extrabold uppercase leading-[1.08] tracking-[-0.025em] text-white sm:text-[39px] lg:text-[42px] xl:text-[48px]">
+              <h2 className="relative max-w-full text-[31px] font-extrabold  leading-[1.08] tracking-[-0.025em] text-[#0d2461] sm:text-[39px] lg:text-[42px] xl:text-[48px]">
                 Leading Plant Processing{" "}
-                <span className=" text-[#54a2bc]">
+                <span className=" text-[#0d2461]">
                   Machine Manufacturer
                 </span>
               </h2>
 
               {/* Divider */}
-              <div className="relative my-6 h-px w-14 bg-[#0096c7]" />
+              <div className="relative my-6 h-px w-14 bg-[#0d2461]" />
 
               {/* Description */}
-              <div className="relative max-w-[620px] space-y-4 text-[13px] leading-6 text-white/65 sm:text-[14px] sm:leading-7">
+              <div className="relative max-w-[620px] space-y-4 text-[13px] leading-6 text-black sm:text-[14px] sm:leading-7">
 
                 <p>
                   Dharam Engg Work is dedicated to manufacturing reliable industrial machinery and plant processing solutions designed to meet diverse industrial requirements. With a strong focus on quality engineering, durable construction, and efficient performance, we aim to help businesses improve productivity and streamline their operations.
@@ -124,23 +124,23 @@ export default function AboutSection() {
               ================================================== */}
               <div className="relative mt-7 grid grid-cols-1 gap-2 sm:grid-cols-2">
 
-                <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.06em] text-white/70">
-                  <FiCheckCircle className="shrink-0 text-[#78d5c8]" />
+                <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.06em] text-black">
+                  <FiCheckCircle className="shrink-0 text-[#0d2461]" />
                   Precision Engineering
                 </div>
 
-                <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.06em] text-white/70">
-                  <FiCheckCircle className="shrink-0 text-[#78d5c8]" />
+                <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.06em] text-black">
+                  <FiCheckCircle className="shrink-0 text-[#0d2461]" />
                   Quality Manufacturing
                 </div>
 
-                <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.06em] text-white/70">
-                  <FiCheckCircle className="shrink-0 text-[#78d5c8]" />
+                <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.06em] text-black">
+                  <FiCheckCircle className="shrink-0 text-[#0d2461]" />
                   Reliable Performance
                 </div>
 
-                <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.06em] text-white/70">
-                  <FiCheckCircle className="shrink-0 text-[#78d5c8]" />
+                <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.06em] text-black">
+                  <FiCheckCircle className="shrink-0 text-[#0d2461]" />
                   Customer Satisfaction
                 </div>
               </div>
@@ -150,7 +150,7 @@ export default function AboutSection() {
               ================================================== */}
               <Link
                 href="/about"
-                className="group relative mt-8 inline-flex h-11 items-center gap-2 overflow-hidden rounded-md bg-[#0F52BA] px-5 text-[12px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00776d] hover:shadow-[0_10px_25px_rgba(0,143,130,0.22)]"
+                className="group relative mt-8 inline-flex h-11 items-center gap-2 overflow-hidden rounded-md bg-[#0d2461] px-5 text-[12px] font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#bb8e2e] hover:shadow-[0_10px_25px_rgba(0,143,130,0.22)]"
               >
                 <span className="relative z-10">
                   Learn More About Us
@@ -163,7 +163,7 @@ export default function AboutSection() {
             </div>
 
             {/* Bottom decorative line */}
-            <div className="absolute -bottom-3 right-5 h-[3px] w-24 rounded-full bg-[#0096c7] sm:right-8" />
+            <div className="absolute -bottom-3 right-5 h-[3px] w-24 rounded-full bg-[#0d2461] sm:right-8" />
           </HomeReveal>
         </div>
       </div>

@@ -56,7 +56,7 @@ export default function Whychoose() {
   return (
     <section
       id="why-choose-us"
-      className="relative overflow-hidden bg-[#d2e9e1] py-6 sm:py-13"
+      className="relative overflow-hidden bg-[#fff] py-6 sm:py-13"
     >
       {/* =====================================================
           BACKGROUND
@@ -126,12 +126,12 @@ export default function Whychoose() {
                   className="group relative overflow-hidden rounded-2xl border border-[#e3ebe7] bg-white p-5 shadow-[0_5px_20px_rgba(0,0,0,0.025)] transition-all duration-300 hover:-translate-y-1 hover:border-[#008f82]/20 hover:shadow-[0_14px_35px_rgba(0,0,0,0.07)] lg:text-right"
                 >
                   {/* Hover accent */}
-                  <div className="absolute inset-y-0 right-0 w-1 bg-[#297eff] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <div className="absolute inset-y-0 right-0 w-1 bg-[#0d2461] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
                   <div className="flex items-start gap-4 lg:flex-row-reverse">
 
                     {/* Icon */}
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eaf5f2] text-[#297eff] transition-all duration-300 group-hover:bg-[#2b6ac9] group-hover:text-white">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eaf5f2] text-[#297eff] transition-all duration-300 group-hover:bg-[#0d2461] group-hover:text-white">
                       <Icon className="text-[18px]" />
                     </div>
 
@@ -163,7 +163,7 @@ export default function Whychoose() {
             <div className="relative">
 
               {/* Glow */}
-              <div className="absolute inset-[-25px] rounded-[40px] bg-[#008f82]/10 blur-3xl" />
+              <div className="absolute inset-[-25px] rounded-[40px] bg-[#0d2461]/10 blur-3xl" />
 
               {/* Main frame */}
               <div className="group relative z-10 w-[275px] overflow-hidden rounded-[30px] border-[7px] border-white bg-white shadow-[0_25px_65px_rgba(0,0,0,0.14)] sm:w-[320px] lg:w-[350px]">
@@ -229,12 +229,12 @@ export default function Whychoose() {
                   className="group relative overflow-hidden rounded-2xl border border-[#e3ebe7] bg-white p-5 shadow-[0_5px_20px_rgba(0,0,0,0.025)] transition-all duration-300 hover:-translate-y-1 hover:border-[#008f82]/20 hover:shadow-[0_14px_35px_rgba(0,0,0,0.07)]"
                 >
                   {/* Hover accent */}
-                  <div className="absolute inset-y-0 left-0 w-1 bg-[#297eff] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <div className="absolute inset-y-0 left-0 w-1 bg-[#0d2461] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
                   <div className="flex items-start gap-4">
 
                     {/* Icon */}
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eaf5f2] text-[#297eff] transition-all duration-300 group-hover:bg-[#297eff] group-hover:text-white">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#eaf5f2] text-[#297eff] transition-all duration-300 group-hover:bg-[#0d2461] group-hover:text-white">
                       <Icon className="text-[18px]" />
                     </div>
 
@@ -254,7 +254,7 @@ export default function Whychoose() {
                       </p>
                     </div>
 
-                    <FiArrowRight className="mt-1 hidden shrink-0 text-[15px] text-[#bcc6c2] transition-all duration-300 group-hover:translate-x-1 group-hover:text-[#008f82] sm:block" />
+                    
                   </div>
                 </div>
               );
@@ -269,7 +269,7 @@ export default function Whychoose() {
 
           <a
             href="#contact-quote-section"
-            className="group inline-flex h-12 items-center gap-3 rounded-lg bg-[#093372] px-6 text-[12px] font-bold uppercase tracking-[0.04em] text-white shadow-[0_8px_22px_rgba(0,143,130,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#00796f] hover:shadow-[0_12px_28px_rgba(0,143,130,0.24)]"
+            className="group inline-flex h-12 items-center gap-3 rounded-lg bg-[#093372] px-6 text-[12px] font-bold uppercase tracking-[0.04em] text-white shadow-[0_8px_22px_rgba(0,143,130,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#bb8e2e] hover:shadow-[0_12px_28px_rgba(0,143,130,0.24)]"
           >
             Get a Free Quote
 

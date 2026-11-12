@@ -106,8 +106,8 @@ export default function ServiceSupport() {
                     <span
                       className={`absolute -right-1 -top-1 h-3 w-3 rounded-full ${
                         service.accent === "blue"
-                          ? "bg-[#0F52BA]"
-                          : "bg-[#0F52BA]"
+                          ? "bg-[#0d2461]"
+                          : "bg-[#0d2461]"
                       }`}
                     />
 
@@ -116,7 +116,7 @@ export default function ServiceSupport() {
                 </div>
 
                 {/* TITLE */}
-                <h3 className="mb-4 text-[26px] font-medium tracking-[-0.035em] text-black transition-colors duration-300 group-hover:text-[#0F52BA] sm:text-[30px]">
+                <h3 className="mb-4 text-[26px] font-medium tracking-[-0.035em] text-black transition-colors duration-300 group-hover:text-[#0d2461] sm:text-[30px]">
                   {service.title}
                 </h3>
 

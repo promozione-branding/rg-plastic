@@ -89,8 +89,8 @@ export default function FAQSection() {
 
                       <span
                         className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[10px] font-bold transition-colors ${isOpen
-                            ? "bg-[#1261A0] text-white"
-                            : "bg-[#EAF4FB] text-[#1261A0]"
+                            ? "bg-[#0d2461] text-white"
+                            : "bg-[#EAF4FB] text-[#0d2461]"
                           }`}
                       >
                         {String(index + 1).padStart(2, "0")}
@@ -104,7 +104,7 @@ export default function FAQSection() {
 
                     <span
                       className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-all duration-300 ${isOpen
-                          ? "bg-[#1261A0] text-white"
+                          ? "bg-[#0d2461] text-white"
                           : "bg-gray-100 text-gray-500"
                         }`}
                     >
@@ -160,11 +160,11 @@ export default function FAQSection() {
                 <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#E1F0FA]">
                   <Settings2
                     size={14}
-                    className="text-[#1261A0]"
+                    className="text-[#0d2461]"
                   />
                 </div>
 
-                <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[#1261A0]">
+                <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[#0d2461]">
                   FAQs
                 </span>
 
@@ -204,7 +204,7 @@ export default function FAQSection() {
   {/* Floating Stat */}
   <div className="absolute bottom-4 left-4 rounded-2xl bg-white/95 px-5 py-4 shadow-[0_10px_35px_rgba(0,0,0,0.15)] backdrop-blur-md sm:bottom-5 sm:left-5">
 
-    <div className="text-3xl font-bold tracking-tight text-[#1261A0]">
+    <div className="text-3xl font-bold tracking-tight text-[#0d2461]">
       100+
     </div>
 
