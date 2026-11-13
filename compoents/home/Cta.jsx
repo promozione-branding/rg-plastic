@@ -72,7 +72,7 @@ export default function Cta() {
                   {/* Heading */}
                   <h2 className="mt-7 max-w-md text-[34px] font-extrabold leading-[1.08] tracking-[-0.035em] sm:text-[42px] ">
                     Looking for the Right
-                    <span className="block text-[#c9f1e8]">
+                    <span className="block text-[#fff]">
                       Plastic Moulding Machine?
                     </span>
                   </h2>

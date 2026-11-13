@@ -14,7 +14,8 @@ import "swiper/css/effect-fade";
 
 const heroImages = [
   "/slide3.png",
-  "/slide3.png",
+  "/slide-2.webp",
+  "/slide-4.webp",
 ];
 
 export default function Hero() {
@@ -64,13 +65,7 @@ export default function Hero() {
           <div className="max-w-[850px]">
 
             {/* SMALL LABEL */}
-            <div className="mb-5 flex items-center gap-3">
-              <span className="h-[2px] w-10 bg-[#159ed8]" />
-
-              <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#59c4e8] sm:text-xs">
-                Dharam Engg Work
-              </span>
-            </div>
+           
 
             {/* HEADING */}
             <h1 className="max-w-[850px] text-[39px] font-extrabold leading-[1.04] tracking-[-0.045em] text-white sm:text-[55px] ">
