@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/compoents/layout/Navbar";
 import Footer from "@/compoents/layout/Footer";
 import MachineMarquee from "@/compoents/MachineMarquee";
+import StickyButton from "@/compoents/layout/StickyButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
       <Navbar/>
         {children}
       <Footer/>
+      <StickyButton />
         </body>
     </html>
   );
