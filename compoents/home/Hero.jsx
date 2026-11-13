@@ -73,7 +73,7 @@ export default function Hero() {
               Plastic Recycling
 
               <span className="block text-white bg-clip-text text-transparent">
-                Machine Manufacturer.
+                Machine Manufacturer
               </span>
 
             </h1>
