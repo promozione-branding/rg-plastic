@@ -68,7 +68,7 @@ export default function Hero() {
            
 
             {/* HEADING */}
-            <h1 className="max-w-[850px] text-[39px] font-extrabold leading-13 tracking-[-0.045em] text-white sm:text-[55px] ">
+            <h1 className="max-w-[850px] text-[39px] font-extrabold leading-15 tracking-[-0.045em] text-white sm:text-[55px] ">
 
               Plastic Recycling
 
@@ -79,7 +79,7 @@ export default function Hero() {
             </h1>
 
             {/* DESCRIPTION */}
-            <p className="mt-5 max-w-[650px] text-[13px] leading-6 text-white/75 sm:text-[15px] sm:leading-6 ">
+            <p className="mt-2 max-w-[650px] text-[13px] leading-6 text-white/75 sm:text-[15px] sm:leading-6 ">
 
               Dharam Engg Work is an experienced Plant Processing Machine
               Manufacturer offering vented extruders, granule machines,
