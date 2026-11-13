@@ -120,7 +120,7 @@ export default function Testimonials() {
               <div className="relative overflow-hidden rounded-2xl bg-[#e9f0ee] shadow-[0_18px_45px_rgba(0,0,0,0.10)]">
                 <div className="aspect-[1.55/1]">
                   <img
-                    src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1400&q=85"
+                    src="https://media.istockphoto.com/id/1193214452/photo/mold-plate-and-parts-for-plastic-injection.jpg?s=612x612&w=0&k=20&c=AUt6WFrMJFPPFFXHDKGFNJEy4f-bFfmssl9c0P6BrGY="
                     alt="Industrial manufacturing team"
                     className="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.025]"
                   />
