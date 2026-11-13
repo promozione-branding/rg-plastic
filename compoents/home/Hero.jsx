@@ -88,8 +88,7 @@ export default function Hero() {
 
               Dharam Engg Work is an experienced Plant Processing Machine
               Manufacturer offering vented extruders, granule machines,
-              Thermocol and EPS recycling machines, mixture machines, and
-              agglomerators for efficient plastic recycling and processing.
+              Thermocol and EPS recycling machines.
 
             </p>
 
@@ -98,7 +97,7 @@ export default function Hero() {
 
               <a
                 href="#products"
-                className="group inline-flex h-12 items-center justify-center gap-3 rounded-md bg-[#0d2461] px-7 text-[13px] font-bold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#1969e0]"
+                className="group inline-flex h-12 items-center justify-center gap-3 rounded-md bg-[#0d2461] px-7 text-[13px] font-bold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#bb8e2e]"
               >
                 Explore Machines
 

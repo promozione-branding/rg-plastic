@@ -48,7 +48,7 @@ const faqs = [
 ];
 
 export default function FAQSection() {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState("");
 
   return (
     <section className="bg-white py-6 sm:py-13">

@@ -123,7 +123,7 @@ export default function Whychoose() {
               return (
                 <div
                   key={item.title}
-                  className="group relative overflow-hidden rounded-2xl border border-[#e3ebe7] bg-white p-5 shadow-[0_5px_20px_rgba(0,0,0,0.025)] transition-all duration-300 hover:-translate-y-1 hover:border-[#008f82]/20 hover:shadow-[0_14px_35px_rgba(0,0,0,0.07)] lg:text-right"
+                  className="group relative overflow-hidden rounded-2xl border border-[#e3ebe7] bg-white p-5 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-[#008f82]/20 hover:shadow-[0_14px_35px_rgba(0,0,0,0.07)] lg:text-right"
                 >
                   {/* Hover accent */}
                   <div className="absolute inset-y-0 right-0 w-1 bg-[#0d2461] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
@@ -226,7 +226,7 @@ export default function Whychoose() {
               return (
                 <div
                   key={item.title}
-                  className="group relative overflow-hidden rounded-2xl border border-[#e3ebe7] bg-white p-5 shadow-[0_5px_20px_rgba(0,0,0,0.025)] transition-all duration-300 hover:-translate-y-1 hover:border-[#008f82]/20 hover:shadow-[0_14px_35px_rgba(0,0,0,0.07)]"
+                  className="group relative overflow-hidden rounded-2xl border border-[#e3ebe7] bg-white p-5 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-[#008f82]/20 hover:shadow-[0_14px_35px_rgba(0,0,0,0.07)]"
                 >
                   {/* Hover accent */}
                   <div className="absolute inset-y-0 left-0 w-1 bg-[#0d2461] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />

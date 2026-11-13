@@ -45,7 +45,7 @@ export default function Work() {
   return (
     <section
       id="process"
-      className="relative overflow-hidden bg-white py-6 text-[#061A2A] sm:py-13"
+      className="relative overflow-hidden bg-white py-6 text-[#061A2A] sm:py-9"
     >
       {/* =====================================================
           BACKGROUND

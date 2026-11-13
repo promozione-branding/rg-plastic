@@ -3,15 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { products } from "@/data/data";
 import {
   FiPhone,
   FiMapPin,
   FiMail,
-  FiFacebook,
-  FiInstagram,
-  FiLinkedin,
-  FiYoutube,
-  FiTwitter,
   FiArrowUpRight,
 } from "react-icons/fi";
 
@@ -23,64 +19,51 @@ export default function Footer() {
   }
 
   return (
-    <footer className="relative overflow-hidden bg-[#061A2A] text-white">
-      {/* subtle texture */}
+    <footer className="relative isolate overflow-hidden bg-[#061A2A] text-white">
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.035]"
+        className="pointer-events-none absolute inset-0 opacity-[0.04]"
         style={{
           backgroundImage:
-            "radial-gradient(rgba(255,255,255,0.35) 0.7px, transparent 0.7px)",
-          backgroundSize: "5px 5px",
+            "radial-gradient(rgba(255,255,255,0.4) 0.7px, transparent 0.7px)",
+          backgroundSize: "6px 6px",
         }}
       />
+      <div className="pointer-events-none absolute -right-40 -top-48 h-[440px] w-[440px] rounded-full bg-[#0d2461]/50 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-48 -left-40 h-[420px] w-[420px] rounded-full bg-[#087e9d]/15 blur-3xl" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#55B8F2]/70 to-transparent" />
 
-      <div className="relative mx-auto max-w-[1400px] px-6 py-12 sm:px-8 lg:px-12 lg:py-14">
-        {/* =====================================================
-            MAIN FOOTER
-        ====================================================== */}
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
-          {/* =================================================
-              BRAND
-          ================================================== */}
-          <div className="lg:col-span-4 lg:pr-10">
+      <div className="relative mx-auto max-w-[1400px] px-5 py-12 sm:px-8 sm:py-14 lg:px-12 lg:py-16">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-11 sm:grid-cols-2 lg:grid-cols-[1.2fr_0.7fr_1.1fr_1fr] lg:gap-x-10">
+          <div className="sm:col-span-2 lg:col-span-1">
             <Link
               href="/"
-              className="group flex bg-white w-fit shrink-0 items-center"
+              aria-label="RG Plastic home"
+              className="inline-flex rounded-xl bg-white p-2.5 shadow-[0_12px_30px_rgba(0,0,0,0.18)] transition-transform duration-300 hover:-translate-y-0.5"
             >
               <Image
                 src="/dharam.webp"
                 alt="RG Plastic - Plastic Processing and Recycling Machines"
                 width={190}
                 height={70}
-                priority
-                className="h-auto w-[150px] object-contain sm:w-[155px]"
+                className="h-auto w-[155px] object-contain"
               />
             </Link>
-            <p className="mt-6 max-w-[310px] text-[12px] leading-5 text-white/55">
+            <p className="mt-5 max-w-[330px] text-[13px] leading-6 text-white/65">
               Delivering reliable and high-performance plastic processing
               machinery with precision, efficiency and engineering excellence
               for modern industrial production.
             </p>
-
-            {/* Social Icons */}
-            {/* <div className="mt-6 flex items-center gap-2.5">
-              <SocialIcon icon={<FiFacebook />} />
-              <SocialIcon icon={<FiInstagram />} />
-              <SocialIcon icon={<FiLinkedin />} />
-              <SocialIcon icon={<FiYoutube />} />
-              <SocialIcon icon={<FiTwitter />} />
-            </div> */}
+            <Link
+              href="/contact"
+              className="group mt-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-2.5 text-[11px] font-semibold text-white transition-all duration-300 hover:border-[#55B8F2]/60 hover:bg-[#55B8F2]/10"
+            >
+              Talk to our team
+              <FiArrowUpRight className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+            </Link>
           </div>
 
-          {/* =================================================
-              QUICK LINKS
-          ================================================== */}
-          <div className="lg:col-span-2">
-            <h3 className="text-[16px] font-semibold text-white">
-              Quick Links
-            </h3>
-
-            <nav className="mt-5 flex flex-col gap-3">
+          <FooterColumn title="Quick Links">
+            <nav className="flex flex-col gap-3">
               {[
                 ["Home", "/"],
                 ["About Us", "/about"],
@@ -89,125 +72,88 @@ export default function Footer() {
                 ["Sitemap", "/sitemap"],
                 ["Blogs", "/blogs"],
               ].map(([label, href]) => (
-                <a
+                <Link
                   key={label}
                   href={href}
-                  className="group flex items-center gap-1 text-[12px] text-white/65 transition-colors duration-300 hover:text-[#55B8F2]"
+                  className="group flex w-fit items-center gap-1.5 text-[12px] text-white/60 transition-colors duration-300 hover:text-[#55B8F2]"
                 >
                   <span>{label}</span>
-
                   <FiArrowUpRight className="text-[11px] opacity-0 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
-                </a>
+                </Link>
               ))}
             </nav>
-          </div>
+          </FooterColumn>
 
-          {/* =================================================
-              WORKING HOURS
-          ================================================== */}
-          <div className="lg:col-span-3">
-            <h3 className="text-[16px] font-semibold text-white">
-              Working Hours
-            </h3>
+          <FooterColumn title="Products">
+            <nav className="flex flex-col gap-3">
+              {products.slice(0, 5).map((product) => (
+                <Link
+                  key={product.slug}
+                  href={`/products/${product.slug}`}
+                  className="w-fit max-w-full text-[12px] leading-5 text-white/60 transition-colors duration-300 hover:text-[#55B8F2]"
+                >
+                  {product.name}
+                </Link>
+              ))}
+              <Link
+                href="/products"
+                className="group mt-1 inline-flex w-fit items-center gap-1.5 text-[12px] font-semibold text-[#55B8F2] transition-colors hover:text-white"
+              >
+                More Products
+                <FiArrowUpRight className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              </Link>
+            </nav>
+          </FooterColumn>
 
-            <div className="mt-5 overflow-hidden rounded-lg border border-white/10 bg-white text-[#252b29] shadow-lg">
-              {/* Monday - Friday */}
-              <div className="flex items-center justify-between border-b border-gray-200 px-4 py-3">
-                <span className="text-[12px] font-bold">Mon–Fri:</span>
-
-                <span className="text-[12px]">8:00 AM – 6:00 PM</span>
-              </div>
-
-              {/* Saturday */}
-              <div className="flex items-center justify-between border-b border-gray-200 px-4 py-3">
-                <span className="text-[12px] font-bold">Sat:</span>
-
-                <span className="text-[12px]">9:00 AM – 3:00 PM</span>
-              </div>
-
-              {/* Sunday */}
-              <div className="flex items-center justify-between px-4 py-3">
-                <span className="text-[12px] font-bold">Sun:</span>
-
-                <span className="text-[12px]">Closed</span>
-              </div>
-            </div>
-          </div>
-
-          {/* =================================================
-              CONTACT
-          ================================================== */}
-          <div className="lg:col-span-3">
-            <h3 className="text-[16px] font-semibold text-white">Contact Us</h3>
-
-            <div className="mt-5 space-y-4">
-              {/* Phone */}
-              <a
+          <FooterColumn title="Contact Us">
+            <div className="flex flex-col gap-3">
+              <ContactLink
                 href="tel:+919891468647"
-                className="group flex items-start gap-3 text-white/65 transition-colors hover:text-[#55B8F2]"
-              >
-                <FiPhone className="mt-0.5 shrink-0 text-[15px]" />
-
-                <span className="text-[12px]">+91 98914 68647</span>
-              </a>
-
-              {/* Location */}
-
-              <a
+                icon={<FiPhone />}
+                label="+91 98914 68647"
+              />
+              <ContactLink
                 href="https://maps.app.goo.gl/q27RdELNotqVzsgb9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-start gap-3 text-white/65 transition-colors hover:text-[#55B8F2]"
-              >
-                <FiMapPin className="mt-0.5 shrink-0 text-[15px]" />
-
-                <span className="text-[12px] leading-5">
-                  Dharam Engg Work
-                  <br />
-                  Plot No. 19, Pocket G,
-                  <br />
-                  DSIIDC Sector-5, Bawana Industrial Area,
-                  <br />
-                  North West Delhi, India
-                </span>
-              </a>
-
-
-              {/* Email */}
-              <a
+                icon={<FiMapPin />}
+                label={
+                  <>
+                    Dharam Engg Work
+                    <br />
+                    Plot No. 19, Pocket G,
+                    <br />
+                    DSIIDC Sector-5, Bawana Industrial Area,
+                    <br />
+                    North West Delhi, India
+                  </>
+                }
+                external
+              />
+              <ContactLink
                 href="mailto:info@rgplastic.com"
-                className="group flex items-start gap-3 text-white/65 transition-colors hover:text-[#55B8F2]"
-              >
-                <FiMail className="mt-0.5 shrink-0 text-[15px]" />
-
-                <span className="break-all text-[12px]">
-                  info@dharamenggwork.com
-                </span>
-              </a>
+                icon={<FiMail />}
+                label="info@dharamenggwork.com"
+              />
             </div>
-          </div>
+          </FooterColumn>
         </div>
 
-        {/* =====================================================
-            BOTTOM LINE
-        ====================================================== */}
-        <div className="mt-10 border-t border-white/[0.09] pt-5">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-[10px] text-white/40 sm:text-[11px]">
+        <div className="mt-12 border-t border-white/10 pt-6">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-[11px] text-white/45">
               © {new Date().getFullYear()} RG Plastic. All Rights Reserved.
             </p>
 
-            <div className="flex flex-wrap items-center gap-5">
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
               <a
                 href="#"
-                className="text-[10px] text-white/45 transition-colors hover:text-[#55B8F2]"
+                className="text-[11px] text-white/45 transition-colors hover:text-[#55B8F2]"
               >
                 Privacy Policy
               </a>
 
               <a
                 href="#"
-                className="text-[10px] text-white/45 transition-colors hover:text-[#55B8F2]"
+                className="text-[11px] text-white/45 transition-colors hover:text-[#55B8F2]"
               >
                 Terms & Conditions
               </a>
@@ -219,17 +165,30 @@ export default function Footer() {
   );
 }
 
-/* =========================================================
-   SOCIAL ICON
-========================================================= */
+function FooterColumn({ title, children }) {
+  return (
+    <section>
+      <h3 className="mb-5 flex items-center gap-2.5 text-[11px] font-bold uppercase tracking-[0.16em] text-white">
+        <span className="h-1.5 w-1.5 rounded-full bg-[#55B8F2]" />
+        {title}
+      </h3>
+      {children}
+    </section>
+  );
+}
 
-function SocialIcon({ icon }) {
+function ContactLink({ href, icon, label, external = false }) {
   return (
     <a
-      href="#"
-      className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-[#092B43] transition-all duration-300 hover:-translate-y-1 hover:bg-[#55B8F2] hover:text-white"
+      href={href}
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
+      className="group flex items-start gap-3 text-white/60 transition-colors duration-300 hover:text-white"
     >
-      <span className="text-[13px]">{icon}</span>
+      <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/[0.06] text-[14px] text-[#55B8F2] transition-all duration-300 group-hover:border-[#55B8F2]/40 group-hover:bg-[#55B8F2]/10">
+        {icon}
+      </span>
+      <span className="pt-1 text-[12px] leading-5">{label}</span>
     </a>
   );
 }

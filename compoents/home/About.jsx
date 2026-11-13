@@ -62,18 +62,7 @@ export default function AboutSection() {
             {/* =================================================
                 EXPERIENCE BADGE
             ================================================== */}
-            <div className="absolute -bottom-5 left-4 z-20 flex items-center gap-3 rounded-lg bg-[#0d2461] px-4 py-3 text-white shadow-[0_12px_30px_rgba(0,143,130,0.22)] sm:-bottom-6 sm:left-8 sm:px-5 sm:py-4">
-
-              <div className="text-[34px] font-extrabold leading-none tracking-[-0.04em] sm:text-[40px]">
-                25+
-              </div>
-
-              <div className="border-l border-white/20 pl-3 text-[9px] font-semibold uppercase leading-4 tracking-[0.08em] text-white/80">
-                Years Of
-                <br />
-                Experience
-              </div>
-            </div>
+           
 
             {/* =================================================
                 SMALL TRUST BADGE
@@ -88,7 +77,7 @@ export default function AboutSection() {
           <HomeReveal className="relative z-20 lg:col-span-6 lg:-ml-20 xl:-ml-28" delay={0.12}>
 
             {/* Black content card */}
-            <div className="relative overflow-hidden rounded-[16px] bg-[#e9edf5] p-7 shadow-[0_22px_55px_rgba(0,0,0,0.18)] sm:p-9 lg:p-10 xl:p-12">
+            <div className="relative overflow-hidden rounded-[16px] bg-[#e9edf5] p-7 shadow-[0_22px_55px_rgba(0,0,0,0.18)] sm:p-9 lg:p-10 ">
 
               {/* Decorative teal glow */}
               <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-[#008f82]/10 blur-3xl" />
@@ -160,6 +149,39 @@ export default function AboutSection() {
 
                 <span className="absolute inset-y-0 -left-full w-1/2 -skew-x-12 bg-white/15 transition-all duration-700 group-hover:left-[130%]" />
               </Link>
+
+              {/* STATS */}
+              <div className="mt-5 grid max-w-[650px] grid-cols-3 border-t border-[#0d2461]/20 pt-3">
+                <div className="pr-3 sm:pr-6">
+                  <div className="text-[25px] font-extrabold tracking-tight text-[#0d2461] sm:text-[32px]">
+                    40+
+                  </div>
+
+                  <p className="mt-1 text-[8px] font-bold uppercase leading-4 tracking-wider text-black/55 sm:text-[10px]">
+                    Years of Engineering Expertise
+                  </p>
+                </div>
+
+                <div className="border-x border-[#0d2461]/20 px-3 sm:px-6">
+                  <div className="text-[25px] font-extrabold tracking-tight text-[#0d2461] sm:text-[32px]">
+                    6+
+                  </div>
+
+                  <p className="mt-1 text-[8px] font-bold uppercase leading-4 tracking-wider text-black/55 sm:text-[10px]">
+                    Plastic Processing Solutions
+                  </p>
+                </div>
+
+                <div className="pl-3 sm:pl-6">
+                  <div className="text-[20px] font-extrabold tracking-tight text-[#0d2461] sm:text-[28px]">
+                    End-to-End
+                  </div>
+
+                  <p className="mt-1 text-[8px] font-bold uppercase leading-4 tracking-wider text-black/55 sm:text-[10px]">
+                    Complete Machinery Solutions
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Bottom decorative line */}

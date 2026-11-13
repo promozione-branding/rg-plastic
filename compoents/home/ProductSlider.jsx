@@ -57,7 +57,7 @@ export default function ProductSlider() {
   return (
     <section
       id="products"
-      className="relative overflow-hidden bg-[#fff] py-12 sm:py-16 lg:py-20"
+      className="relative overflow-hidden bg-[#fff] py-12 sm:pt-13 sm:pb-5"
     >
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
 
