@@ -148,7 +148,7 @@ export default function Work() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="max-w-[250px] text-[12px] font-extrabold uppercase leading-5 tracking-[0.05em] text-[#061A2A] transition-colors duration-300 group-hover:text-[#00356B] sm:text-[13px]">
+                  <h3 className="max-w-[250px] text-[12px] font-extrabold  leading-5 tracking-[0.05em] text-[#061A2A] transition-colors duration-300 group-hover:text-[#00356B] sm:text-[17px]">
                     {step.title}
                   </h3>
 

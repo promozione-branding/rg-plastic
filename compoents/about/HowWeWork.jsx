@@ -38,18 +38,18 @@ export default function HowWeWork() {
         {/* HEADER */}
         <div className="mx-auto max-w-2xl text-center">
           <div className="mb-4 flex items-center justify-center gap-3">
-            <span className="h-px w-8 bg-[#1261A0]" />
+            <span className="h-px w-8 bg-[#0d2461]" />
 
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1261A0]">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0d2461]">
               Our Process
             </span>
 
-            <span className="h-px w-8 bg-[#1261A0]" />
+            <span className="h-px w-8 bg-[#0d2461]" />
           </div>
 
           <h2 className="text-4xl font-semibold tracking-tight text-[#111] sm:text-5xl lg:text-[54px]">
             How We
-            <span className="text-[#1261A0]"> Work</span>
+            <span className="text-[#0d2461]"> Work</span>
           </h2>
 
           <p className="mx-auto mt-5 max-w-xl text-sm leading-6 text-gray-500 sm:text-base">
@@ -78,7 +78,7 @@ export default function HowWeWork() {
               <button
                 type="button"
                 aria-label="Play company video"
-                className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#1261A0] text-white shadow-[0_10px_35px_rgba(18,97,160,0.4)] transition duration-300 hover:scale-110 hover:bg-[#0b4d82] sm:h-20 sm:w-20"
+                className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#0d2461] text-white shadow-[0_10px_35px_rgba(18,97,160,0.4)] transition duration-300 hover:scale-110 hover:bg-[#0b4d82] sm:h-20 sm:w-20"
               >
                 <Play
                   size={25}
@@ -104,7 +104,7 @@ export default function HowWeWork() {
             {processSteps.map((step) => (
               <div key={step.number} className="relative group">
                 {/* Number */}
-                <div className="relative z-10 mb-6 flex h-14 w-14 items-center justify-center rounded-full border border-[#1261A0]/20 bg-white text-sm font-bold text-[#1261A0] shadow-sm transition duration-300 group-hover:border-[#1261A0] group-hover:bg-[#1261A0] group-hover:text-white">
+                <div className="relative z-10 mb-6 flex h-14 w-14 items-center justify-center rounded-full border border-[#1261A0]/20 bg-white text-sm font-bold text-[#1261A0] shadow-sm transition duration-300 group-hover:border-[#0d2461] group-hover:bg-[#0d2461] group-hover:text-white">
                   {step.number}
                 </div>
 
@@ -116,7 +116,7 @@ export default function HowWeWork() {
                   {step.description}
                 </p>
 
-                <div className="mt-5 flex items-center gap-2 text-xs font-semibold text-[#1261A0]">
+                <div className="mt-5 flex items-center gap-2 text-xs font-semibold text-[#0d2461]">
                   <CheckCircle2 size={15} />
                   Quality focused
                 </div>
@@ -126,7 +126,7 @@ export default function HowWeWork() {
         </div>
 
         {/* BOTTOM CTA */}
-        <div className="mt-16 flex flex-col items-center justify-between gap-5 rounded-2xl bg-[#f3f8fc] px-6 py-7 sm:flex-row sm:px-8 lg:mt-20">
+        <div className="mt-16 flex flex-col items-center justify-between gap-5 rounded-2xl bg-[#0d2461]/10 px-6 py-7 sm:flex-row sm:px-8 lg:mt-20">
           <div>
             <h3 className="text-lg font-semibold text-[#111]">
               Looking for the right plastic machinery?
@@ -137,7 +137,7 @@ export default function HowWeWork() {
             </p>
           </div>
 
-          <Link href="tel:+919891468647" className="group flex shrink-0 items-center gap-3 rounded-full bg-[#1261A0] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#0b4d82]">
+          <Link href="tel:+919891468647" className="group flex shrink-0 items-center gap-3 rounded-full bg-[#0d2461] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#0d2461]">
             Talk to Us
             <ArrowRight
               size={17}

@@ -25,7 +25,7 @@ export default function AboutIntro() {
             <div className="mb-5 flex items-center gap-3">
               <span className="h-px w-8 bg-[#1261A0]" />
 
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1261A0]">
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0d2461]">
                 About Us
               </span>
             </div>
@@ -34,7 +34,7 @@ export default function AboutIntro() {
             <h2 className="max-w-[600px] text-[42px] font-semibold leading-[1.02] tracking-[-0.035em] text-[#111111] sm:text-[52px] lg:text-[58px]">
               Engineering
               <br />
-              <span className="text-[#0D2461]">Excellence</span>
+              <span className="text-[#0d2461]">Excellence</span>
               <br />
               Together.
             </h2>
@@ -65,7 +65,7 @@ export default function AboutIntro() {
                     <Check
                       size={14}
                       strokeWidth={2.5}
-                      className="text-[#0D2461]"
+                      className="text-[#0d2461]"
                     />
                   </span>
 
@@ -198,7 +198,7 @@ export default function AboutIntro() {
                 </svg>
 
                 {/* Center */}
-                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#1261A0] shadow-lg shadow-[#1261A0]/25 transition-transform duration-300 hover:scale-110">
+                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#0d2461] shadow-lg shadow-[#1261A0]/25 transition-transform duration-300 hover:scale-110">
                   <ArrowUpRight
                     size={19}
                     strokeWidth={2}

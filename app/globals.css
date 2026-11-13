@@ -264,3 +264,13 @@ body {
   }
 
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+/* Smooth scrolling for all section links */
+section[id] {
+  scroll-margin-top: 67px;
+}

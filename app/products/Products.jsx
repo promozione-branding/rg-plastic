@@ -55,7 +55,7 @@ export default function Products() {
               Machinery built
               <br />
               for{" "}
-              <span className="text-[#55B8F2]">
+              <span className="text-[#fff]">
                 performance.
               </span>
             </h1>
@@ -132,7 +132,7 @@ export default function Products() {
 
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
 
-          <div className="relative overflow-hidden rounded-[30px] bg-[#075B96] px-7 py-12 sm:px-10 lg:px-14 lg:py-14">
+          <div className="relative overflow-hidden rounded-[30px] bg-[#0d2461] px-7 py-12 sm:px-10 lg:px-14 lg:py-14">
 
             {/* Decorative circles */}
             <div className="absolute -right-20 -top-28 h-80 w-80 rounded-full border border-white/10" />
@@ -161,7 +161,7 @@ export default function Products() {
 
               <button
                 onClick={() => setIsPopupOpen(true)}
-                className="group flex w-fit shrink-0 items-center gap-3 rounded-xl bg-white px-6 py-3.5 text-sm font-semibold text-[#075B96] transition hover:-translate-y-1 hover:shadow-xl"
+                className="group flex w-fit shrink-0 items-center gap-3 rounded-xl bg-white px-6 py-3.5 text-sm font-semibold text-[#0d2461] transition hover:-translate-y-1 hover:shadow-xl"
               >
                 Get a Quote
 
@@ -224,7 +224,7 @@ function ProductCard({ product }) {
             {product.name}
           </h3>
 
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#EAF5FC] text-[#075B96] transition duration-300 group-hover:bg-[#075B96] group-hover:text-white">
+          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#EAF5FC] text-[#0d2461] transition duration-300 group-hover:bg-[#0d2461] group-hover:text-white">
             <Settings2 size={16} />
           </div>
 
@@ -246,11 +246,11 @@ function ProductCard({ product }) {
           className="group/button mt-7 flex items-center justify-between border-t border-gray-100 pt-5"
         >
 
-          <span className="text-sm font-semibold text-[#075B96]">
+          <span className="text-sm font-semibold text-[#0d2461]">
             View Product
           </span>
 
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#075B96]/20 text-[#075B96] transition-all duration-300 group-hover/button:bg-[#075B96] group-hover/button:text-white">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#0d2461]/20 text-[#0d2461] transition-all duration-300 group-hover/button:bg-[#0d2461] group-hover/button:text-white">
 
             <ArrowUpRight
               size={17}

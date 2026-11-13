@@ -5,6 +5,7 @@ import {
   FiArrowRight,
   FiFileText,
 } from "react-icons/fi";
+import { useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
@@ -12,13 +13,15 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
-const heroImages = [
-  "/slide3.png",
-  "/slide-2.webp",
-  "/slide-4.webp",
+const heroSlides = [
+  { image: "/slide3.png", machineName: "Two Stage Granule Machine" },
+  { image: "/slide-2.webp", machineName: "Vented Extruder Granule Machine" },
+  { image: "/slide-4.webp", machineName: "Agglomerator Machine" },
 ];
 
 export default function Hero() {
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+
   return (
     <section className="relative isolate min-h-[750px] h-screen w-full overflow-hidden bg-[#101d1b]">
 
@@ -36,9 +39,10 @@ export default function Hero() {
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
+          onRealIndexChange={(swiper) => setActiveSlideIndex(swiper.realIndex)}
           className="h-full w-full"
         >
-          {heroImages.map((image, index) => (
+          {heroSlides.map(({ image }, index) => (
             <SwiperSlide key={index} className="h-screen mt-20 w-full">
               <img
                 src={image}
@@ -68,13 +72,11 @@ export default function Hero() {
            
 
             {/* HEADING */}
-            <h1 className="max-w-[850px] text-[39px] font-extrabold leading-15 tracking-[-0.045em] text-white sm:text-[55px] ">
+            <h1 className="max-w-[950px] text-[39px] font-extrabold leading-15 tracking-[-0.045em] text-white sm:text-[55px] ">
 
-              Plastic Recycling
+              {heroSlides[activeSlideIndex].machineName}
 
-              <span className="block text-white bg-clip-text text-transparent">
-                Machine Manufacturer
-              </span>
+            
 
             </h1>
 

@@ -76,16 +76,16 @@ export default function AboutStory() {
         <div className="mb-20 max-w-3xl sm:mb-28">
 
           <div className="mb-6 flex items-center gap-3">
-            <span className="h-px w-9 bg-[#1261A0]" />
+            <span className="h-px w-9 bg-[#0d2461]" />
 
-            <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#1261A0]">
+            <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#0d2461]">
               About Dharam Engg Work
             </span>
           </div>
 
           <h2 className="text-[42px] font-semibold leading-[1.02] tracking-[-0.035em] text-[#111] sm:text-5xl lg:text-[64px]">
             Built on{" "}
-            <span className="text-[#1261A0]">quality.</span>
+            <span className="text-[#0d2461]">quality.</span>
             <br />
             Driven by innovation.
           </h2>
@@ -169,7 +169,7 @@ export default function AboutStory() {
 
                 {/* Blue corner block */}
                 <div
-                  className={`absolute -bottom-5 z-0 h-24 w-24 rounded-2xl bg-[#1261A0] sm:-bottom-7 sm:h-28 sm:w-28 ${section.reverse
+                  className={`absolute -bottom-5 z-0 h-24 w-24 rounded-2xl bg-[#0d2461] sm:-bottom-7 sm:h-28 sm:w-28 ${section.reverse
                       ? "-left-5 sm:-left-7"
                       : "-right-5 sm:-right-7"
                     }`}
@@ -177,7 +177,7 @@ export default function AboutStory() {
 
                 {/* Number badge */}
                 <div
-                  className={`absolute -top-5 z-20 flex h-[58px] w-[58px] items-center justify-center rounded-full bg-[#1261A0] text-sm font-semibold text-white shadow-xl ${section.reverse
+                  className={`absolute -top-5 z-20 flex h-[58px] w-[58px] items-center justify-center rounded-full bg-[#0d2461] text-sm font-semibold text-white shadow-xl ${section.reverse
                       ? "left-5 sm:left-7"
                       : "left-5 sm:left-7"
                     }`}
@@ -195,9 +195,9 @@ export default function AboutStory() {
                 {/* Eyebrow */}
                 <div className="flex items-center gap-3">
 
-                  <span className="h-px w-7 bg-[#1261A0]" />
+                  <span className="h-px w-7 bg-[#0d2461]" />
 
-                  <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#1261A0]">
+                  <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#0d2461]">
                     {section.eyebrow}
                   </span>
                 </div>
@@ -209,8 +209,8 @@ export default function AboutStory() {
 
                 {/* Accent */}
                 <div className="mt-6 flex items-center gap-2">
-                  <span className="h-1 w-10 rounded-full bg-[#1261A0]" />
-                  <span className="h-1 w-2 rounded-full bg-[#1261A0]/30" />
+                  <span className="h-1 w-10 rounded-full bg-[#0d2461]" />
+                  <span className="h-1 w-2 rounded-full bg-[#0d2461]/30" />
                 </div>
 
                 {/* Description */}
@@ -230,7 +230,7 @@ export default function AboutStory() {
                         <CheckCircle2
                           size={16}
                           strokeWidth={2.2}
-                          className="text-[#1261A0]"
+                          className="text-[#0d2461]"
                         />
                       </span>
 
@@ -246,9 +246,9 @@ export default function AboutStory() {
                 <div className="mt-9 flex items-center gap-4 border-t border-gray-200 pt-6">
 
                   <div className="flex -space-x-2">
-                    <span className="h-7 w-7 rounded-full border-2 border-[#f5f8fb] bg-[#1261A0]" />
-                    <span className="h-7 w-7 rounded-full border-2 border-[#f5f8fb] bg-[#1261A0]/60" />
-                    <span className="h-7 w-7 rounded-full border-2 border-[#f5f8fb] bg-[#1261A0]/30" />
+                    <span className="h-7 w-7 rounded-full border-2 border-[#f5f8fb] bg-[#0d2461]" />
+                    <span className="h-7 w-7 rounded-full border-2 border-[#f5f8fb] bg-[#0d2461]/60" />
+                    <span className="h-7 w-7 rounded-full border-2 border-[#f5f8fb] bg-[#0d2461]/30" />
                   </div>
 
                   <span className="text-xs font-medium text-gray-500">

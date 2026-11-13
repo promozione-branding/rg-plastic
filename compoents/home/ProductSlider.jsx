@@ -1,8 +1,9 @@
 
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import {
   FiArrowUpRight,
   FiArrowLeft,
@@ -52,10 +53,31 @@ const products = [
 
 export default function ProductSlider() {
   const swiperRef = useRef(null);
+  const sectionRef = useRef(null);
+  const isSectionVisibleRef = useRef(false);
   const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+
+    const observer = new IntersectionObserver(([entry]) => {
+      isSectionVisibleRef.current = entry.isIntersecting;
+
+      if (entry.isIntersecting) {
+        swiperRef.current?.autoplay.start();
+      } else {
+        swiperRef.current?.autoplay.stop();
+      }
+    });
+
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <section
+      ref={sectionRef}
       id="products"
       className="relative overflow-hidden bg-[#fff] py-12 sm:pt-13 sm:pb-5"
     >
@@ -94,13 +116,20 @@ export default function ProductSlider() {
 
         {/* PRODUCT SLIDER */}
         <Swiper
+          modules={[Autoplay]}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
+            swiper.autoplay.stop();
+            if (isSectionVisibleRef.current) swiper.autoplay.start();
           }}
           onSlideChange={(swiper) => {
             setActiveIndex(swiper.activeIndex);
           }}
-          initialSlide={1}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          initialSlide={0}
           spaceBetween={18}
           slidesPerView={1.15}
           breakpoints={{
@@ -178,7 +207,7 @@ export default function ProductSlider() {
                     </div>
 
                     {/* ANIMATED PRODUCT TITLE */}
-                    <h3 className="product-title min-h-[42px] text-[15px] font-extrabold uppercase leading-[1.35] tracking-[-0.025em] text-[#25221f] sm:text-[16px]">
+                    <h3 className="product-title min-h-[42px] text-[15px] font-extrabold  leading-[1.35] tracking-[-0.025em] text-[#25221f] sm:text-[17px]">
                       <span className="product-title-text">
                         {product.title}
                       </span>

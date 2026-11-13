@@ -54,7 +54,7 @@ export default function SingleProduct({ product }) {
         aria-label="Breadcrumb"
         className="border-b border-slate-200 bg-[#EDF1F4] pt-10"
       >
-        <ol className="mx-auto flex max-w-[1360px] flex-wrap items-center gap-2 px-5 py-3.5 text-[13px] text-slate-600 sm:px-8 lg:px-8">
+        <ol className="mx-auto mt-5 flex max-w-[1360px] flex-wrap items-center gap-2 px-5 py-3.5 text-[13px] text-slate-600 sm:px-8 lg:px-8">
           {[
             ["Home", "/"],
             ["Products", "/products"],
@@ -76,112 +76,100 @@ export default function SingleProduct({ product }) {
 
       {/* Hero */}
       {/* Hero */}
-      <section className="bg-[#EDF1F4]">
-        <div className="mx-auto grid max-w-[1360px] gap-10 px-5 pb-14 pt-8 sm:px-8 lg:grid-cols-[1.1fr_.9fr] md:gap-16 md:px-8 md:pb-20 md:pt-5">
-          {/* Gallery */}
-          <div className="flex flex-col gap-3 lg:flex-row-reverse">
-            <div className="relative h-100  flex-1 overflow-hidden rounded-xl border border-slate-200 bg-white">
-              <Image
-                src={current.src}
-                alt={`${product.name}: ${current.label}`}
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 55vw"
-                className="object-contain p-6 sm:p-7"
-              />
-              <span className="absolute bottom-4 left-4 rounded bg-[#0B2233] px-3 py-1.5 text-xs font-medium text-white">
-                {current.label}
-              </span>
-            </div>
+    
+<section className="bg-[#EDF1F4]">
+  <div className="mx-auto grid max-w-[1440px] gap-10 px-5 pb-14 pt-8 sm:px-8 lg:grid-cols-[1.2fr_.8fr] md:gap-16 md:px-8 md:pb-11 md:pt-5">
 
-            <div className="flex gap-3 overflow-x-auto lg:flex-col lg:overflow-visible">
-              {product.images.map((img, i) => (
-                <button
-                  key={img.src}
-                  type="button"
-                  onClick={() => setActive(i)}
-                  aria-label={`Show ${img.label}`}
-                  aria-pressed={active === i}
-                  className={`relative h-20 w-20 shrink-0 overflow-hidden rounded-lg border-2 bg-white transition-colors ${focus} ${active === i
-                    ? "border-[#0878D1]"
-                    : "border-transparent hover:border-slate-300"
-                    }`}
-                >
-                  <Image
-                    src={img.src}
-                    alt=""
-                    fill
-                    sizes="80px"
-                    className="object-contain p-1.5"
-                  />
-                </button>
-              ))}
-            </div>
-          </div>
+    {/* Gallery */}
+    <div className="flex min-w-0 flex-col gap-4">
 
-          {/* Info */}
-          <div className="flex flex-col justify-center">
-            {/* <p className="text-sm font-semibold text-[#0878D1]">
-              {product.category} · Model {product.model}
-            </p> */}
-            <h1
-              className={`mt-3 text-5xl font-extrabold leading-[.95] tracking-tight sm:text-6xl `}
-            >
-              {product.name}
-            </h1>
-            <p className="mt-6 max-w-xl text-base leading-7 text-slate-700">
-              {product.description}
-            </p>
+      {/* Main Image */}
+      <div className="relative h-[500px] w-full overflow-hidden rounded-xl border border-slate-200 bg-white sm:h-[400px] ">
+        <Image
+          src={current.src}
+          alt={`${product.name}: ${current.label}`}
+          fill
+          priority
+          sizes="(max-width: 1024px) 100vw, 65vw"
+          className="object-contain p-5 sm:p-8 lg:p-10"
+        />
 
-            {/* Rating plate: the one memorable element */}
-            {/* <dl className="mt-8 grid grid-cols-2 overflow-hidden rounded-lg border-2 border-[#0B2233] bg-white sm:grid-cols-4">
-              {product.highlights.map(([value, label], i) => (
-                <div
-                  key={label}
-                  className={`px-2 py-3  text-center ${i > 0 ? "sm:border-l-2" : ""} ${
-                    i % 2 ? "border-l-2" : ""
-                  } ${i > 1 ? "border-t-2 sm:border-t-0" : ""} border-[#0B2233]`}
-                >
-                  <dd className={`text-[20px] font-bold leading-none`}>{value}</dd>
-                  <dt className="mt-1.5 text-xs text-slate-600">{label}</dt>
-                </div>
-              ))}
-            </dl> */}
+        <span className="absolute bottom-5 left-5 rounded bg-[#0B2233] px-3 py-1.5 text-xs font-medium text-white">
+          {current.label}
+        </span>
+      </div>
 
-            <div className="mt-6 flex flex-col gap-2 sm:flex-row">
-              <button
-                onClick={() => setIsPopupOpen(true)}
-                className={`inline-flex items-center justify-center gap-2 rounded-lg bg-[#0878D1] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#0669B8] ${focus}`}
-              >
-                <Send size={15} />
-                Get a quote
-              </button>
+      {/* Thumbnail Gallery Below */}
+      <div className="flex gap-3 overflow-x-auto pb-2">
+        {product.images.map((img, i) => (
+          <button
+            key={img.src}
+            type="button"
+            onClick={() => setActive(i)}
+            aria-label={`Show ${img.label}`}
+            aria-pressed={active === i}
+            className={`relative h-24 w-24 shrink-0 overflow-hidden rounded-lg border-2 bg-white transition-colors ${focus} ${
+              active === i
+                ? "border-[#0d2461]"
+                : "border-transparent hover:border-slate-300"
+            }`}
+          >
+            <Image
+              src={img.src}
+              alt=""
+              fill
+              sizes="96px"
+              className="object-contain p-2"
+            />
+          </button>
+        ))}
+      </div>
+    </div>
 
-              <Link
-                href="https://wa.me/919891468647"
+    {/* Product Information */}
+    <div className="flex flex-col justify-start">
+      <h1 className="mt-3 text-5xl font-extrabold leading-[.95] tracking-tight sm:text-6xl">
+        {product.name}
+      </h1>
 
-                className={`inline-flex items-center justify-center gap-2 rounded-lg bg-green-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#0669B8] ${focus}`}
-              >
-                <FaWhatsapp size={15} />
-                WhatsApp Now
-              </Link>
+      <p className="mt-6 max-w-xl text-base leading-7 text-slate-700">
+        {product.description}
+      </p>
 
+      <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
+        <button
+          onClick={() => setIsPopupOpen(true)}
+          className={`inline-flex items-center justify-center gap-2 rounded-lg bg-[#0d2461] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#c79639] ${focus}`}
+        >
+          <Send size={15} />
+          Get a quote
+        </button>
 
-              <a
-                href="/dharam-eng-catelog.pdf"
-                download="Dharam-Engg-Work-Brochure.pdf"
-                className={`inline-flex items-center justify-center gap-2 rounded-lg border border-[#0B2233] px-4 py-2.5 text-sm font-semibold text-[#0B2233] transition hover:bg-[#0B2233] hover:text-white ${focus}`}
-              >
-                <FileDown size={15} />
-                Download brochure
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+        <Link
+          href="https://wa.me/919891468647"
+          className={`inline-flex items-center justify-center gap-2 rounded-lg bg-green-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-green-600 ${focus}`}
+        >
+          <FaWhatsapp size={15} />
+          WhatsApp Now
+        </Link>
+
+        <a
+          href="/dharam-eng-catelog.pdf"
+          download="Dharam-Engg-Work-Brochure.pdf"
+          className={`inline-flex items-center justify-center gap-2 rounded-lg border border-[#0B2233] px-4 py-2.5 text-sm font-semibold text-[#0B2233] transition hover:bg-[#0d2461] hover:text-white ${focus}`}
+        >
+          <FileDown size={15} />
+          Download brochure
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
       {/* Section nav */}
-      <div className="sticky top-25 z-30 border-b border-slate-200 bg-white/95 backdrop-blur">
+      <div className="sticky top-29 z-30 border-b border-slate-200 bg-white/95 backdrop-blur">
         <nav
           aria-label="Product sections"
           className="mx-auto flex max-w-[1360px] gap-1 overflow-x-auto px-5 sm:px-8 lg:px-8"
@@ -302,7 +290,7 @@ export default function SingleProduct({ product }) {
             <a
               href="/dharam-eng-catelog.pdf"
               download="Dharam-Engg-Work-Brochure.pdf"
-              className={`mt-5 flex w-full items-center justify-center rounded-lg bg-[#0B2233] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#0878D1] ${focus}`}
+              className={`mt-5 flex w-full items-center justify-center rounded-lg bg-[#0B2233] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#0d2461] ${focus}`}
             >
               Download brochure
             </a>
@@ -359,7 +347,7 @@ export default function SingleProduct({ product }) {
                 key={a.title}
                 className="group rounded-xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#0878D1] hover:shadow-lg"
               >
-                <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-lg bg-[#0B2233] text-sm font-bold text-white">
+                <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-lg bg-[#0d2461] text-sm font-bold text-white">
                   {String(index + 1).padStart(2, "0")}
                 </div>
 
@@ -375,7 +363,7 @@ export default function SingleProduct({ product }) {
       </section>
 
       {/* Enquiry */}
-      <section id="enquiry" className="scroll-mt-14 bg-[#0878D1]">
+      <section id="enquiry" className="scroll-mt-14 bg-[#0d2461]">
         <div className="mx-auto grid max-w-[1360px] gap-10 px-5 py-16 sm:px-8 lg:grid-cols-[.8fr_1.2fr] md:gap-16 md:px-8 md:py-13">
           <div className="text-white">
             <h2 className={`text-4xl font-bold leading-none sm:text-5xl`}>

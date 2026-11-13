@@ -32,7 +32,7 @@ export default function CompanyStats() {
               service providers of{" "}
             </span>
 
-            <span className="text-[#1261A0]">
+            <span className="text-[#0d2461]">
               Plastic Granules Making Machines, Scrap Grinder Machines
             </span>
 
@@ -54,27 +54,26 @@ export default function CompanyStats() {
         </div>
 
         {/* STATS */}
-        <div className="mt-14 grid grid-cols-2 gap-y-10 sm:mt-16 sm:grid-cols-4 sm:gap-y-0">
+ 
+<div className="mt-14 grid grid-cols-2 gap-y-10 sm:mt-16 sm:grid-cols-4 sm:gap-y-0">
+  {stats.map((stat, index) => (
+    <div
+      key={stat.label}
+      className={`group cursor-pointer text-center transition-all duration-300 ease-out hover:scale-110 ${
+        index !== 0 ? "sm:border-l sm:border-gray-200" : ""
+      }`}
+    >
+      <div className="text-4xl font-semibold tracking-tight text-[#111] transition-colors duration-300 group-hover:text-[#0D2461] sm:text-5xl lg:text-[52px]">
+        {stat.number}
+      </div>
 
-          {stats.map((stat, index) => (
-            <div
-              key={stat.label}
-              className={`text-center ${index !== 0
-                  ? "sm:border-l sm:border-gray-200"
-                  : ""
-                }`}
-            >
-              <div className="text-4xl font-semibold tracking-tight text-[#111] sm:text-5xl lg:text-[52px]">
-                {stat.number}
-              </div>
+      <div className="mt-2 text-xs font-medium text-gray-600 transition-colors duration-300 group-hover:text-[#0D2461] sm:text-sm">
+        {stat.label}
+      </div>
+    </div>
+  ))}
+</div>
 
-              <div className="mt-2 text-xs font-medium text-gray-600 sm:text-sm">
-                {stat.label}
-              </div>
-            </div>
-          ))}
-
-        </div>
       </div>
     </section>
   );

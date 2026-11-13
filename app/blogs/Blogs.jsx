@@ -44,8 +44,8 @@ function toBlogCard(blog) {
 function SectionLabel({ children }) {
   return (
     <div className="mb-5 flex items-center gap-3">
-      <span className="h-px w-8 bg-cyan-400" />
-      <span className="text-[10px] font-bold uppercase tracking-[0.24em] text-cyan-400">
+      <span className="h-px w-8 bg-[#0d2461]" />
+      <span className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#0d2461]">
         {children}
       </span>
     </div>
@@ -75,7 +75,7 @@ function BlogCard({ blog, index }) {
 
         <div className="absolute inset-0 bg-gradient-to-t from-[#071318]/75 via-transparent to-transparent" />
 
-        <span className="absolute left-4 top-4 rounded-md border border-white/20 bg-[#071318]/90 px-3 py-1.5 text-[9px] font-bold uppercase tracking-wider text-cyan-300 backdrop-blur-sm">
+        <span className="absolute left-4 top-4 rounded-md border border-white/20 bg-[#071318]/90 px-3 py-1.5 text-[9px] font-bold uppercase tracking-wider text-[#fff] backdrop-blur-sm">
           {blog.category}
         </span>
 
@@ -83,7 +83,7 @@ function BlogCard({ blog, index }) {
           ARTICLE / {String(index + 1).padStart(2, "0")}
         </span>
 
-        <span className="absolute bottom-3 right-4 flex h-9 w-9 items-center justify-center rounded-full bg-blue-600 text-white transition duration-300 group-hover:bg-cyan-400 group-hover:text-[#071318]">
+        <span className="absolute bottom-3 right-4 flex h-9 w-9 items-center justify-center rounded-full bg-[#0d2461] text-white transition duration-300 group-hover:bg-[#fff] group-hover:text-[#071318]">
           <ArrowUpRight size={17} />
         </span>
       </Link>
@@ -91,17 +91,17 @@ function BlogCard({ blog, index }) {
       <div className="flex flex-1 flex-col p-5 sm:p-6">
         <div className="mb-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-[10px] font-medium text-slate-500">
           <span className="flex items-center gap-1.5">
-            <CalendarDays size={13} className="text-blue-600" />
+            <CalendarDays size={13} className="text-[#0d2461]" />
             {blog.date}
           </span>
           <span className="flex items-center gap-1.5">
-            <Clock3 size={13} className="text-blue-600" />
+            <Clock3 size={13} className="text-[#0d2461]" />
             {blog.readTime}
           </span>
         </div>
 
         <Link href={`/blogs/${blog.slug}`}>
-          <h2 className="text-lg font-extrabold leading-snug tracking-tight text-[#10252e] transition-colors group-hover:text-blue-700 sm:text-xl">
+          <h2 className="text-lg font-extrabold leading-snug tracking-tight text-[#10252e] transition-colors group-hover:text-[#0d2461] sm:text-xl">
             {blog.title}
           </h2>
         </Link>
@@ -113,7 +113,7 @@ function BlogCard({ blog, index }) {
         <div className="mt-5 border-t border-slate-100 pt-4">
           <Link
             href={`/blogs/${blog.slug}`}
-            className="inline-flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-[0.12em] text-blue-700 transition-colors hover:text-cyan-600"
+            className="inline-flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-[0.12em] text-[#0d2461] transition-colors hover:text-[#0d2461]/80"
           >
             Read Article
             <ArrowRight
@@ -145,6 +145,7 @@ export default function Blogs() {
         }
 
         const data = await response.json();
+        
         if (!Array.isArray(data)) {
           throw new Error("The blog API returned an invalid response.");
         }
@@ -200,7 +201,7 @@ export default function Blogs() {
               <h2 className="max-w-2xl text-3xl font-black uppercase leading-tight tracking-tight text-[#10252e] sm:text-4xl">
                 Knowledge for
                 <br />
-                <span className="text-blue-700">Better Production.</span>
+                <span className="text-[#0d2461]">Better Production.</span>
               </h2>
 
               <p className="mt-4 max-w-xl text-sm leading-7 text-slate-600">
@@ -280,7 +281,7 @@ export default function Blogs() {
 
       {/* Industrial CTA */}
       <section className="px-5 pb-14 sm:px-8 sm:pb-20 lg:px-8">
-        <div className="relative mx-auto max-w-[1320px] overflow-hidden rounded-xl bg-blue-700">
+        <div className="relative mx-auto max-w-[1320px] overflow-hidden rounded-xl bg-[#0d2461]">
           <div className="absolute -right-16 -top-32 h-80 w-80 rounded-full border border-white/10" />
           <div className="absolute -right-4 -top-20 h-64 w-64 rounded-full border border-white/10" />
           <div className="absolute -bottom-32 left-1/4 h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl" />
@@ -304,7 +305,7 @@ export default function Blogs() {
 
             <Link
               href="/contact"
-              className="inline-flex w-fit items-center justify-center gap-3 rounded-md bg-white px-6 py-4 text-[10px] font-extrabold uppercase tracking-wider text-blue-800 transition hover:bg-cyan-100"
+              className="inline-flex w-fit items-center justify-center gap-3 rounded-md bg-white px-6 py-4 text-[10px] font-extrabold uppercase tracking-wider text-blue-800 transition hover:bg-[#C79639] hover:text-white"
             >
               Request a Consultation
               <ArrowUpRight size={16} />

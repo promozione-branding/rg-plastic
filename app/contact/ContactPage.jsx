@@ -19,7 +19,7 @@ export default function ContactPage() {
         />
 
         {/* Dark Blue Overlay */}
-        <div className="absolute inset-0 bg-[#062d4f]/75" />
+        <div className="absolute inset-0 bg-[#0d2461]/95" />
 
         {/* Subtle Grid */}
 
@@ -27,14 +27,14 @@ export default function ContactPage() {
         <div className="relative z-10 flex min-h-[520px] items-center justify-center px-5 text-center">
           <div className="max-w-4xl">
             <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-5 py-2 text-xs font-medium uppercase tracking-[0.2em] text-white backdrop-blur-sm">
-              <span className="h-2 w-2 rounded-full bg-[#4ca7e8]" />
+              <span className="h-2 w-2 rounded-full bg-[#fff]" />
               Get In Touch
             </div>
 
             <h1 className="text-5xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl ">
               Let's Build
               <br />
-              <span className="text-[#65b5ee]">Something Better.</span>
+              <span className="text-[#fff]">Something Better.</span>
             </h1>
 
             <p className="mx-auto mt-7 max-w-2xl text-sm leading-7 text-white/75 sm:text-base">
@@ -64,8 +64,8 @@ export default function ContactPage() {
             {" "}
             <div className="mb-5 flex items-center gap-3">
               {" "}
-              <span className="h-px w-9 bg-[#1261A0]" />{" "}
-              <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#1261A0]">
+              <span className="h-px w-9 bg-[#0d2461]" />{" "}
+              <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#0d2461]">
                 {" "}
                 Get In Touch{" "}
               </span>{" "}
@@ -73,7 +73,7 @@ export default function ContactPage() {
             <h2 className="text-[42px] font-semibold leading-[1.03] tracking-[-0.035em] text-[#111] sm:text-5xl lg:text-[60px]">
               {" "}
               Let&apos;s build the <br />{" "}
-              <span className="text-[#1261A0]">right solution.</span>{" "}
+              <span className="text-[#0d2461]">right solution.</span>{" "}
             </h2>{" "}
             <p className="mt-6 max-w-2xl text-[15px] leading-7 text-gray-600 sm:text-base">
               {" "}
@@ -86,7 +86,7 @@ export default function ContactPage() {
           <div className="grid overflow-hidden rounded-[32px] border border-gray-200 bg-white shadow-[0_25px_80px_rgba(0,0,0,0.08)] lg:grid-cols-[0.8fr_1.2fr]">
             {" "}
             {/* ================================================= LEFT CONTACT PANEL ================================================= */}{" "}
-            <div className="relative overflow-hidden bg-[#0d4f7d] p-7 text-white sm:p-10 lg:p-12">
+            <div className="relative overflow-hidden bg-[#0d2461] p-7 text-white sm:p-10 lg:p-12">
               {" "}
               {/* Decorative grid */}{" "}
               <div
@@ -222,7 +222,7 @@ export default function ContactPage() {
                 {" "}
                 <div>
                   {" "}
-                  <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#1261A0]">
+                  <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#0d2461]">
                     {" "}
                     Enquiry Form{" "}
                   </span>{" "}
@@ -237,7 +237,7 @@ export default function ContactPage() {
                   </p>{" "}
                 </div>{" "}
                 {/* Number */}{" "}
-                <div className="hidden h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#eaf4fb] text-sm font-semibold text-[#1261A0] sm:flex">
+                <div className="hidden h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0d2461] text-sm font-semibold text-[#fff] sm:flex">
                   {" "}
                   01{" "}
                 </div>{" "}
@@ -333,7 +333,7 @@ export default function ContactPage() {
                   </p>{" "}
                   <button
                     type="submit"
-                    className="group inline-flex shrink-0 items-center justify-center gap-3 rounded-full bg-[#1261A0] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#1261A0]/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0b4d82] hover:shadow-xl hover:shadow-[#1261A0]/25"
+                    className="group inline-flex shrink-0 items-center justify-center gap-3 rounded-full bg-[#0d2461] px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#1261A0]/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0d2461] hover:shadow-xl hover:shadow-[#0d2461]/25"
                   >
                     {" "}
                     Send Enquiry{" "}
@@ -358,7 +358,7 @@ export default function ContactPage() {
             </span>{" "}
             <span className="flex items-center gap-2">
               {" "}
-              <span className="h-1.5 w-1.5 rounded-full bg-green-500" /> Our
+              <span className="h-1.5 w-1.5 rounded-full bg-[#0d2461]" /> Our
               team is ready to help{" "}
             </span>{" "}
           </div>{" "}
@@ -384,7 +384,7 @@ export default function ContactPage() {
             {/* ADDRESS */}
             <div className="rounded-2xl bg-white p-6 shadow-sm">
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#eaf4fb]">
-                <MapPin size={19} className="text-[#1261A0]" />
+                <MapPin size={19} className="text-[#0d2461]" />
               </div>
 
               <h3 className="mt-5 font-semibold">Our Address</h3>
@@ -401,7 +401,7 @@ export default function ContactPage() {
             {/* PHONE */}
             <div className="rounded-2xl bg-white p-6 shadow-sm">
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#eaf4fb]">
-                <Phone size={19} className="text-[#1261A0]" />
+                <Phone size={19} className="text-[#0d2461]" />
               </div>
 
               <h3 className="mt-5 font-semibold">Phone & Enquiries</h3>
@@ -418,7 +418,7 @@ export default function ContactPage() {
             {/* HOURS */}
             <div className="rounded-2xl bg-white p-6 shadow-sm">
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#eaf4fb]">
-                <Clock3 size={19} className="text-[#1261A0]" />
+                <Clock3 size={19} className="text-[#0d2461]" />
               </div>
 
               <h3 className="mt-5 font-semibold">Working Hours</h3>
@@ -444,7 +444,7 @@ export default function ContactPage() {
             {/* Google Maps */}
             <iframe
               title="Dharam Engg Work Location - Bawana Industrial Area"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.4922588901622!2d77.1841372!3d28.554977399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d8d97516281%3A0x72e4bdfe4c1b9314!2sR%20G%20Plastics%20Machinery!5e0!3m2!1sen!2sin!4v1792563403415!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.6581145957807!2d77.16235191116077!3d28.699871980917614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d022340000001%3A0x4b375f3608768d8b!2sDharam%20Engineering%20Works!5e0!3m2!1sen!2sin!4v1794565356163!5m2!1sen!2sin"
               className="absolute inset-0 h-full w-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -455,7 +455,7 @@ export default function ContactPage() {
 
             <div className="absolute right-4 top-4 z-10 max-w-[calc(100%-2rem)] rounded-xl bg-white px-4 py-3 shadow-xl sm:right-7 sm:top-7 sm:px-5 sm:py-4">
               <div className="flex items-start gap-3">
-                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#1261A0]">
+                <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#0d2461]">
                   <Factory size={17} className="text-white" />
                 </div>
 
