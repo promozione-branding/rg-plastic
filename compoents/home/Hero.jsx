@@ -68,11 +68,11 @@ export default function Hero() {
            
 
             {/* HEADING */}
-            <h1 className="max-w-[850px] text-[39px] font-extrabold leading-[1.04] tracking-[-0.045em] text-white sm:text-[55px] ">
+            <h1 className="max-w-[850px] text-[39px] font-extrabold leading-13 tracking-[-0.045em] text-white sm:text-[55px] ">
 
               Plastic Recycling
 
-              <span className="block bg-gradient-to-r from-[#159ed8] to-[#1969e0] bg-clip-text text-transparent">
+              <span className="block text-white bg-clip-text text-transparent">
                 Machine Manufacturer.
               </span>
 
