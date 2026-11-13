@@ -78,7 +78,7 @@ export default function SingleProduct({ product }) {
       {/* Hero */}
     
 <section className="bg-[#EDF1F4]">
-  <div className="mx-auto grid max-w-[1440px] gap-10 px-5 pb-14 pt-8 sm:px-8 lg:grid-cols-[1.2fr_.8fr] md:gap-16 md:px-8 md:pb-11 md:pt-5">
+  <div className="mx-auto grid max-w-[1440px] gap-10 px-5 pb-14 pt-8 sm:px-8 md:grid-cols-2 md:gap-12 md:px-8 md:pb-11 md:pt-5">
 
     {/* Gallery */}
     <div className="flex min-w-0 flex-col gap-4">

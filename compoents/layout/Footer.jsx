@@ -48,14 +48,14 @@ export default function Footer() {
                 className="h-auto w-[155px] object-contain"
               />
             </Link>
-            <p className="mt-5 max-w-[330px] text-[13px] leading-6 text-white/65">
+            <p className="mt-5 max-w-[330px] text-[14px] leading-6 text-white/65">
               Delivering reliable and high-performance plastic processing
               machinery with precision, efficiency and engineering excellence
               for modern industrial production.
             </p>
             <Link
               href="/contact"
-              className="group mt-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-2.5 text-[11px] font-semibold text-white transition-all duration-300 hover:border-[#55B8F2]/60 hover:bg-[#55B8F2]/10"
+              className="group text-[13px] mt-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-2.5 text-[11px] font-semibold text-white transition-all duration-300 hover:border-[#55B8F2]/60 hover:bg-[#55B8F2]/10"
             >
               Talk to our team
               <FiArrowUpRight className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
@@ -75,10 +75,10 @@ export default function Footer() {
                 <Link
                   key={label}
                   href={href}
-                  className="group flex w-fit items-center gap-1.5 text-[12px] text-white/60 transition-colors duration-300 hover:text-[#55B8F2]"
+                  className="group flex w-fit items-center gap-1.5 text-[14px] text-white/60 transition-colors duration-300 hover:text-[#55B8F2]"
                 >
                   <span>{label}</span>
-                  <FiArrowUpRight className="text-[11px] opacity-0 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
+                  <FiArrowUpRight className="text-[14px] opacity-0 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
                 </Link>
               ))}
             </nav>
@@ -90,7 +90,7 @@ export default function Footer() {
                 <Link
                   key={product.slug}
                   href={`/products/${product.slug}`}
-                  className="w-fit max-w-full text-[12px] leading-5 text-white/60 transition-colors duration-300 hover:text-[#55B8F2]"
+                  className="w-fit max-w-full text-[14px] leading-5 text-white/60 transition-colors duration-300 hover:text-[#55B8F2]"
                 >
                   {product.name}
                 </Link>
@@ -139,21 +139,21 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-white/10 pt-6">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-[11px] text-white/45">
+            <p className="text-[13px] text-white/45">
               © {new Date().getFullYear()} RG Plastic. All Rights Reserved.
             </p>
 
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
               <a
                 href="#"
-                className="text-[11px] text-white/45 transition-colors hover:text-[#55B8F2]"
+                className="text-[13px] text-white/45 transition-colors hover:text-[#55B8F2]"
               >
                 Privacy Policy
               </a>
 
               <a
                 href="#"
-                className="text-[11px] text-white/45 transition-colors hover:text-[#55B8F2]"
+                className="text-[13px] text-white/45 transition-colors hover:text-[#55B8F2]"
               >
                 Terms & Conditions
               </a>
@@ -168,7 +168,7 @@ export default function Footer() {
 function FooterColumn({ title, children }) {
   return (
     <section>
-      <h3 className="mb-5 flex items-center gap-2.5 text-[11px] font-bold uppercase tracking-[0.16em] text-white">
+      <h3 className="mb-5 flex items-center gap-2.5 text-[14px] font-bold uppercase tracking-[0.16em] text-white">
         <span className="h-1.5 w-1.5 rounded-full bg-[#55B8F2]" />
         {title}
       </h3>
@@ -188,7 +188,7 @@ function ContactLink({ href, icon, label, external = false }) {
       <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/[0.06] text-[14px] text-[#55B8F2] transition-all duration-300 group-hover:border-[#55B8F2]/40 group-hover:bg-[#55B8F2]/10">
         {icon}
       </span>
-      <span className="pt-1 text-[12px] leading-5">{label}</span>
+      <span className="pt-1 text-[14px] leading-5">{label}</span>
     </a>
   );
 }
